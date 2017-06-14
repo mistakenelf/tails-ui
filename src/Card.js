@@ -27,7 +27,7 @@ export const CardContent = styled.div`
 
 export default ({ children, headerText }) =>
   <Card>
-    <CardHeader>{headerText}</CardHeader>
+    {headerText && <CardHeader>{headerText}</CardHeader>}
     <CardContent>
       {children}
     </CardContent>
