@@ -6,7 +6,9 @@
   "scripts": {
     "prepublishOnly": "babel src -d dist",
     "start": "webpack-dev-server",
-    "docs": "webpack -p"
+    "docs": "webpack -p",
+    "precommit": "lint-staged",
+    "format": "prettier --single-quote --no-semi --trailing-comma es5 --write \"src/**/*.js\""
   },
   "keywords": [
     "react",
@@ -23,6 +25,9 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "html-webpack-plugin": "^2.24.0",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.1",
+    "prettier": "^1.4.4",
     "raw-loader": "^0.5.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -31,5 +36,11 @@
   },
   "dependencies": {
     "styled-components": "^2.0.1"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --single-quote --no-semi --trailing-comma es5 --write",
+      "git add"
+    ]
   }
 }
