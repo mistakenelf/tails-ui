@@ -1,5 +1,13 @@
-import { Button } from 'stylized'
+import { Button, Card } from 'stylized'
+
 import React from 'react'
 
 export default () => 
-  <Button>Test</Button>
+  <div>
+    <Button>Test</Button>
+    <Card headerText="Sample Card">
+      <ul>
+        <li>First item on the list</li>
+      </ul>
+    </Card>
+  </div>
