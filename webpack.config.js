@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './docs/entry.js',
@@ -22,11 +21,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        loader: 'raw-loader'
       }
     ]
   },
@@ -35,12 +29,10 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    new HtmlWebpackPlugin({
-      template: 'docs/template.ejs'
-    })
   ],
-
+  
   devServer: {
-    contentBase: 'docs/'
+    contentBase: 'docs/',
+    historyApiFallback: true
   }
 }

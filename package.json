@@ -7,6 +7,7 @@
     "prepublishOnly": "babel src -d dist",
     "start": "webpack-dev-server",
     "docs": "webpack -p",
+    "build": "babel src -d dist",
     "precommit": "lint-staged",
     "format": "prettier --single-quote --no-semi --trailing-comma es5 --write \"src/**/*.js\""
   },
@@ -24,11 +25,9 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "html-webpack-plugin": "^2.28.0",
     "husky": "^0.13.4",
     "lint-staged": "^3.6.1",
     "prettier": "^1.4.4",
-    "raw-loader": "^0.5.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "webpack": "^2.6.1",
@@ -36,10 +35,6 @@
   },
   "dependencies": {
     "styled-components": "^2.1.0"
-  },
-  "peerDependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
   },
   "lint-staged": {
     "src/**/*.js": [
