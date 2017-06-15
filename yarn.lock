@@ -2942,12 +2942,6 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.5.8:
-  version "15.5.8"
-  resolved "http://dfwprdnpm.sial.com:4873/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
-  dependencies:
-    fbjs "^0.8.9"
-
 prop-types@^15.5.10, prop-types@^15.5.4:
   version "15.5.10"
   resolved "http://dfwprdnpm.sial.com:4873/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
@@ -3046,18 +3040,6 @@ react-dom@^15.6.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
-
-react-icon-base@2.0.7:
-  version "2.0.7"
-  resolved "http://dfwprdnpm.sial.com:4873/react-icon-base/-/react-icon-base-2.0.7.tgz#0bd18736bd6ce79ca6d69ce8387a07fb8d4ceffe"
-  dependencies:
-    prop-types "15.5.8"
-
-react-icons@^2.2.5:
-  version "2.2.5"
-  resolved "http://dfwprdnpm.sial.com:4873/react-icons/-/react-icons-2.2.5.tgz#f942501c21a4cc0456ce2bbee5032c93f6051dcf"
-  dependencies:
-    react-icon-base "2.0.7"
 
 react@^15.6.1:
   version "15.6.1"
