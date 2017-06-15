@@ -10,9 +10,6 @@ import {
 } from './styles'
 import React, { Component } from 'react'
 
-import Clear from 'react-icons/lib/md/clear'
-import Reorder from 'react-icons/lib/md/reorder'
-
 export default class extends Component {
   state = {
     showMenu: false,
@@ -25,7 +22,13 @@ export default class extends Component {
   }
 
   render() {
-    const { title, menuItems, color } = this.props
+    const {
+      title,
+      menuItems,
+      color,
+      mobileMenuOpenIcon,
+      mobileMenuCloseIcon,
+    } = this.props
 
     return (
       <AppBar color={color}>
@@ -46,14 +49,14 @@ export default class extends Component {
           })}
         </DesktopMenu>
         <Hamburger onClick={this.toggleMenu}>
-          <Reorder />
+          {mobileMenuOpenIcon || 'menu'}
         </Hamburger>
         <MobileMenu
           showMenu={this.state.showMenu}
           style={{ display: this.state.showMenu ? 'initial' : 'none' }}
         >
           <Close onClick={this.toggleMenu}>
-            <Clear />
+            {mobileMenuCloseIcon || 'close'}
           </Close>
           {menuItems.map((link, index) => {
             return (
