@@ -1,4 +1,4 @@
-import { Button, Card } from 'stylized'
+import { Button, Card, TextArea, TextField } from 'stylized'
 
 import React from 'react'
 
@@ -8,4 +8,6 @@ export default () =>
     <Card>
       Some content here
     </Card>
+    <TextField placeholder="Enter some text" />
+    <TextArea placeholder="Enter some long text" />
   </div>
