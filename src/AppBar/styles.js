@@ -85,9 +85,11 @@ export const MobileMenu = styled.div`
 export const MobileMenuItem = styled.div`
   text-transform: uppercase;
   padding-bottom: 15px;
+  color: black;
 
   > a {
     text-decoration: none;
+    color: black;
   }
 `
 
@@ -109,15 +111,5 @@ export const DesktopMenuItem = styled.span`
   > a {
     text-decoration: none;
     color: ${props => props.fontColor || 'black'};
-
-    &:before {
-      padding-right: 2px;
-      content: "|";
-    }
-
-    &:after {
-      content: "|";
-      padding-left: 2px;
-    }
   }
 `
