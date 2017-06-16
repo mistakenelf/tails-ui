@@ -15,7 +15,6 @@ const TextArea = styled.textarea`
     border: 1px solid dimgray;
   }
 `
-
 export default ({ placeholder, labelText }) =>
   <div>
     {labelText && <label>{labelText}</label>}

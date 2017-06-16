@@ -18,6 +18,7 @@ export default ({ icon, size, color }) => {
       fill: color,
     },
   }
+
   return (
     <svg width={`${size}px`} height={`${size}px`} viewBox="0 0 32 32">
       <path style={styles.path} d={icons[icon]} />

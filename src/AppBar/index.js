@@ -28,10 +28,13 @@ export default class extends Component {
       color,
       mobileMenuOpenIcon,
       mobileMenuCloseIcon,
+      hasShadow,
+      fixed,
+      height,
     } = this.props
 
     return (
-      <AppBar color={color}>
+      <AppBar color={color} hasShadow={hasShadow} fixed={fixed} height={height}>
         <Title>{title}</Title>
         <DesktopMenu>
           {menuItems.map((link, index) => {

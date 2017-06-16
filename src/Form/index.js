@@ -1,12 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Form = styled.fieldset`
-  padding: 20px;
+export const Form = styled.form`
+  padding: 0px;
 `
 
-export default ({ children, label }) =>
+export default ({ children, label, hasBorder }) =>
   <Form>
-    <legend>{label}</legend>
-    {children}
+    {hasBorder
+      ? <fieldset>
+          <legend>{label}</legend>
+          {children}
+        </fieldset>
+      : <div>{children}</div>}
   </Form>

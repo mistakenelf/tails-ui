@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Card = styled.div`
+const Card = styled.div`
   padding: 5px;
   border: 1px solid silver;
   border-radius: 3px;
@@ -9,7 +9,7 @@ export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 `
 
-export const CardHeader = styled.div`
+const CardHeader = styled.div`
   font-weight: bolder;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ export const CardHeader = styled.div`
   padding: 5px;
 `
 
-export const CardContent = styled.div`
+const CardContent = styled.div`
   padding: 5px;
   font-size: 1em;
 `

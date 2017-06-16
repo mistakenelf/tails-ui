@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const ModalContainer = styled.div`
+const ModalContainer = styled.div`
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.95);
   color: dimgrey;
@@ -15,7 +15,7 @@ export const ModalContainer = styled.div`
   justify-content: center;
 `
 
-export const Modal = styled.div`
+const Modal = styled.div`
   background: white;
   padding: 20px;
   border-radius: 3px;

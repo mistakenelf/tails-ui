@@ -1,4 +1,4 @@
-import { Button, Card, Loader, Modal, TextArea, TextField } from 'stylized'
+import { Button, Card, Form, Loader, Modal, TextArea, TextField } from 'stylized'
 import React, { Component } from 'react'
 
 export default class extends Component {
@@ -30,6 +30,9 @@ export default class extends Component {
             <Button onClick={this.toggle}>Test</Button>
           </Modal>
         }
+        <Form hasBorder>
+          this is a form
+        </Form>
       </div>
     )
   }

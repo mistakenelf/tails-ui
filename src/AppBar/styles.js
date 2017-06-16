@@ -5,9 +5,9 @@ export const AppBar = styled.div`
   align-items: center;
 	width: 100%;
   background: ${props => props.color || 'royalblue'};
-  height: 3em;
-  box-shadow: 1px 1px 1px #999;
-  position: fixed;
+  height: ${props => props.height || '3em'};
+  box-shadow: ${props => (props.hasShadow ? '1px 1px 1px #999' : null)};
+  position: ${props => (props.fixed ? 'fixed' : 'initial')};
 `
 
 export const Title = styled.div`

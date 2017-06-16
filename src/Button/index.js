@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -16,4 +17,5 @@ const Button = styled.button`
   box-shadow: 0 3px dimgrey;
 `
 
-export default Button
+export default ({ children, onClick, type }) =>
+  <Button type={type} onClick={onClick}>{children}</Button>
