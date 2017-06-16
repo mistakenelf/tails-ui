@@ -25,7 +25,8 @@ export default class extends Component {
     const {
       title,
       menuItems,
-      color,
+      backgroundColor,
+      fontColor,
       mobileMenuOpenIcon,
       mobileMenuCloseIcon,
       hasShadow,
@@ -34,8 +35,14 @@ export default class extends Component {
     } = this.props
 
     return (
-      <AppBar color={color} hasShadow={hasShadow} fixed={fixed} height={height}>
-        <Title>{title}</Title>
+      <AppBar
+        backgroundColor={backgroundColor}
+        fontColor={fontColor}
+        hasShadow={hasShadow}
+        fixed={fixed}
+        height={height}
+      >
+        <Title fontColor={fontColor}>{title}</Title>
         <DesktopMenu>
           {menuItems.map((link, index) => {
             return (
@@ -56,7 +63,7 @@ export default class extends Component {
         </Hamburger>
         <MobileMenu
           showMenu={this.state.showMenu}
-          style={{ display: this.state.showMenu ? 'initial' : 'none' }}
+          style={{ display: this.state.showMenu ? 'flex' : 'none' }}
         >
           <Close onClick={this.toggleMenu}>
             {mobileMenuCloseIcon || 'close'}

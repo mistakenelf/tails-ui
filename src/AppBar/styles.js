@@ -1,46 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-export const AppBar = styled.div`
-  display: flex;
-  align-items: center;
-	width: 100%;
-  background: ${props => props.color || 'royalblue'};
-  height: ${props => props.height || '3em'};
-  box-shadow: ${props => (props.hasShadow ? '1px 1px 1px #999' : null)};
-  position: ${props => (props.fixed ? 'fixed' : 'initial')};
-`
-
-export const Title = styled.div`
-  font-size: 1.5em;
-  color: white;
-  padding-left: 0.5em;
-`
-
-export const Hamburger = styled.div`
-  padding-right: 0.5em;
-  font-size: 2em;
-  color: white;
-  margin-left: auto;
-  cursor: pointer;
-
-  @media (min-width: 700px) {
-		display: none;
-	}
-`
-
-export const Close = styled.div`
-  color: black;
-  position: absolute;
-  padding-right: 15px;
-  padding-top: 5px;
-  top: 0;
-  right: 0;
-
-  @media(min-width: 700px) {
-    display: none;
-  }
-`
-
+// Slide in animation for mobile menu
 const slideIn = keyframes`
   from {
 	  margin-left: 100%;
@@ -53,10 +13,56 @@ const slideIn = keyframes`
 	}
 `
 
+// Main app bar component
+export const AppBar = styled.div`
+  display: flex;
+  align-items: center;
+	width: 100%;
+  background: ${props => props.backgroundColor || 'royalblue'};
+  color: ${props => props.fontColor || 'black'};
+  height: ${props => props.height || '3em'};
+  box-shadow: ${props => (props.hasShadow ? '1px 1px 1px #999' : null)};
+  position: ${props => (props.fixed ? 'fixed' : 'initial')};
+`
+
+// Title Component
+export const Title = styled.div`
+  font-size: 2em;
+  text-transform: uppercase;
+  color: ${props => props.fontColor || 'black'};
+  padding-left: 0.5em;
+`
+
+// Hamburger icon
+export const Hamburger = styled.div`
+  padding-right: 0.5em;
+  font-size: 2em;
+  margin-left: auto;
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+		display: none;
+	}
+`
+
+// Close icon for mobile menu
+export const Close = styled.div`
+  position: absolute;
+  padding-right: 15px;
+  padding-top: 5px;
+  top: 0;
+  right: 0;
+
+  @media(min-width: 700px) {
+    display: none;
+  }
+`
+
+// Main mobile menu panel
 export const MobileMenu = styled.div`
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.95);
-  color: dimgrey;
+  color: black;
   z-index: 100;
   width: 100%;
   position: fixed;
@@ -75,20 +81,19 @@ export const MobileMenu = styled.div`
 	}
 `
 
+// Mobile meu items
 export const MobileMenuItem = styled.div`
-  padding-top: 30px;
   text-transform: uppercase;
-
+  padding-bottom: 15px;
   > a {
     text-decoration: none;
-    color: dimgrey;
+    color: black;
   }
 `
 
 export const DesktopMenu = styled.div`
   font-weight: bolder;
-  padding-left: 1em;
-  color: white;
+  margin-left: auto;
 
   @media (max-width: 700px) {
 		display: none;
@@ -101,6 +106,15 @@ export const DesktopMenuItem = styled.span`
 
   > a {
     text-decoration: none;
-    color: white;
+
+    &:before {
+      padding-right: 2px;
+      content: "|";
+    }
+
+    &:after {
+      content: "|";
+      padding-left: 2px;
+    }
   }
 `
