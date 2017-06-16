@@ -14,25 +14,10 @@ export default class extends Component {
 
   render() {
     return (
-      <div>
-        <Button onClick={this.toggle}>Test</Button>
-        <Card>
+      <div style={{ margin: 20 }}>
+        <Card hasShadow headerText="Test Card" hasBorder rounded backgroundColor="palevioletred" fontColor="white">
           Some content here
         </Card>
-        <TextField placeholder="Enter some text" />
-        <TextArea placeholder="Enter some long text" />
-        <Loader />
-        {this.state.open && 
-          <Modal>
-            <TextField placeholder="Test" />
-            <TextField placeholder="Test" />
-            <TextField placeholder="Test" />
-            <Button onClick={this.toggle}>Test</Button>
-          </Modal>
-        }
-        <Form hasBorder>
-          this is a form
-        </Form>
       </div>
     )
   }
