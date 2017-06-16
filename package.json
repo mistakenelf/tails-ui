@@ -1,8 +1,11 @@
 {
   "name": "stylized",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Minimalistic react component library",
   "main": "dist/index.js",
+  "repository": {
+    "url": "https://github.com/knipferrc/stylized"
+  },
   "scripts": {
     "prepublishOnly": "babel src -d dist",
     "start": "webpack-dev-server",
