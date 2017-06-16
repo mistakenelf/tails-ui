@@ -85,15 +85,16 @@ export const MobileMenu = styled.div`
 export const MobileMenuItem = styled.div`
   text-transform: uppercase;
   padding-bottom: 15px;
+
   > a {
     text-decoration: none;
-    color: black;
   }
 `
 
 export const DesktopMenu = styled.div`
   font-weight: bolder;
   margin-left: auto;
+  color: ${props => props.fontColor || 'black'};
 
   @media (max-width: 700px) {
 		display: none;
@@ -103,9 +104,11 @@ export const DesktopMenu = styled.div`
 export const DesktopMenuItem = styled.span`
   padding-right: 15px;
   cursor: pointer;
+  color: ${props => props.fontColor || 'black'};
 
   > a {
     text-decoration: none;
+    color: ${props => props.fontColor || 'black'};
 
     &:before {
       padding-right: 2px;

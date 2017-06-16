@@ -19,7 +19,7 @@ export default class extends Component {
         title="Tyler & Mariah"
         fixed
         backgroundColor="transparent"
-        fontColor="black"
+        fontColor="white"
         mobileMenuOpenIcon={<Icon icon="menu" color="black" size={25} />}
         mobileMenuCloseIcon={<Icon icon="close" color="black" size={25} />}
         menuItems={[{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> }]}

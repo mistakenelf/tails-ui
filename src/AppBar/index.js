@@ -43,15 +43,15 @@ export default class extends Component {
         height={height}
       >
         <Title fontColor={fontColor}>{title}</Title>
-        <DesktopMenu>
+        <DesktopMenu fontColor={fontColor}>
           {menuItems.map((link, index) => {
             return (
               <span key={index}>
                 {link.click
-                  ? <DesktopMenuItem onClick={link.click}>
+                  ? <DesktopMenuItem fontColor={fontColor} onClick={link.click}>
                       {link.text}
                     </DesktopMenuItem>
-                  : <DesktopMenuItem>
+                  : <DesktopMenuItem fontColor={fontColor}>
                       {link.link}
                     </DesktopMenuItem>}
               </span>
