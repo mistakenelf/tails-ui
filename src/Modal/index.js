@@ -16,7 +16,7 @@ const ModalContainer = styled.div`
 
 const Modal = styled.div`
   background: white;
-  border-radius: 3px;
+  border-radius: ${props => (props.rounded ? '3px' : '0px')};
   max-height: calc(100% - 100px);
   position: fixed;
   top: 50%;
@@ -50,9 +50,9 @@ const ModalHeader = styled.div`
   margin-bottom: 10px;
 `
 
-export default ({ children, handleClose }) =>
+export default ({ children, handleClose, rounded }) =>
   <ModalContainer>
-    <Modal>
+    <Modal rounded={rounded}>
       <ModalHeader>
         <ModalTitle>Modal Title</ModalTitle>
         <CloseIcon onClick={handleClose}>X</CloseIcon>

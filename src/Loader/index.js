@@ -3,25 +3,24 @@ import styled, { keyframes } from 'styled-components'
 import React from 'react'
 
 const spin = keyframes`
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
+	 0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    background: palevioletred;
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    background: royalblue;
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    background: papayawhip;
+  }
 `
 
 const Loader = styled.div`
-  border: 8px solid white;
-  border-radius: 50%;
-  border-top: 8px solid royalblue;
-  border-right: 8px solid mediumseagreen;
-  border-bottom: 8px solid mediumpurple;
-  border-left: 8px solid khaki;
-  width: 50px;
-  height: 50px;
-  animation: ${spin} 1s linear infinite;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #333;
+  animation: ${spin} 1.2s infinite ease-in-out;
 `
 
 export default () => <Loader />

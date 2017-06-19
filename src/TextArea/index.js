@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TextArea = styled.textarea`
-  width: ${props => (props.fullwidth ? '100%' : 'null')};
   padding: 10px 10px;
   box-sizing: border-box;
   border: 1px solid silver;
@@ -19,13 +18,19 @@ const TextArea = styled.textarea`
     border: 1px solid indianred;
   }
 `
+
+const FieldContainer = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  width: ${props => (props.fullWidth ? '100%' : 'initial')};
+`
+
 export default ({ placeholder, labelText, fullWidth, rounded }) =>
-  <div>
+  <FieldContainer fullWidth={fullWidth}>
     {labelText && <label>{labelText}</label>}
     <TextArea
       placeholder={placeholder || null}
-      fullWidth={fullWidth}
       rounded={rounded}
       labelText={labelText}
     />
-  </div>
+  </FieldContainer>

@@ -1,4 +1,4 @@
-import { AppBar, Button, Card, Form, Icon, Loader, Modal, TextField } from 'stylized'
+import { AppBar, Button, Card, Form, Icon, Loader, Modal, TextArea, TextField } from 'stylized'
 import React, { Component } from 'react'
 
 export default class extends Component {
@@ -32,14 +32,17 @@ export default class extends Component {
         {this.state.open &&
           <Modal handleClose={this.toggle}>
             <Form onSubmit={(this.submit)}>
-              <TextField fullWidth type="text" placeholder="Enter some text" />
+              <TextField fullWidth type="text" placeholder="Enter some text" labelText="Product" />
+              <br />
+              <br />
+              <TextArea fullWidth placeholder="Enter some long text" labelText="Description" />
+              <br />
               <br />
               <Button fullWidth type="submit">Test</Button>
             </Form>
         </Modal>
         }
         <Loader />
-        <Button backgroundColor="#65daa2">Color Test</Button>
       </div>
     )
   }
