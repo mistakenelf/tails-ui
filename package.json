@@ -28,7 +28,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "husky": "^0.13.4",
-    "lint-staged": "^3.6.1",
+    "lint-staged": "^4.0.0",
     "prettier": "^1.4.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
