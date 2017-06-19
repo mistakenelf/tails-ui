@@ -27,8 +27,7 @@ export const AppBar = styled.div`
 
 // Title Component
 export const Title = styled.div`
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 1.5em;
   color: ${props => props.fontColor || 'black'};
   padding-left: 0.5em;
 `

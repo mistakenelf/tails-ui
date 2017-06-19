@@ -1,4 +1,4 @@
-import { AppBar, Button, Form, Icon, Modal, TextField } from 'stylized'
+import { AppBar, Button, Card, Form, Icon, Loader, Modal, TextField } from 'stylized'
 import React, { Component } from 'react'
 
 export default class extends Component {
@@ -22,9 +22,9 @@ export default class extends Component {
       <div>
         <AppBar
           title="AppBar"
-          backgroundColor="royalblue"
-          fontColor="white"
-          mobileMenuOpenIcon={<Icon icon="menu" color="white" size={25} />}
+          backgroundColor="papayawhip"
+          fontColor="palevioletred"
+          mobileMenuOpenIcon={<Icon icon="menu" color="palevioletred" size={25} />}
           mobileMenuCloseIcon={<Icon icon="close" color="black" size={25} />}
           menuItems={[{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> }]}
         />
@@ -38,6 +38,8 @@ export default class extends Component {
             </Form>
         </Modal>
         }
+        <Loader />
+        <Button backgroundColor="#65daa2">Color Test</Button>
       </div>
     )
   }
