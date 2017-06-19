@@ -9,13 +9,32 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  border-radius: 3px;
-  background: palevioletred;
+  color: ${props => props.fontColor || 'white'};
+  border-radius: ${props => (props.rounded ? '3px' : '0px')};
+  background: ${props => props.backgroundColor || 'palevioletred'};
   border: none;
-  width: 100%;
-  box-shadow: 0 3px dimgrey;
+  box-shadow: ${props => (props.hasShadow ? '0 3px dimgrey' : null)};
+  width: ${props => (props.fullWidth ? '100%' : null)};
 `
 
-export default ({ children, onClick, type }) =>
-  <Button type={type} onClick={onClick}>{children}</Button>
+export default ({
+  children,
+  onClick,
+  type,
+  fullWidth,
+  backgroundColor,
+  fontColor,
+  hasShadow,
+  rounded,
+}) =>
+  <Button
+    type={type}
+    fullWidth={fullWidth}
+    backgroundColor={backgroundColor}
+    fontColor={fontColor}
+    onClick={onClick}
+    hasShadow={hasShadow}
+    rounded={rounded}
+  >
+    {children}
+  </Button>
