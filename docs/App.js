@@ -1,4 +1,4 @@
-import { AppBar, Button, Form, Icon, TextField } from 'stylized'
+import { AppBar, Button, Form, Icon, Modal, TextField } from 'stylized'
 import React, { Component } from 'react'
 
 export default class extends Component {
@@ -28,11 +28,16 @@ export default class extends Component {
           mobileMenuCloseIcon={<Icon icon="close" color="black" size={25} />}
           menuItems={[{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> },{ text: 'Home', link: <a href="/">Home</a> }]}
         />
-        <Form hasBorder onSubmit={(this.submit)}>
-          <TextField type="text" placeholder="Enter some text" />
-          <br />
-          <Button type="submit">Test</Button>
-        </Form>
+        <Button onClick={this.toggle}>Toggle</Button>
+        {this.state.open &&
+          <Modal handleClose={this.toggle}>
+            <Form onSubmit={(this.submit)}>
+              <TextField fullWidth type="text" placeholder="Enter some text" />
+              <br />
+              <Button fullWidth type="submit">Test</Button>
+            </Form>
+        </Modal>
+        }
       </div>
     )
   }
