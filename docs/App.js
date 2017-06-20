@@ -7,6 +7,11 @@ import {
   Loader,
   Modal,
   Table,
+  TableBody,
+  TableData,
+  TableHead,
+  TableHeading,
+  TableRow,
   TextArea,
   TextField,
 } from "stylized";
@@ -71,7 +76,37 @@ export default class extends Component {
             </Form>
           </Modal>}
         <Loader />
-        <Table />
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableHeading>Payment</TableHeading>
+              <TableHeading>Amount</TableHeading>
+              <TableHeading>Total</TableHeading>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableData data-label="payment">Payment</TableData>
+              <TableData data-label="amount">Amount</TableData>
+              <TableData data-label="total">Total</TableData>
+            </TableRow>
+            <TableRow>
+              <TableData data-label="payment">Payment</TableData>
+              <TableData data-label="amount">Amount</TableData>
+              <TableData data-label="total">Total</TableData>
+            </TableRow>
+            <TableRow>
+              <TableData data-label="payment">Payment</TableData>
+              <TableData data-label="amount">Amount</TableData>
+              <TableData data-label="total">Total</TableData>
+            </TableRow>
+            <TableRow>
+              <TableData data-label="payment">Payment</TableData>
+              <TableData data-label="amount">Amount</TableData>
+              <TableData data-label="total">Total</TableData>
+            </TableRow>
+          </TableBody>
+        </Table>
       </div>
     );
   }
