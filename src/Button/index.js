@@ -1,4 +1,5 @@
 import React from 'react'
+import { invert } from 'polished'
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -15,6 +16,13 @@ const Button = styled.button`
   border: none;
   box-shadow: ${props => (props.hasShadow ? '0 3px dimgrey' : null)};
   width: ${props => (props.fullWidth ? '100%' : null)};
+
+  &:active {
+    background: ${props =>
+      props.backgroundColor
+        ? invert(props.backgroundColor)
+        : invert('palevioletred')};
+  }
 `
 
 export default ({
