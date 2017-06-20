@@ -1,7 +1,5 @@
-### Release 0.0.7
-- Card header text is not required now
-
-### Release 0.0.5
-- Initial pre alpha release
-- Card Component
-- Button Component
+### Release 0.1.2
+- New table component
+- Modal Component
+- New loader component
+- Lots of fixes for several components
