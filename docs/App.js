@@ -1,4 +1,4 @@
-import { AppBar, Button, Card, Form, Icon, Loader, Modal, TextArea, TextField } from 'stylized'
+import { AppBar, Button, Card, Form, Icon, Loader, Modal, Table, TextArea, TextField } from 'stylized'
 import React, { Component } from 'react'
 
 export default class extends Component {
@@ -43,6 +43,7 @@ export default class extends Component {
         </Modal>
         }
         <Loader />
+        <Table />
       </div>
     )
   }
