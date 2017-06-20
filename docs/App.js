@@ -51,7 +51,7 @@ export default class extends Component {
             { text: "Home", link: <a href="/">Home</a> }
           ]}
         />
-        <Button backgroundColor="royalblue" onClick={this.toggle}>
+        <Button hasShadow backgroundColor="royalblue" onClick={this.toggle}>
           Toggle
         </Button>
         {this.state.open &&
