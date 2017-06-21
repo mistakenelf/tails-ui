@@ -6,11 +6,11 @@ const flipIn = keyframes`
   0% {
     transform: perspective(400px) rotateY(90deg);
     opacity: 0;
-   }
-   100% {
+  }
+  100% {
     transform: perspective(400px) rotateY(0deg);
     opacity: 1;
-   }
+  }
 } 
 `
 
