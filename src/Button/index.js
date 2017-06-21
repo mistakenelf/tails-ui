@@ -20,10 +20,7 @@ const Button = styled.button`
   &:active {
     box-shadow: 0;
     transform: translateY(2px);
-    background: ${props =>
-      props.backgroundColor
-        ? invert(props.backgroundColor)
-        : invert('palevioletred')};
+    filter: brightness(85%);
   }
 `
 
