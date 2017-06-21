@@ -64,11 +64,11 @@ const ModalHeader = styled.div`
   margin-bottom: 10px;
 `
 
-export default ({ children, handleClose, rounded }) =>
+export default ({ children, handleClose, rounded, title }) =>
   <ModalContainer>
     <Modal rounded={rounded}>
       <ModalHeader>
-        <ModalTitle>Modal Title</ModalTitle>
+        <ModalTitle>{title}</ModalTitle>
         <CloseIcon onClick={handleClose}>X</CloseIcon>
       </ModalHeader>
       <ModalContent>
