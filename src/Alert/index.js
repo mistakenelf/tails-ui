@@ -4,17 +4,11 @@ import React from 'react'
 
 const flip = keyframes`
   0% {
-    transform: perspective(400px) rotateX(90deg);
+    transform: rotateX(90deg);
     opacity: 0;
   }
-  40% {
-    transform: perspective(400px) rotateX(-10deg);
-  }
-  70% {
-    transform: perspective(400px) rotateX(10deg);
-  }
   100% {
-    transform: perspective(400px) rotateX(0deg);
+    transform: rotateX(0deg);
     opacity: 1;
   }
 `
@@ -25,7 +19,7 @@ const Alert = styled.div`
   font-weight: ${props => (props.boldText ? 'bold' : 'normal')};
   padding: 20px;
   border-radius: ${props => (props.rounded ? '3px' : '0px')};
-  animation: ${flip} 1.2s;
+  animation: ${flip} 0.5s;
 `
 
 export default ({ children, backgroundColor, fontColor, rounded, boldText }) =>
