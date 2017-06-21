@@ -36,7 +36,6 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
-    "polished": "^1.2.0",
     "styled-components": "^2.1.0"
   },
   "lint-staged": {
