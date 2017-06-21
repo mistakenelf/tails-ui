@@ -1,5 +1,4 @@
-### Release 0.1.2
-- New table component
-- Modal Component
-- New loader component
-- Lots of fixes for several components
+### Release 0.1.3
+- Modal Animation
+- Can actually pass a title to modal now
+- Alert component
