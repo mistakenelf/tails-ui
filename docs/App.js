@@ -56,7 +56,7 @@ export default class extends Component {
           Toggle
         </Button>
         {this.state.open &&
-          <Modal handleClose={this.toggle}>
+          <Modal handleClose={this.toggle} title='Sample Modal'>
             <Form onSubmit={this.submit}>
               <TextField
                 fullWidth
