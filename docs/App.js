@@ -43,7 +43,7 @@ export default class extends Component {
           mobileMenuOpenIcon={
             <Icon icon="menu" color="palevioletred" size={25} />
           }
-          mobileMenuCloseIcon={<Icon icon="close" color="black" size={25} />}
+          mobileMenuCloseIcon={<Icon icon="cross" color="black" size={25} />}
           menuItems={[
             { text: "Home", link: <a href="/">Home</a> },
             { text: "Home", link: <a href="/">Home</a> },
