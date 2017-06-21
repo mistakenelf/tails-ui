@@ -1,11 +1,22 @@
 {
   "name": "stylized",
   "version": "0.1.2",
-  "description": "Minimalistic react component library",
+  "description": "Stylish and fun react component library",
   "main": "dist/index.js",
+  "author": "Tyler Knipfer",
+  "license": "MIT",
   "repository": {
     "url": "https://github.com/knipferrc/stylized"
   },
+  "bugs":{
+    "url": "https://github.com/knipferrc/stylized/issues"
+  },
+  "keywords": [
+    "react",
+    "styled-components",
+    "components",
+    "library"
+  ],
   "scripts": {
     "prepublishOnly": "babel src -d dist",
     "start": "webpack-dev-server",
@@ -13,14 +24,6 @@
     "precommit": "lint-staged",
     "format": "prettier --single-quote --no-semi --trailing-comma es5 --write \"src/**/*.js\""
   },
-  "keywords": [
-    "react",
-    "styled-components",
-    "components",
-    "flexbox"
-  ],
-  "author": "Tyler Knipfer",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.0",
