@@ -1,4 +1,5 @@
 import {
+  Alert,
   AppBar,
   Button,
   Card,
@@ -107,6 +108,7 @@ export default class extends Component {
             </TableRow>
           </TableBody>
         </Table>
+        <Alert>This is an alert</Alert>
       </div>
     );
   }
