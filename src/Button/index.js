@@ -11,8 +11,9 @@ const Button = styled.button`
   outline: none;
   color: ${props => props.fontColor || 'white'};
   border-radius: ${props => (props.rounded ? '3px' : '0px')};
-  background: ${props => props.backgroundColor || 'palevioletred'};
-  border: none;
+  background: ${props =>
+    props.ghost ? 'transparent' : props.backgroundColor || 'palevioletred'};
+  border: ${props => (props.ghost ? `2px solid ${props.borderColor}` : 'none')};
   box-shadow: ${props => (props.hasShadow ? '0 3px dimgrey' : null)};
   width: ${props => (props.fullWidth ? '100%' : null)};
 
@@ -32,6 +33,8 @@ export default ({
   fontColor,
   hasShadow,
   rounded,
+  ghost,
+  borderColor,
 }) =>
   <Button
     type={type}
@@ -41,6 +44,8 @@ export default ({
     onClick={onClick}
     hasShadow={hasShadow}
     rounded={rounded}
+    ghost={ghost}
+    borderColor={borderColor}
   >
     {children}
   </Button>
