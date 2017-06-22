@@ -8,7 +8,7 @@
   "repository": {
     "url": "https://github.com/knipferrc/stylized"
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/knipferrc/stylized/issues"
   },
   "keywords": [
@@ -30,7 +30,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "husky": "^0.13.4",
+    "husky": "^0.14.0",
     "lint-staged": "^4.0.0",
     "prettier": "^1.4.4",
     "react": "^15.6.1",
