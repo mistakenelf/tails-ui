@@ -29,7 +29,7 @@ export default class extends Component {
       fontColor,
       mobileMenuOpenIcon,
       mobileMenuCloseIcon,
-      hasShadow,
+      shadowed,
       fixed,
       height,
     } = this.props
@@ -38,7 +38,7 @@ export default class extends Component {
       <AppBar
         backgroundColor={backgroundColor}
         fontColor={fontColor}
-        hasShadow={hasShadow}
+        shadowed={shadowed}
         fixed={fixed}
         height={height}
       >

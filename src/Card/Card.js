@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 const Card = styled.div`
   padding: 5px;
-  border: ${props => (props.hasBorder ? '1px solid silver' : 'none')};
+  border: ${props => (props.bordered ? '1px solid silver' : 'none')};
   border-radius: ${props => (props.rounded ? '3px' : '0px')};
   background: ${props => props.backgroundColor || 'white'};
   box-shadow: ${props =>
-    props.hasShadow ? '0 4px 8px 0 rgba(0,0,0,0.2)' : null};
+    props.shadowed ? '0 4px 8px 0 rgba(0,0,0,0.2)' : null};
   color: ${props => props.fontColor || 'black'};
 `
 
@@ -30,16 +30,16 @@ const CardContent = styled.div`
 export default ({
   children,
   headerText,
-  hasShadow,
-  hasBorder,
+  shadowed,
+  bordered,
   rounded,
   backgroundColor,
   fontColor,
   headerColor,
 }) =>
   <Card
-    hasShadow={hasShadow}
-    hasBorder={hasBorder}
+    shadowed={shadowed}
+    bordered={bordered}
     rounded={rounded}
     backgroundColor={backgroundColor}
     fontColor={fontColor}

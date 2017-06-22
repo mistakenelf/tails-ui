@@ -9,12 +9,13 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: ${props => props.fontColor || 'white'};
+  color: ${props => props.fontColor || 'black'};
   border-radius: ${props => (props.rounded ? '3px' : '0px')};
   background: ${props =>
     props.ghost ? 'transparent' : props.backgroundColor || 'palevioletred'};
-  border: ${props => (props.ghost ? `2px solid ${props.borderColor}` : 'none')};
-  box-shadow: ${props => (props.hasShadow ? '0 3px dimgrey' : null)};
+  border: ${props =>
+    props.hollow ? `2px solid ${props.borderColor}` : 'none'};
+  box-shadow: ${props => (props.shadowed ? '0 3px dimgrey' : null)};
   width: ${props => (props.fullWidth ? '100%' : null)};
 
   &:active {
@@ -31,9 +32,9 @@ export default ({
   fullWidth,
   backgroundColor,
   fontColor,
-  hasShadow,
+  shadowed,
   rounded,
-  ghost,
+  hollow,
   borderColor,
 }) =>
   <Button
@@ -42,9 +43,9 @@ export default ({
     backgroundColor={backgroundColor}
     fontColor={fontColor}
     onClick={onClick}
-    hasShadow={hasShadow}
+    shadowed={shadowed}
     rounded={rounded}
-    ghost={ghost}
+    hollow={hollow}
     borderColor={borderColor}
   >
     {children}

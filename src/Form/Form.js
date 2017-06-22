@@ -5,9 +5,9 @@ export const Form = styled.form`
   padding: 0px;
 `
 
-export default ({ children, label, hasBorder, onSubmit }) =>
+export default ({ children, label, bordered, onSubmit }) =>
   <Form onSubmit={onSubmit}>
-    {hasBorder
+    {bordered
       ? <fieldset>
           <legend>{label}</legend>
           {children}

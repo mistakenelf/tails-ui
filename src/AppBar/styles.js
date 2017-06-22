@@ -21,7 +21,7 @@ export const AppBar = styled.div`
   background: ${props => props.backgroundColor || 'royalblue'};
   color: ${props => props.fontColor || 'black'};
   height: ${props => props.height || '3em'};
-  box-shadow: ${props => (props.hasShadow ? '1px 1px 1px #999' : null)};
+  box-shadow: ${props => (props.shadowed ? '1px 1px 1px #999' : null)};
   position: ${props => (props.fixed ? 'fixed' : 'initial')};
 `
 
