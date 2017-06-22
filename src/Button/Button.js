@@ -12,7 +12,7 @@ const Button = styled.button`
   color: ${props => props.fontColor || 'black'};
   border-radius: ${props => (props.rounded ? '3px' : '0px')};
   background: ${props =>
-    props.ghost ? 'transparent' : props.backgroundColor || 'palevioletred'};
+    props.hollow ? 'transparent' : props.backgroundColor || 'palevioletred'};
   border: ${props =>
     props.hollow ? `2px solid ${props.borderColor}` : 'none'};
   box-shadow: ${props => (props.shadowed ? '0 3px dimgrey' : null)};

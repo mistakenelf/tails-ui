@@ -108,7 +108,7 @@ export default class extends Component {
             </TableRow>
           </TableBody>
         </Table>
-        <Alert>This is an alert</Alert>
+        <Alert boldText>This is an alert</Alert>
       </div>
     );
   }

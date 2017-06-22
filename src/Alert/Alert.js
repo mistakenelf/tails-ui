@@ -27,6 +27,7 @@ export default ({ children, backgroundColor, fontColor, rounded, boldText }) =>
     backgroundColor={backgroundColor}
     fontColor={fontColor}
     rounded={rounded}
+    boldText={boldText}
   >
     {children}
   </Alert>
