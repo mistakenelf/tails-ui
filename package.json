@@ -18,9 +18,9 @@
     "library"
   ],
   "scripts": {
-    "prepublishOnly": "babel src -d dist",
+    "prepublishOnly": "rimraf dist && babel src -d dist",
     "start": "webpack-dev-server",
-    "build": "babel src -d dist && NODE_ENV=production webpack -p",
+    "build": "rimraf dist && babel src -d dist && NODE_ENV=production webpack -p",
     "precommit": "lint-staged",
     "format": "prettier --single-quote --no-semi --trailing-comma es5 --write \"src/**/*.js\""
   },
@@ -35,6 +35,7 @@
     "prettier": "^1.4.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "rimraf": "^2.6.1",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
   },
