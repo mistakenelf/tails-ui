@@ -4,7 +4,9 @@ import {
   DesktopMenu,
   DesktopMenuItem,
   Hamburger,
+  MobileHeaderText,
   MobileMenu,
+  MobileMenuHeader,
   MobileMenuItem,
   Title,
 } from './styles'
@@ -32,6 +34,7 @@ export default class extends Component {
       shadowed,
       fixed,
       height,
+      mobileMenuHeaderText,
     } = this.props
 
     return (
@@ -65,9 +68,14 @@ export default class extends Component {
           showMenu={this.state.showMenu}
           style={{ display: this.state.showMenu ? 'flex' : 'none' }}
         >
-          <Close onClick={this.toggleMenu}>
-            {mobileMenuCloseIcon || 'close'}
-          </Close>
+          <MobileMenuHeader backgroundColor={backgroundColor}>
+            <MobileHeaderText fontColor={fontColor}>
+              {mobileMenuHeaderText}
+            </MobileHeaderText>
+            <Close onClick={this.toggleMenu}>
+              {mobileMenuCloseIcon || 'close'}
+            </Close>
+          </MobileMenuHeader>
           {menuItems.map((link, index) => {
             return (
               <span key={index}>
