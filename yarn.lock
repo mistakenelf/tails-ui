@@ -2285,9 +2285,9 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
-husky@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.0.tgz#d0115459d824e7cc67dbc23231935ba9cfdf0989"
+husky@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-0.14.1.tgz#8edba33e728ceed75343e88bb8002e4cbd8d1b40"
   dependencies:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
