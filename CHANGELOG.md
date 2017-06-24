@@ -1,2 +1,2 @@
-### Release 0.1.6
-- Mobile Menu enhancements
+### Release 0.1.7
+- More customization to the mobile menu
