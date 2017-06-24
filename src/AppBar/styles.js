@@ -75,7 +75,7 @@ export const MobileMenu = styled.div`
 `
 
 export const MobileMenuHeader = styled.div`
-  background: ${props => props.backgroundColor || 'royalblue'};
+  background: ${props => props.mobileMenuHeaderColor || 'royalblue'};
   height: 1.5em;
   top: 0;
   width: 100%;
@@ -84,7 +84,7 @@ export const MobileMenuHeader = styled.div`
 `
 
 export const MobileHeaderText = styled.div`
-  color: ${props => props.fontColor || 'white'};
+  color: ${props => props.mobileMenuHeaderTextColor || 'white'};
   padding-left: 10px;
 `
 

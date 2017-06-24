@@ -9,6 +9,8 @@ export default class App extends Component {
         fixed
         backgroundColor="palevioletred"
         fontColor="white"
+        mobileMenuHeaderTextColor="blue"
+        mobileMenuHeaderColor="black"
         mobileMenuHeaderText="Test Title"
         mobileMenuOpenIcon={
           <Icon icon="menu" color="white" size={25} />

@@ -34,6 +34,8 @@ export default class extends Component {
       shadowed,
       fixed,
       height,
+      mobileMenuHeaderColor,
+      mobileMenuHeaderTextColor,
       mobileMenuHeaderText,
     } = this.props
 
@@ -68,8 +70,10 @@ export default class extends Component {
           showMenu={this.state.showMenu}
           style={{ display: this.state.showMenu ? 'flex' : 'none' }}
         >
-          <MobileMenuHeader backgroundColor={backgroundColor}>
-            <MobileHeaderText fontColor={fontColor}>
+          <MobileMenuHeader mobileMenuHeaderColor={mobileMenuHeaderColor}>
+            <MobileHeaderText
+              mobileMenuHeaderTextColor={mobileMenuHeaderTextColor}
+            >
               {mobileMenuHeaderText}
             </MobileHeaderText>
             <Close onClick={this.toggleMenu}>
