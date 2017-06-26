@@ -1,2 +1,2 @@
-### Release 0.1.9
-- Nicer looking mobile menu
+### Release 0.2.0
+- Fix issue with link on mobile menu
