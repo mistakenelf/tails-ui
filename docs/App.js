@@ -1,28 +1,31 @@
-import { AppBar, Icon } from 'stylized'
+import { AppBar, Button, Icon } from 'stylized'
 import React, { Component } from 'react'
 
 export default class App extends Component {
   render() {
     return (
-      <AppBar
-        title="AppBar"
-        fixed
-        backgroundColor="palevioletred"
-        fontColor="white"
-        mobileMenuHeaderTextColor="blue"
-        mobileMenuHeaderColor="black"
-        mobileMenuHeaderText="Test Title"
-        mobileMenuOpenIcon={
-          <Icon icon="menu" color="white" size={25} />
-        }
-        mobileMenuCloseIcon={<Icon icon="cross" color="white" size={25} />}
-        menuItems={[
-          { text: "Home", link: <a href="/">Home</a> },
-          { text: "Home", link: <a href="/">Home</a> },
-          { text: "Home", link: <a href="/">Home</a> },
-          { text: "Home", link: <a href="/">Home</a> }
-        ]}
-      />
+      <div>
+        <AppBar
+          title="AppBar"
+          fontColor="white"
+          shadowed
+          mobileMenuHeaderTextColor="white"
+          mobileMenuHeaderColor="palevioletred"
+          mobileMenuHeaderText="Test Title"
+          mobileMenuOpenIcon={
+            <Icon icon="menu" color="white" size={25} />
+          }
+          mobileMenuCloseIcon={<Icon icon="cross" color="white" size={25} />}
+          menuItems={[
+            { text: "Home", link: <a href="/">Home</a>, icon: <Icon icon="cross" color="black" size="25" /> },
+            { text: "Home", link: <a href="/">Home</a> },
+            { text: "Home", link: <a href="/">Home</a> },
+            { text: "Home", link: <a href="/">Home</a> }
+          ]}
+        />
+        <br />
+        <Button borderColor="royalblue" rounded hollow>Test Text</Button>
+      </div>
     )
   }
 }

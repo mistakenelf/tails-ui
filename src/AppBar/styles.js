@@ -57,7 +57,7 @@ export const Close = styled.div`
 // Main mobile menu panel
 export const MobileMenu = styled.div`
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #eeeeee;
   color: black;
   z-index: 10000000;
   width: 100%;
@@ -94,7 +94,7 @@ export const MobileMenuItem = styled.div`
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid #bdbdbd;
   color: #424242;
 
   > a {
@@ -122,4 +122,8 @@ export const DesktopMenuItem = styled.span`
     text-decoration: none;
     color: ${props => props.fontColor || 'black'};
   }
+`
+
+export const MenuItemIcon = styled.span`
+  margin-right: 10px;
 `

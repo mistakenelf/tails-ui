@@ -4,6 +4,7 @@ import {
   DesktopMenu,
   DesktopMenuItem,
   Hamburger,
+  MenuItemIcon,
   MobileHeaderText,
   MobileMenu,
   MobileMenuHeader,
@@ -88,6 +89,7 @@ export default class extends Component {
                       {link.text}
                     </MobileMenuItem>
                   : <MobileMenuItem key={index} onClick={this.toggleMenu}>
+                      <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
                       {link.link}
                     </MobileMenuItem>}
               </span>
