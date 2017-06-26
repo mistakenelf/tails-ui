@@ -104,6 +104,21 @@ export const MobileMenuItem = styled.div`
   }
 `
 
+export const RemoveDecoration = styled.span`
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+  color: #424242;
+  font-size: 1.3em;
+
+  > a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.3em;
+  }
+`
+
 export const DesktopMenu = styled.div`
   font-weight: bolder;
   margin-left: auto;

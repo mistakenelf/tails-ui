@@ -10,6 +10,7 @@ import {
   MobileMenuContainer,
   MobileMenuHeader,
   MobileMenuItem,
+  RemoveDecoration,
   Title,
 } from './styles'
 import React, { Component } from 'react'
@@ -85,12 +86,10 @@ export default class extends Component {
           <MobileMenuContainer>
             {menuItems.map((link, index) => {
               return (
-                <span key={index}>
-                  <MobileMenuItem key={index} onClick={this.toggleMenu}>
-                    <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
-                    {link.link}
-                  </MobileMenuItem>
-                </span>
+                <MobileMenuItem key={index}>
+                  {link.icon ? <MenuItemIcon>{link.icon}</MenuItemIcon> : null}
+                  <RemoveDecoration>{link.link}</RemoveDecoration>
+                </MobileMenuItem>
               )
             })}
           </MobileMenuContainer>

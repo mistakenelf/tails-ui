@@ -1,2 +1,2 @@
-### Release 0.2.0
-- Fix issue with link on mobile menu
+### Release 0.2.1
+- Fixed minor app bar issues
