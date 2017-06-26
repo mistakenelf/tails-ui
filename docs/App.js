@@ -17,14 +17,14 @@ export default class App extends Component {
           }
           mobileMenuCloseIcon={<Icon icon="cross" color="white" size={25} />}
           menuItems={[
-            { text: "Home", link: <a href="/">Home</a>, icon: <Icon icon="cross" color="black" size="25" /> },
+            { text: "Home", link: <a href="/">Home</a>},
             { text: "Home", link: <a href="/">Home</a> },
             { text: "Home", link: <a href="/">Home</a> },
             { text: "Home", link: <a href="/">Home</a> }
           ]}
         />
         <br />
-        <CircleButton shadowed><Icon icon="cross" color="white" size={25} /></CircleButton>
+        <CircleButton shadowed><Icon icon="cross" color="white" size={15} /></CircleButton>
         <Button shadowed>Test</Button>
         <Alert shadowed>Test</Alert>
       </div>

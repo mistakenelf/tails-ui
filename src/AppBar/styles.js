@@ -57,7 +57,7 @@ export const Close = styled.div`
 // Main mobile menu panel
 export const MobileMenu = styled.div`
   height: 100vh;
-  background-color: #eeeeee;
+  background: #fafafa;
   color: black;
   z-index: 10000000;
   width: 100%;
@@ -66,7 +66,6 @@ export const MobileMenu = styled.div`
   top: 0;
   display: flex;
   flex-direction: column;
-  font-size: 2em;
   animation: 0.3s alternate ${slideIn};
 
   @media (min-width: 700px) {
@@ -76,7 +75,7 @@ export const MobileMenu = styled.div`
 
 export const MobileMenuHeader = styled.div`
   background: ${props => props.mobileMenuHeaderColor || 'royalblue'};
-  height: 1.5em;
+  height: 3em;
   top: 0;
   width: 100%;
   display: flex;
@@ -86,6 +85,7 @@ export const MobileMenuHeader = styled.div`
 export const MobileHeaderText = styled.div`
   color: ${props => props.mobileMenuHeaderTextColor || 'white'};
   padding-left: 10px;
+  font-size: 1.5em;
 `
 
 // Mobile meu items
@@ -93,13 +93,14 @@ export const MobileMenuItem = styled.div`
   text-transform: uppercase;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 10px;
-  border-bottom: 3px solid #bdbdbd;
+  border-bottom: 1px solid #eee;
   color: #424242;
+  font-size: 1.3em;
 
   > a {
     text-decoration: none;
     color: #424242;
+    font-size: 1.3em;
   }
 `
 
@@ -126,4 +127,10 @@ export const DesktopMenuItem = styled.span`
 
 export const MenuItemIcon = styled.span`
   margin-right: 10px;
+`
+
+export const MobileMenuContainer = styled.div`
+  background: white;
+  margin: 20px;
+  text-align: center;
 `

@@ -7,6 +7,7 @@ import {
   MenuItemIcon,
   MobileHeaderText,
   MobileMenu,
+  MobileMenuContainer,
   MobileMenuHeader,
   MobileMenuItem,
   Title,
@@ -81,20 +82,22 @@ export default class extends Component {
               {mobileMenuCloseIcon || 'close'}
             </Close>
           </MobileMenuHeader>
-          {menuItems.map((link, index) => {
-            return (
-              <span key={index}>
-                {link.click
-                  ? <MobileMenuItem onClick={link.click}>
-                      {link.text}
-                    </MobileMenuItem>
-                  : <MobileMenuItem key={index} onClick={this.toggleMenu}>
-                      <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
-                      {link.link}
-                    </MobileMenuItem>}
-              </span>
-            )
-          })}
+          <MobileMenuContainer>
+            {menuItems.map((link, index) => {
+              return (
+                <span key={index}>
+                  {link.click
+                    ? <MobileMenuItem onClick={link.click}>
+                        {link.text}
+                      </MobileMenuItem>
+                    : <MobileMenuItem key={index} onClick={this.toggleMenu}>
+                        <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
+                        {link.link}
+                      </MobileMenuItem>}
+                </span>
+              )
+            })}
+          </MobileMenuContainer>
         </MobileMenu>
       </AppBar>
     )
