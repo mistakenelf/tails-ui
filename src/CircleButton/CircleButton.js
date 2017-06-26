@@ -1,16 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = styled.button`
-  display: inline-block;
-  padding: 10px 10px;
-  font-size: 1em;
+const CircleButton = styled.button`
+  padding: 10px;
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
+  border-radius: 50%;
   outline: none;
   color: ${props => props.fontColor || 'white'};
-  border-radius: ${props => (props.rounded ? '3px' : '0px')};
   background: ${props =>
     props.hollow ? 'transparent' : props.backgroundColor || 'palevioletred'};
   border: ${props =>
@@ -20,7 +17,7 @@ const Button = styled.button`
       ? 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px'
       : null};
   width: ${props => (props.fullWidth ? '100%' : null)};
-
+  
   &:active {
     box-shadow: 0;
     transform: translateY(2px);
@@ -36,20 +33,18 @@ export default ({
   backgroundColor,
   fontColor,
   shadowed,
-  rounded,
   hollow,
   borderColor,
 }) =>
-  <Button
+  <CircleButton
     type={type}
     fullWidth={fullWidth}
     backgroundColor={backgroundColor}
     fontColor={fontColor}
     onClick={onClick}
     shadowed={shadowed}
-    rounded={rounded}
     hollow={hollow}
     borderColor={borderColor}
   >
     {children}
-  </Button>
+  </CircleButton>

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate icon snapshot 1`] = `
+<svg
+  fill={undefined}
+  height="undefinedpx"
+  viewBox="0 0 32 32"
+  width="undefinedpx"
+/>
+`;

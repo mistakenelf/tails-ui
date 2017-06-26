@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate from snapshot 1`] = `
+<form
+  className="sc-bdVaJa cZXGFx"
+  onSubmit={undefined}
+>
+  <div />
+</form>
+`;

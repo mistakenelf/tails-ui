@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate AppBar snapshot 1`] = `
+<div
+  className="sc-bdVaJa lcManH"
+  height={undefined}
+>
+  <div
+    className="sc-bwzfXH bwNFHM"
+  />
+  <div
+    className="sc-htoDjs edwoQM"
+  >
+    <span>
+      <span
+        className="sc-dnqmqq cXvcpx"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </span>
+    </span>
+    <span>
+      <span
+        className="sc-dnqmqq cXvcpx"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </span>
+    </span>
+    <span>
+      <span
+        className="sc-dnqmqq cXvcpx"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </span>
+    </span>
+    <span>
+      <span
+        className="sc-dnqmqq cXvcpx"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </span>
+    </span>
+  </div>
+  <div
+    className="sc-htpNat fpxLoE"
+    onClick={[Function]}
+  >
+    menu
+  </div>
+  <div
+    className="sc-ifAKCX kTSlfg"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="sc-EHOje fJpvWK"
+    >
+      <div
+        className="sc-bZQynM jJSKFu"
+      />
+      <div
+        className="sc-bxivhb jNwlqs"
+        onClick={[Function]}
+      >
+        close
+      </div>
+    </div>
+    <span>
+      <div
+        className="sc-gzVnrw fpTcdx"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-iwsKbI eZRwOu"
+        />
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </span>
+    <span>
+      <div
+        className="sc-gzVnrw fpTcdx"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-iwsKbI eZRwOu"
+        />
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </span>
+    <span>
+      <div
+        className="sc-gzVnrw fpTcdx"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-iwsKbI eZRwOu"
+        />
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </span>
+    <span>
+      <div
+        className="sc-gzVnrw fpTcdx"
+        onClick={[Function]}
+      >
+        <span
+          className="sc-iwsKbI eZRwOu"
+        />
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </span>
+  </div>
+</div>
+`;

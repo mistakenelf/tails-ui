@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate button snapshot 1`] = `
+<button
+  className="sc-bdVaJa qgbxa"
+  onClick={undefined}
+  type={undefined}
+/>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate modal snapshot 1`] = `
+<div
+  className="sc-bdVaJa kNuNvs"
+>
+  <div
+    className="sc-bwzfXH dOrgHU"
+  >
+    <div
+      className="sc-EHOje glmYZP"
+    >
+      <div
+        className="sc-ifAKCX kjhGcz"
+      />
+      <div
+        className="sc-bxivhb jEroHT"
+        onClick={undefined}
+      >
+        X
+      </div>
+    </div>
+    <div
+      className="sc-htpNat hFgGyf"
+    />
+  </div>
+</div>
+`;
