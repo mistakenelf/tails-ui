@@ -88,7 +88,9 @@ export default class extends Component {
               return (
                 <MobileMenuItem key={index}>
                   {link.icon ? <MenuItemIcon>{link.icon}</MenuItemIcon> : null}
-                  <RemoveDecoration>{link.link}</RemoveDecoration>
+                  <RemoveDecoration onClick={this.toggleMenu}>
+                    {link.link}
+                  </RemoveDecoration>
                 </MobileMenuItem>
               )
             })}

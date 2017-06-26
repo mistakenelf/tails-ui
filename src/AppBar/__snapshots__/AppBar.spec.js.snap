@@ -9,11 +9,11 @@ exports[`generate AppBar snapshot 1`] = `
     className="sc-bwzfXH bwNFHM"
   />
   <div
-    className="sc-htoDjs edwoQM"
+    className="sc-dnqmqq gYVeiL"
   >
     <span>
       <span
-        className="sc-dnqmqq cXvcpx"
+        className="sc-iwsKbI efEKy"
       >
         <a
           href="/"
@@ -24,7 +24,7 @@ exports[`generate AppBar snapshot 1`] = `
     </span>
     <span>
       <span
-        className="sc-dnqmqq cXvcpx"
+        className="sc-iwsKbI efEKy"
       >
         <a
           href="/"
@@ -35,7 +35,7 @@ exports[`generate AppBar snapshot 1`] = `
     </span>
     <span>
       <span
-        className="sc-dnqmqq cXvcpx"
+        className="sc-iwsKbI efEKy"
       >
         <a
           href="/"
@@ -46,7 +46,7 @@ exports[`generate AppBar snapshot 1`] = `
     </span>
     <span>
       <span
-        className="sc-dnqmqq cXvcpx"
+        className="sc-iwsKbI efEKy"
       >
         <a
           href="/"
@@ -63,7 +63,7 @@ exports[`generate AppBar snapshot 1`] = `
     menu
   </div>
   <div
-    className="sc-ifAKCX kTSlfg"
+    className="sc-ifAKCX gAZBnH"
     style={
       Object {
         "display": "none",
@@ -71,10 +71,10 @@ exports[`generate AppBar snapshot 1`] = `
     }
   >
     <div
-      className="sc-EHOje fJpvWK"
+      className="sc-EHOje fzWXcg"
     >
       <div
-        className="sc-bZQynM jJSKFu"
+        className="sc-bZQynM hJBfGn"
       />
       <div
         className="sc-bxivhb jNwlqs"
@@ -83,66 +83,66 @@ exports[`generate AppBar snapshot 1`] = `
         close
       </div>
     </div>
-    <span>
+    <div
+      className="sc-gqjmRU eAwNAW"
+    >
       <div
-        className="sc-gzVnrw fpTcdx"
-        onClick={[Function]}
+        className="sc-gzVnrw cpPDdq"
       >
         <span
-          className="sc-iwsKbI eZRwOu"
-        />
-        <a
-          href="/"
+          className="sc-htoDjs nxrqN"
+          onClick={[Function]}
         >
-          Home
-        </a>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </span>
       </div>
-    </span>
-    <span>
       <div
-        className="sc-gzVnrw fpTcdx"
-        onClick={[Function]}
+        className="sc-gzVnrw cpPDdq"
       >
         <span
-          className="sc-iwsKbI eZRwOu"
-        />
-        <a
-          href="/"
+          className="sc-htoDjs nxrqN"
+          onClick={[Function]}
         >
-          Home
-        </a>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </span>
       </div>
-    </span>
-    <span>
       <div
-        className="sc-gzVnrw fpTcdx"
-        onClick={[Function]}
+        className="sc-gzVnrw cpPDdq"
       >
         <span
-          className="sc-iwsKbI eZRwOu"
-        />
-        <a
-          href="/"
+          className="sc-htoDjs nxrqN"
+          onClick={[Function]}
         >
-          Home
-        </a>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </span>
       </div>
-    </span>
-    <span>
       <div
-        className="sc-gzVnrw fpTcdx"
-        onClick={[Function]}
+        className="sc-gzVnrw cpPDdq"
       >
         <span
-          className="sc-iwsKbI eZRwOu"
-        />
-        <a
-          href="/"
+          className="sc-htoDjs nxrqN"
+          onClick={[Function]}
         >
-          Home
-        </a>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </span>
       </div>
-    </span>
+    </div>
   </div>
 </div>
 `;

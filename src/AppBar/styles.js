@@ -95,12 +95,12 @@ export const MobileMenuItem = styled.div`
   padding-top: 10px;
   border-bottom: 1px solid #eee;
   color: #424242;
-  font-size: 1.3em;
+  font-size: 1.1em;
 
   > a {
     text-decoration: none;
     color: #424242;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 `
 
@@ -110,12 +110,12 @@ export const RemoveDecoration = styled.span`
   padding-top: 10px;
   border-bottom: 1px solid #eee;
   color: #424242;
-  font-size: 1.3em;
+  font-size: 1.1em;
 
   > a {
     text-decoration: none;
     color: #424242;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 `
 
