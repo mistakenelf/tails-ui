@@ -86,14 +86,10 @@ export default class extends Component {
             {menuItems.map((link, index) => {
               return (
                 <span key={index}>
-                  {link.click
-                    ? <MobileMenuItem onClick={link.click}>
-                        {link.text}
-                      </MobileMenuItem>
-                    : <MobileMenuItem key={index} onClick={this.toggleMenu}>
-                        <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
-                        {link.link}
-                      </MobileMenuItem>}
+                  <MobileMenuItem key={index} onClick={this.toggleMenu}>
+                    <MenuItemIcon>{link.icon && link.icon}</MenuItemIcon>
+                    {link.link}
+                  </MobileMenuItem>
                 </span>
               )
             })}
