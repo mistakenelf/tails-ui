@@ -1,6 +1,6 @@
 {
   "name": "stylized",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Stylish and fun react component library",
   "main": "dist/index.js",
   "author": "Tyler Knipfer",
