@@ -2,7 +2,7 @@
 
 exports[`generate button snapshot 1`] = `
 <button
-  className="sc-bdVaJa qgbxa"
+  className="sc-bdVaJa hIFmew"
   onClick={undefined}
   type={undefined}
 />

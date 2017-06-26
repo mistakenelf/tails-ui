@@ -2,7 +2,7 @@
 
 exports[`generate CircleButton snapshot 1`] = `
 <button
-  className="sc-bdVaJa wfWew"
+  className="sc-bdVaJa iMbEBq"
   onClick={undefined}
   type={undefined}
 />
