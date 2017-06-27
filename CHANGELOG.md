@@ -1,3 +1,4 @@
-### Release 0.2.2
-- Smaller mobile menu fonts
-- Close menu on click
+### Release 0.2.3
+- Lots of code cleanup
+- compose HOC
+- Some basic keyframe animations
