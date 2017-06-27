@@ -4,7 +4,7 @@ const TableData = styled.td`
   padding: 10px;
   text-align: center;
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     display: block;
     text-align: right;
     font-size: 13px;

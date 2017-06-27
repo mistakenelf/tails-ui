@@ -27,12 +27,10 @@ const Modal = styled.div`
 
   @media (max-width: 700px) {
     width: 95%;
-	}
+  }
 `
 
-const ModalContent = styled.div`
-  padding: 10px;
-`
+const ModalContent = styled.div`padding: 10px;`
 
 const CloseIcon = styled.div`
   padding: 10px;
@@ -56,7 +54,9 @@ export default ({ children, handleClose, rounded, title }) =>
   <ModalContainer>
     <Modal rounded={rounded}>
       <ModalHeader>
-        <ModalTitle>{title}</ModalTitle>
+        <ModalTitle>
+          {title}
+        </ModalTitle>
         <CloseIcon onClick={handleClose}>X</CloseIcon>
       </ModalHeader>
       <ModalContent>

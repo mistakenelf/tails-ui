@@ -50,7 +50,9 @@ export default class extends Component {
         fixed={fixed}
         height={height}
       >
-        <Title fontColor={fontColor}>{title}</Title>
+        <Title fontColor={fontColor}>
+          {title}
+        </Title>
         <DesktopMenu fontColor={fontColor}>
           {menuItems.map((link, index) => {
             return (
@@ -87,7 +89,11 @@ export default class extends Component {
             {menuItems.map((link, index) => {
               return (
                 <MobileMenuItem key={index}>
-                  {link.icon ? <MenuItemIcon>{link.icon}</MenuItemIcon> : null}
+                  {link.icon
+                    ? <MenuItemIcon>
+                        {link.icon}
+                      </MenuItemIcon>
+                    : null}
                   <RemoveDecoration onClick={this.toggleMenu}>
                     {link.link}
                   </RemoveDecoration>

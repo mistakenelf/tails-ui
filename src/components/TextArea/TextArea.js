@@ -27,7 +27,10 @@ const FieldContainer = styled.div`
 
 export default ({ placeholder, labelText, fullWidth, rounded }) =>
   <FieldContainer fullWidth={fullWidth}>
-    {labelText && <label>{labelText}</label>}
+    {labelText &&
+      <label>
+        {labelText}
+      </label>}
     <TextArea
       placeholder={placeholder || null}
       rounded={rounded}

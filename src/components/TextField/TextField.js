@@ -27,7 +27,10 @@ const TextField = styled.input`
 
 export default ({ type, placeholder, labelText, rounded, fullWidth }) =>
   <FieldContainer fullWidth={fullWidth}>
-    {labelText && <label>{labelText}</label>}
+    {labelText &&
+      <label>
+        {labelText}
+      </label>}
     <TextField
       type={type}
       rounded={rounded}

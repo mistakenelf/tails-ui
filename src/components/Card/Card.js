@@ -45,7 +45,9 @@ export default ({
     fontColor={fontColor}
   >
     {headerText &&
-      <CardHeader headerColor={headerColor}>{headerText}</CardHeader>}
+      <CardHeader headerColor={headerColor}>
+        {headerText}
+      </CardHeader>}
     <CardContent>
       {children}
     </CardContent>

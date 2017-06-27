@@ -8,7 +8,7 @@ const Table = styled.table`
   border-collapse: collapse;
   border-spacing: 0;
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     border: none;
   }
 `

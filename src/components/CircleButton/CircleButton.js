@@ -17,7 +17,7 @@ const CircleButton = styled.button`
       ? 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px'
       : null};
   width: ${props => (props.fullWidth ? '100%' : null)};
-  
+
   &:active {
     box-shadow: 0;
     transform: translateY(2px);

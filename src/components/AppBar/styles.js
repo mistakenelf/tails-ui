@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const AppBar = styled.div`
   display: flex;
   align-items: center;
-	width: 100%;
+  width: 100%;
   background: ${props => props.backgroundColor || 'royalblue'};
   color: ${props => props.fontColor || 'black'};
   height: ${props => props.height || '3em'};
@@ -28,8 +28,8 @@ export const Hamburger = styled.div`
   cursor: pointer;
 
   @media (min-width: 700px) {
-		display: none;
-	}
+    display: none;
+  }
 `
 
 // Close icon for mobile menu
@@ -37,7 +37,7 @@ export const Close = styled.div`
   margin-left: auto;
   padding-right: 10px;
 
-  @media(min-width: 700px) {
+  @media (min-width: 700px) {
     display: none;
   }
 `
@@ -57,8 +57,8 @@ export const MobileMenu = styled.div`
   animation: 0.3s alternate ${slideFromRight};
 
   @media (min-width: 700px) {
-		display: none;
-	}
+    display: none;
+  }
 `
 
 export const MobileMenuHeader = styled.div`
@@ -113,8 +113,8 @@ export const DesktopMenu = styled.div`
   color: ${props => props.fontColor || 'black'};
 
   @media (max-width: 700px) {
-		display: none;
-	}
+    display: none;
+  }
 `
 
 export const DesktopMenuItem = styled.span`
@@ -128,9 +128,7 @@ export const DesktopMenuItem = styled.span`
   }
 `
 
-export const MenuItemIcon = styled.span`
-  margin-right: 10px;
-`
+export const MenuItemIcon = styled.span`margin-right: 10px;`
 
 export const MobileMenuContainer = styled.div`
   background: white;
