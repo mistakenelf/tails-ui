@@ -1,17 +1,6 @@
-import styled, { keyframes } from 'styled-components'
-
 import React from 'react'
-
-const flip = keyframes`
-  0% {
-    transform: rotateX(90deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-`
+import flipX from '../../animations/flipX'
+import styled from 'styled-components'
 
 const Alert = styled.div`
   background: ${props => props.backgroundColor || 'red'};
@@ -23,7 +12,7 @@ const Alert = styled.div`
     props.shadowed
       ? 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px'
       : 'none'};
-  animation: ${flip} 0.5s;
+  animation: ${flipX} 0.5s;
 `
 
 export default ({

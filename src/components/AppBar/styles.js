@@ -1,17 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-
-// Slide in animation for mobile menu
-const slideIn = keyframes`
-  from {
-	  margin-left: 100%;
-    width: 100%;
-	}
-
-	to {
-	  margin-left: 0%;
-    width: 100%;
-	}
-`
+import slideFromRight from '../../animations/slideFromRight'
+import styled from 'styled-components'
 
 // Main app bar component
 export const AppBar = styled.div`
@@ -66,7 +54,7 @@ export const MobileMenu = styled.div`
   top: 0;
   display: flex;
   flex-direction: column;
-  animation: 0.3s alternate ${slideIn};
+  animation: 0.3s alternate ${slideFromRight};
 
   @media (min-width: 700px) {
 		display: none;

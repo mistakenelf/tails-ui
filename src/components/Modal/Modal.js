@@ -1,18 +1,6 @@
-import styled, { keyframes } from 'styled-components'
-
 import React from 'react'
-
-const flipIn = keyframes`
-  0% {
-    transform: perspective(400px) rotateY(90deg);
-    opacity: 0;
-  }
-  100% {
-    transform: perspective(400px) rotateY(0deg);
-    opacity: 1;
-  }
-} 
-`
+import flipIn from '../../animations/flipIn'
+import styled from 'styled-components'
 
 const ModalContainer = styled.div`
   height: 100vh;

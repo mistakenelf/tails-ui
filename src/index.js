@@ -19,3 +19,9 @@ export { default as CircleButton } from './components/CircleButton'
 
 // Utils
 export { default as compose } from './utils/compose'
+
+// Animations
+export { default as slideFromRight } from './animations/slideFromRight'
+export { default as flipX } from './animations/flipX'
+export { default as flipAround } from './animations/flipAround'
+export { default as flipIn } from './animations/flipIn'
