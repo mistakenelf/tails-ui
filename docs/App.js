@@ -1,4 +1,4 @@
-import { Alert, AppBar, Button, CircleButton, Icon } from 'stylized'
+import { Alert, AppBar, Button, Carousel, CircleButton, Icon } from 'stylized'
 import React, { Component } from 'react'
 
 export default class App extends Component {
@@ -27,6 +27,10 @@ export default class App extends Component {
         <CircleButton shadowed><Icon icon="cross" color="white" size={15} /></CircleButton>
         <Button shadowed>Test</Button>
         <Alert shadowed>Test</Alert>
+        <Carousel>
+          <div style={{ background: 'blue', height: 400}}>test</div>
+          <div style={{ background: 'blue', height: 400}}>test</div>
+        </Carousel>
       </div>
     )
   }

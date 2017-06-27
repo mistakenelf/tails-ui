@@ -2,14 +2,14 @@
 
 exports[`generate AppBar snapshot 1`] = `
 <div
-  className="sc-bdVaJa lcManH"
+  className="sc-bdVaJa fXnJXs"
   height={undefined}
 >
   <div
     className="sc-bwzfXH bwNFHM"
   />
   <div
-    className="sc-dnqmqq gYVeiL"
+    className="sc-dnqmqq bQbZXj"
   >
     <span>
       <span
@@ -57,13 +57,13 @@ exports[`generate AppBar snapshot 1`] = `
     </span>
   </div>
   <div
-    className="sc-htpNat fpxLoE"
+    className="sc-htpNat cpMKuo"
     onClick={[Function]}
   >
     menu
   </div>
   <div
-    className="sc-ifAKCX gAZBnH"
+    className="sc-ifAKCX fVixIb"
     style={
       Object {
         "display": "none",
@@ -77,7 +77,7 @@ exports[`generate AppBar snapshot 1`] = `
         className="sc-bZQynM hJBfGn"
       />
       <div
-        className="sc-bxivhb jNwlqs"
+        className="sc-bxivhb jRVxcX"
         onClick={[Function]}
       >
         close

@@ -16,6 +16,7 @@ export { default as TableBody } from './components/Table/TableBody'
 export { default as TableData } from './components/Table/TableData'
 export { default as Alert } from './components/Alert'
 export { default as CircleButton } from './components/CircleButton'
+export { default as Carousel } from './components/Carousel'
 
 // Utils
 export { default as compose } from './utils/compose'
