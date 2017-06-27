@@ -3,18 +3,15 @@ const webpack = require('webpack')
 
 module.exports = {
   entry: './docs/entry.js',
-
   output: {
     path: path.join(__dirname, 'docs'),
     filename: 'bundle.js'
   },
-
   resolve: {
     alias: {
       'stylized': path.join(__dirname, 'src/index.js')
     }
   },
-
   module: {
     rules: [
       {
@@ -24,7 +21,6 @@ module.exports = {
       }
     ]
   },
-
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -33,7 +29,6 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin()
   ],
-  
   devServer: {
     contentBase: 'docs/',
     historyApiFallback: true
