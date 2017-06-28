@@ -1,4 +1,4 @@
-### Release 0.2.3
-- Lots of code cleanup
-- compose HOC
-- Some basic keyframe animations
+### Release 0.2.4
+- Basic Carousel component
+- Fix tests
+- Remove button animation
