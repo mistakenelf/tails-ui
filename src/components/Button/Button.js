@@ -23,7 +23,6 @@ const Button = styled.button`
 
   &:active {
     box-shadow: 0;
-    transform: translateY(2px);
     filter: brightness(85%);
   }
 `
