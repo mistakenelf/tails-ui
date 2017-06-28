@@ -43,6 +43,7 @@
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
+    "react-swipeable-views": "^0.12.3",
     "styled-components": "^2.1.0"
   },
   "lint-staged": {
