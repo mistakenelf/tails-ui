@@ -1,8 +1,20 @@
-import { Alert, AppBar, Button, Carousel, CircleButton, Icon } from 'stylized'
+import { AppBar, Carousel, Icon } from 'stylized'
 import React, { Component } from 'react'
 
 export default class App extends Component {
+  state = {
+    index: 0
+  }
+
+  handleChangeIndex = (index) => {
+    this.setState({
+      index,
+    })
+  }
+
   render() {
+    const { index } = this.state
+
     return (
       <div>
         <AppBar
@@ -23,13 +35,9 @@ export default class App extends Component {
             { text: "Home", link: <a href="/">Home</a> }
           ]}
         />
-        <br />
-        <CircleButton shadowed><Icon icon="cross" color="white" size={15} /></CircleButton>
-        <Button shadowed>Test</Button>
-        <Alert shadowed>Test</Alert>
-        <Carousel>
-          <div style={{ background: 'blue', height: 400}}>test</div>
-          <div style={{ background: 'blue', height: 400}}>test</div>
+        <Carousel index={index} onChangeIndex={this.handleChangeIndex} dots={2}>
+          <div style={{ background: 'grey', height: 400 }}>test</div>
+          <div style={{ background: 'grey', height: 400 }}>test</div>
         </Carousel>
       </div>
     )
