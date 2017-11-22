@@ -11,7 +11,7 @@
     "start": "cross-env NODE_ENV=development tsc-watch --onSuccess \"rollup -c\"",
     "prebuild": "rimraf dist",
     "build": "tsc && cross-env NODE_ENV=production rollup -c && cross-env NODE_ENV=development rollup -c && rimraf compiled",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "format": "prettier --trailing-comma none --no-semi --single-quote  --write 'src/**/*.{ts,tsx}' 'test/**/*.{ts,tsx}'",
     "doctoc": "doctoc .",
     "precommit": "lint-staged"
@@ -74,6 +74,7 @@
     "ts-jest": "^21.2.3",
     "ts-lint": "^4.5.1",
     "tsc-watch": "1.0.8",
+    "tslint": "^5.8.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.6.1"
   },
@@ -97,5 +98,8 @@
       "json"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^2.2.3",
+    "tailwindcss": "^0.2.2"
+  }
 }

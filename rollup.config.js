@@ -6,8 +6,8 @@ import sourceMaps from 'rollup-plugin-sourcemaps';
 import uglify from 'rollup-plugin-uglify';
 
 const shared = {
-  entry: `compiled/index.js`,
-  sourceMap: true,
+  input: `compiled/index.js`,
+  sourcemap: true,
   external: ['react'],
   globals: {
     react: 'React',
@@ -17,7 +17,7 @@ const shared = {
 
 export default [
   Object.assign({}, shared, {
-    moduleName: 'Stylized',
+    name: 'Stylized',
     format: 'umd',
     dest:
       process.env.NODE_ENV === 'production'
@@ -38,7 +38,7 @@ export default [
     ],
   }),
   Object.assign({}, shared, {
-    targets: [
+    output: [
       { dest: 'dist/index.es6.js', format: 'es' },
       { dest: 'dist/index.js', format: 'cjs' },
     ],
