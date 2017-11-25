@@ -4,26 +4,12 @@
   "description": "Stylish and fun react component library",
   "author": "Tyler Knipfer <knipferrc@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/knipferrc/stylized/issues"
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepublish": "npm run build"
-  },
-  "prettier": {
-    "trailingComma": "none",
-    "singleQuote": true,
-    "semi": false
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/knipferrc/stylized.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knipferrc/stylized/issues"
   },
   "keywords": [
     "react",
@@ -31,6 +17,19 @@
     "library",
     "components"
   ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "prettier": {
+    "trailingComma": "none",
+    "singleQuote": true,
+    "semi": false
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "prepublish": "npm run build"
+  },
   "dependencies": {
     "styled-components": "^2.2.3"
   },
@@ -42,7 +41,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "gh-pages": "^1.1.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "rollup": "^0.51.8",
