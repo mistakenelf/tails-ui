@@ -1,47 +1,31 @@
-import commonjs from 'rollup-plugin-commonjs';
-import filesize from 'rollup-plugin-filesize';
-import replace from 'rollup-plugin-replace';
-import resolve from 'rollup-plugin-node-resolve';
-import sourceMaps from 'rollup-plugin-sourcemaps';
-import uglify from 'rollup-plugin-uglify';
+import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
+import pkg from './package.json'
+import postcss from 'rollup-plugin-postcss'
+import resolve from 'rollup-plugin-node-resolve'
 
-const shared = {
-  input: `compiled/index.js`,
-  sourcemap: true,
-  external: ['react'],
-  globals: {
-    react: 'React',
-  },
-  exports: 'named',
-};
-
-export default [
-  Object.assign({}, shared, {
-    name: 'Stylized',
-    format: 'umd',
-    dest:
-      process.env.NODE_ENV === 'production'
-        ? './dist/index.umd.min.js'
-        : './dist/index.umd.js',
-    plugins: [
-      resolve(),
-      replace({
-        exclude: 'node_modules/**',
-        'process.env.NODE_ENV': JSON.stringify(
-          process.env.NODE_ENV || 'development'
-        ),
-      }),
-      commonjs(),
-      sourceMaps(),
-      process.env.NODE_ENV === 'production' && filesize(),
-      process.env.NODE_ENV === 'production' && uglify(),
-    ],
-  }),
-  Object.assign({}, shared, {
-    output: [
-      { dest: 'dist/index.es6.js', format: 'es' },
-      { dest: 'dist/index.js', format: 'cjs' },
-    ],
-    plugins: [resolve(), sourceMaps()],
-  }),
-];
+export default {
+  input: 'src/index.js',
+  output: [
+    {
+      file: pkg.main,
+      format: 'cjs'
+    },
+    {
+      file: pkg.module,
+      format: 'es'
+    }
+  ],
+  external: [
+    'react',
+    'react-dom'
+  ],
+  plugins: [
+    postcss({}),
+    babel({
+      exclude: 'node_modules/**'
+    }),
+    resolve(),
+    commonjs()
+  ]
+}
