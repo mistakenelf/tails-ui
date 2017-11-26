@@ -7,6 +7,4 @@ const StyledButton = styled.button`
   border: none;
 `
 
-export const Button: React.SFC<any> = () => (
-  <StyledButton>Buttton</StyledButton>
-)
+export const Button: React.SFC<any> = () => <StyledButton>Buttton</StyledButton>

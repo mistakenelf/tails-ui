@@ -19,6 +19,8 @@
     "removeComments": true,
     "sourceMap": true,
     "pretty": true,
+    "strict": true,
+
     "stripInternal": true,
     "target": "es5",
     "typeRoots": ["node_modules/@types"]
