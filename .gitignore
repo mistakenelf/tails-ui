@@ -2,8 +2,7 @@
 node_modules
 
 # builds
-dist
-compiled
+build
 
 # misc
 *.log
