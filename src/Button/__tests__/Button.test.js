@@ -8,7 +8,7 @@ it('renders without crashing', () => {
   render(<Button />, div)
 })
 
-test('ad banners snapshot', () => {
+test('button snapshot', () => {
   const tree = renderer.create(<Button />).toJSON()
   expect(tree).toMatchSnapshot()
 })
