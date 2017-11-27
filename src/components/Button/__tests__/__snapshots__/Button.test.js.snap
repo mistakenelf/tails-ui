@@ -2,8 +2,6 @@
 
 exports[`button snapshot 1`] = `
 <button
-  className="sc-bdVaJa jwbmCL"
->
-  Button
-</button>
+  className="sc-bdVaJa yKvfm"
+/>
 `;
