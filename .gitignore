@@ -4,6 +4,9 @@ node_modules
 # builds
 dist
 
+# tests
+coverage
+
 # misc
 *.log
 .DS_Store

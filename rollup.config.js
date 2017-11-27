@@ -27,17 +27,7 @@ export default {
   plugins: [
     postcss({}),
     babel({
-      presets: [
-        [
-          "env",
-          {
-            modules: false
-          }
-        ]
-      ],
-      exclude: 'node_modules/**',
-      plugins: ["external-helpers"],
-      babelrc: false
+      exclude: 'node_modules/**'
     }),
     resolve(),
     commonjs(),

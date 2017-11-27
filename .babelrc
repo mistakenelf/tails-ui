@@ -1,0 +1,29 @@
+{
+  "ignore": [
+    "node_modules/**"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "env",
+        "stage-0",
+        "react"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "stage-0",
+        "react"
+      ],
+      "plugins": [
+        "external-helpers"
+      ]
+    }
+  }
+}
