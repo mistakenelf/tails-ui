@@ -4,7 +4,9 @@
   "description": "Stylish and fun react component library",
   "author": "Tyler Knipfer <knipferrc@gmail.com>",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/knipferrc/stylized.git"
@@ -18,34 +20,47 @@
     "library",
     "components"
   ],
-  "prettier": {
-    "trailingComma": "none",
-    "singleQuote": true,
-    "semi": false
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --progress",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production rollup -c",
+    "start": "rollup -c -w",
+    "prepublishOnly": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "styled-components": "^2.2.3"
   },
   "devDependencies": {
-    "@types/react": "^16.0.25",
-    "@types/react-dom": "^16.0.3",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.12.0",
+    "eslint-plugin-react": "^7.5.1",
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.8.2",
+    "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "source-map-loader": "^0.2.3",
-    "ts-loader": "^3.1.1",
-    "typescript": "^2.6.1",
-    "typings": "^2.1.1",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
-  }
+    "rollup": "^0.52.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-postcss": "^0.5.5",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-es": "^3.2.0"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "singleQuote": true,
+    "semi": false
+  },
+  "files": [
+    "dist"
+  ]
 }
