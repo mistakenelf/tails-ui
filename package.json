@@ -21,7 +21,7 @@
     "components"
   ],
   "scripts": {
-    "test": "NODE_ENV=development jest",
+    "test": "jest",
     "build": "NODE_ENV=production rollup -c",
     "start": "rollup -c -w",
     "prepublishOnly": "npm run build",

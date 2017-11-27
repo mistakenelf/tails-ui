@@ -3,11 +3,26 @@
     "node_modules/**"
   ],
   "env": {
-    "development": {
+    "test": {
       "presets": [
         "env",
         "stage-0",
         "react"
+      ]
+    },
+    "development": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "stage-0",
+        "react"
+      ],
+      "plugins": [
+        "external-helpers"
       ]
     },
     "production": {
