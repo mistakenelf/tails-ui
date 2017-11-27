@@ -11,10 +11,6 @@ const ButtonContainer = styled.button`
   }
 `
 
-const Button = () => (
-  <ButtonContainer>
-    Button
-  </ButtonContainer>
-)
+const Button = () => <ButtonContainer>Button</ButtonContainer>
 
 export default Button

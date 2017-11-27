@@ -20,8 +20,6 @@ const LoaderContainer = styled.div`
   animation: ${spin} 1s linear infinite;
 `
 
-const Loader = () => (
-  <LoaderContainer />
-)
+const Loader = () => <LoaderContainer />
 
 export default Loader
