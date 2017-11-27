@@ -25,12 +25,7 @@
     "build": "NODE_ENV=production rollup -c",
     "start": "rollup -c -w",
     "prepublishOnly": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build",
     "format": "prettier --write \"src/**/*.js\""
-  },
-  "dependencies": {
-    "styled-components": "^2.2.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -43,7 +38,6 @@
     "eslint": "^4.12.0",
     "eslint-plugin-jest": "^21.3.2",
     "eslint-plugin-react": "^7.5.1",
-    "gh-pages": "^1.1.0",
     "jest": "^21.2.1",
     "prettier": "^1.8.2",
     "prop-types": "^15.6.0",
@@ -59,6 +53,9 @@
     "rollup-plugin-postcss": "^0.5.5",
     "rollup-plugin-uglify": "^2.0.1",
     "uglify-es": "^3.2.0"
+  },
+  "dependencies": {
+    "styled-components": "^2.2.3"
   },
   "prettier": {
     "trailingComma": "none",
