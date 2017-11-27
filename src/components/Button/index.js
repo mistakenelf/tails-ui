@@ -44,7 +44,7 @@ const StyledButton = styled.button`
       `};
 `
 
-const Button = ({ children, primary, secondary, success, info, danger }) => (
+const Button = ({ children, primary, secondary, success, info, danger, loading }) => (
   <StyledButton
     primary={primary}
     secondary={secondary}
@@ -52,7 +52,7 @@ const Button = ({ children, primary, secondary, success, info, danger }) => (
     info={info}
     danger={danger}
   >
-    {children}
+    {loading ? 'loading...' : children}
   </StyledButton>
 )
 
@@ -62,7 +62,8 @@ Button.propTypes = {
   secondary: PropTypes.bool,
   success: PropTypes.bool,
   info: PropTypes.bool,
-  danger: PropTypes.bool
+  danger: PropTypes.bool,
+  loading: PropTypes.bool
 }
 
 export default Button
