@@ -1,7 +1,7 @@
 {
-  "name": "stylized",
-  "version": "0.2.5",
-  "description": "Stylish and fun react component library",
+  "name": "tails-ui",
+  "version": "0.0.1",
+  "description": "Clean UI based on tailwindcss",
   "author": "Tyler Knipfer <knipferrc@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
@@ -9,16 +9,17 @@
   "jsnext:main": "dist/index.es.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knipferrc/stylized.git"
+    "url": "git+https://github.com/knipferrc/tails-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/knipferrc/stylized/issues"
+    "url": "https://github.com/knipferrc/tails-ui/issues"
   },
   "keywords": [
     "react",
-    "stylized",
+    "tails-ui",
     "library",
-    "components"
+    "components",
+    "tailwindcss"
   ],
   "scripts": {
     "test": "jest",
@@ -55,7 +56,8 @@
     "uglify-es": "^3.2.0"
   },
   "dependencies": {
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.2.3",
+    "tailwindcss": "^0.2.2"
   },
   "prettier": {
     "trailingComma": "none",
