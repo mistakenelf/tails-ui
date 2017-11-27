@@ -1,5 +1,2 @@
-# Stylized
-- Stylish and fun react component library
-- Built with styled-components
-- Responsive
-- Highly customizable with stylish defaults
+# Tails-UI
+- Clean UI components based on tailwindcss
