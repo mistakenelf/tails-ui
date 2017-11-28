@@ -1,5 +1,6 @@
 import 'tailwindcss/dist/tailwind.min.css'
 
+// Component exports
 export { default as Button } from './components/Button'
 export { default as Loader } from './components/Loader'
 export { default as Table } from './components/Table/Table'
@@ -9,3 +10,6 @@ export { default as TableHead } from './components/Table/TableHead'
 export { default as TableBody } from './components/Table/TableBody'
 export { default as TableData } from './components/Table/TableData'
 export { default as Alert } from './components/Alert'
+
+// Utility exports
+export { spinAnimation } from './utils/animations'
