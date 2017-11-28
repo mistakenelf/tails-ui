@@ -1,14 +1,14 @@
-import Loader from '../Loader'
+import PrimaryButton from '../PrimaryButton'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<Loader />, div)
+  render(<PrimaryButton />, div)
 })
 
-test('loader snapshot', () => {
-  const tree = renderer.create(<Loader />).toJSON()
+test('primary button snapshot', () => {
+  const tree = renderer.create(<PrimaryButton />).toJSON()
   expect(tree).toMatchSnapshot()
 })

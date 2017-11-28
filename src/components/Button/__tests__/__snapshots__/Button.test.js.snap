@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button snapshot 1`] = `
+<button
+  className="bg-grey hover:bg-grey-dark text-white font-sans font-bold py-2 px-4 shadow rounded sc-bwzfXH crrApc"
+/>
+`;
