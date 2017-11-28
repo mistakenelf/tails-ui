@@ -28,13 +28,13 @@ export default {
       exclude: 'node_modules/**'
     }),
     resolve(),
+    commonjs(),
     replace({
       exclude: 'node_modules/**',
       'process.env.NODE_ENV': JSON.stringify(
         process.env.NODE_ENV || 'development'
       )
     }),
-    commonjs(),
     process.env.NODE_ENV === 'production' && filesize(),
     process.env.NODE_ENV === 'production' && uglify({}, minify)
   ]
