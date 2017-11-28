@@ -71,7 +71,9 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
-    "setupTestFrameworkScriptFile": "./src/setupTests"
+    "setupFiles": [
+      "raf/polyfill"
+    ]
   },
   "files": [
     "dist"
