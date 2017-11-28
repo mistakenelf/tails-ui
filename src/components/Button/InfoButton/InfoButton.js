@@ -8,12 +8,12 @@ const Button = styled.button`
   }
 `
 
-const InfoButton = ({ children, outline }) => (
+const InfoButton = ({ children, outline, fullWidth }) => (
   <Button
     className={
       outline
-        ? 'bg-transparent hover:bg-indigo text-indigo-dark font-semibold hover:text-white py-2 px-4 border-2 border-indigo hover:border-transparent rounded'
-        : 'bg-indigo hover:bg-indigo-dark text-white font-sans font-bold py-2 px-4 shadow rounded'
+        ? `${fullWidth && 'w-full'} bg-transparent hover:bg-indigo text-indigo-dark font-semibold hover:text-white py-2 px-4 border-2 border-indigo hover:border-transparent rounded`
+        : `${fullWidth && 'w-full'} bg-indigo hover:bg-indigo-dark text-white font-sans font-bold py-2 px-4 shadow rounded`
     }
   >
     {children}
@@ -22,7 +22,8 @@ const InfoButton = ({ children, outline }) => (
 
 InfoButton.propTypes = {
   children: PropTypes.node,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default InfoButton

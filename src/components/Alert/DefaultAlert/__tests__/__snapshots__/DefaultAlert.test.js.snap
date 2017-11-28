@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`alert snapshot 1`] = `
+exports[`default alert snapshot 1`] = `
 <div
   className="bg-grey-lightest border-t-4 border-grey rounded-b text-grey-darkest px-4 py-3 shadow-md"
   role="alert"

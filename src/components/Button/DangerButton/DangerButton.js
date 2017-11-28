@@ -8,12 +8,12 @@ const Button = styled.button`
   }
 `
 
-const DangerButton = ({ children, outline }) => (
+const DangerButton = ({ children, outline, fullWidth }) => (
   <Button
     className={
       outline
-        ? 'bg-transparent hover:bg-red text-red-dark font-semibold hover:text-white py-2 px-4 border-2 border-red hover:border-transparent rounded'
-        : 'bg-red hover:bg-red-dark text-white font-sans font-bold py-2 px-4 shadow rounded'
+        ? `${fullWidth && 'w-full'}bg-transparent hover:bg-red text-red-dark font-semibold hover:text-white py-2 px-4 border-2 border-red hover:border-transparent rounded`
+        : `${fullWidth && 'w-full'}bg-red hover:bg-red-dark text-white font-sans font-bold py-2 px-4 shadow rounded`
     }
   >
     {children}
@@ -22,7 +22,8 @@ const DangerButton = ({ children, outline }) => (
 
 DangerButton.propTypes = {
   children: PropTypes.node,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default DangerButton

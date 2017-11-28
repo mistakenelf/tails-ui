@@ -8,12 +8,12 @@ const Button = styled.button`
   }
 `
 
-const DefaultButton = ({ children, outline }) => (
+const DefaultButton = ({ children, outline, fullWidth }) => (
   <Button
     className={
       outline
-        ? 'bg-transparent hover:bg-grey text-grey-dark font-semibold hover:text-white py-2 px-4 border-2 border-grey hover:border-transparent rounded'
-        : 'bg-grey hover:bg-grey-dark text-white font-sans font-bold py-2 px-4 shadow rounded'
+        ? `${fullWidth && 'w-full'} bg-transparent hover:bg-grey text-grey-dark font-semibold hover:text-white py-2 px-4 border-2 border-grey hover:border-transparent rounded`
+        : `${fullWidth && 'w-full'} bg-grey hover:bg-grey-dark text-white font-sans font-bold py-2 px-4 shadow rounded`
     }
   >
     {children}
@@ -22,7 +22,8 @@ const DefaultButton = ({ children, outline }) => (
 
 DefaultButton.propTypes = {
   children: PropTypes.node,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default DefaultButton

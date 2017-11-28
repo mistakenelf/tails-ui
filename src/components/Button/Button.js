@@ -15,11 +15,12 @@ const Button = ({
   info,
   danger,
   loading,
-  outline
+  outline,
+  fullWidth
 }) => {
   if (primary) {
     return (
-      <PrimaryButton outline={outline}>
+      <PrimaryButton outline={outline} fullWidth={fullWidth}>
         {loading ? 'loading...' : children}
       </PrimaryButton>
     )
@@ -67,7 +68,8 @@ Button.propTypes = {
   info: PropTypes.bool,
   danger: PropTypes.bool,
   loading: PropTypes.bool,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default Button

@@ -8,12 +8,12 @@ const Button = styled.button`
   }
 `
 
-const SuccessButton = ({ children, outline }) => (
+const SuccessButton = ({ children, outline, fullWidth }) => (
   <Button
     className={
       outline
-        ? 'bg-transparent hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border-2 border-green hover:border-transparent rounded'
-        : 'bg-green hover:bg-green-dark text-white font-sans font-bold py-2 px-4 shadow rounded'
+        ? `${fullWidth && 'w-full'} bg-transparent hover:bg-green text-green-dark font-semibold hover:text-white py-2 px-4 border-2 border-green hover:border-transparent rounded`
+        : `${fullWidth && 'w-full'} bg-green hover:bg-green-dark text-white font-sans font-bold py-2 px-4 shadow rounded`
     }
   >
     {children}
@@ -22,7 +22,8 @@ const SuccessButton = ({ children, outline }) => (
 
 SuccessButton.propTypes = {
   children: PropTypes.node,
-  outline: PropTypes.bool
+  outline: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default SuccessButton

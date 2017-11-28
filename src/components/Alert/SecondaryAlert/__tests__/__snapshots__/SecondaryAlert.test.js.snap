@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`alert snapshot 1`] = `
+exports[`secondary alert snapshot 1`] = `
 <div
-  className="bg-grey-lightest border-t-4 border-grey rounded-b text-grey-darkest px-4 py-3 shadow-md"
+  className="bg-pink-lightest border-t-4 border-pink rounded-b text-pink-darkest px-4 py-3 shadow-md"
   role="alert"
 >
   <div
     className="flex"
   >
     <svg
-      className="h-6 w-6 text-grey mr-4"
+      className="h-6 w-6 text-pink mr-4"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >
