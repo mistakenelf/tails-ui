@@ -10,7 +10,7 @@ import uglify from 'rollup-plugin-uglify'
 
 export default {
   input: 'src/index.js',
-  sourcemap: 'inline',
+  sourcemap: 'true',
   output: [
     {
       file: pkg.main,
