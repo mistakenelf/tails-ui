@@ -17,33 +17,21 @@ const Alert = ({
   content
 }) => {
   if (primary) {
-    return (
-      <PrimaryAlert heading={heading} content={content} />
-    )
+    return <PrimaryAlert heading={heading} content={content} />
   }
   if (secondary) {
-    return (
-      <SecondaryAlert heading={heading} content={content} />
-    )
+    return <SecondaryAlert heading={heading} content={content} />
   }
   if (success) {
-    return (
-      <SuccessAlert heading={heading} content={content} />
-    )
+    return <SuccessAlert heading={heading} content={content} />
   }
   if (info) {
-    return (
-      <InfoAlert heading={heading} content={content} />
-    )
+    return <InfoAlert heading={heading} content={content} />
   }
   if (danger) {
-    return (
-      <DangerAlert heading={heading} content={content} />
-    )
+    return <DangerAlert heading={heading} content={content} />
   }
-  return (
-    <DefaultAlert heading={heading} content={content} />
-  )
+  return <DefaultAlert heading={heading} content={content} />
 }
 
 Alert.propTypes = {

@@ -2,6 +2,6 @@
 
 exports[`loader snapshot 1`] = `
 <div
-  className="border-6 bg-grey-light border-blue rounded-full w-8 h-8 border-t-4 shadow sc-bdVaJa ixIJhe"
+  className="border-6 border-grey bg-grey-light rounded-full w-8 h-8 border-t-4 shadow sc-bdVaJa ixIJhe"
 />
 `;
