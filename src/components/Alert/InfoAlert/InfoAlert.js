@@ -3,12 +3,12 @@ import React from 'react'
 
 const InfoAlert = ({ heading, content }) => (
   <div
-    className="bg-indigo-lightest border-t-4 border-indigo rounded-b text-indigo-darkest px-4 py-3 shadow-md"
+    className="bg-blue-lightest border-t-4 border-blue rounded-b text-blue-darkest px-4 py-3 shadow-md"
     role="alert"
   >
     <div className="flex">
       <svg
-        className="h-6 w-6 text-indigo mr-4"
+        className="h-6 w-6 text-blue mr-4"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >

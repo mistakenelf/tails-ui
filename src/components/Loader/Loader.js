@@ -10,13 +10,13 @@ const StyledLoader = styled.div`
 const Loader = ({ primary, secondary, success, info, danger }) => {
   let loaderColor
   if (primary) {
-    loaderColor = 'border-blue'
+    loaderColor = 'border-teal'
   } else if (secondary) {
     loaderColor = 'border-pink-light'
   } else if (success) {
     loaderColor = 'border-green-light'
   } else if (info) {
-    loaderColor = 'border-indigo-light'
+    loaderColor = 'border-blue-light'
   } else if (danger) {
     loaderColor = 'border-red-lighter'
   } else {

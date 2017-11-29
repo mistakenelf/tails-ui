@@ -10,6 +10,7 @@ export { default as TableHead } from './components/Table/TableHead'
 export { default as TableBody } from './components/Table/TableBody'
 export { default as TableData } from './components/Table/TableData'
 export { default as Alert } from './components/Alert'
+export { default as TextField } from './components/TextField'
 
 // Utility exports
 export { spinAnimation } from './utils/animations'
