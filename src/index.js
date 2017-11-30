@@ -3,7 +3,7 @@ import 'tailwindcss/dist/tailwind.min.css'
 // Component exports
 export { default as Button } from './components/Button'
 export { default as Loader } from './components/Loader'
-export { default as Table } from './components/Table/Table'
+export { default as Table } from './components/Table'
 export { default as TableRow } from './components/Table/TableRow'
 export { default as TableHeading } from './components/Table/TableHeading'
 export { default as TableHead } from './components/Table/TableHead'

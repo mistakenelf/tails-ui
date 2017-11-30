@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const TableHeading = ({ children }) => (
@@ -5,5 +6,9 @@ const TableHeading = ({ children }) => (
     {children}
   </th>
 )
+
+TableHeading.propTypes = {
+  children: PropTypes.node
+}
 
 export default TableHeading
