@@ -18,3 +18,4 @@ export { default as CodeBlock } from './UIComponents/CodeBlock'
 // UtilityComponent exports
 export { default as DangerousHTML } from './UtilityComponents/DangerousHTML'
 export { default as ShowIf } from './UtilityComponents/ShowIf'
+export { default as Hide } from './UtilityComponents/Hide'
