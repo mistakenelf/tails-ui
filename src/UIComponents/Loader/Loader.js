@@ -1,7 +1,16 @@
+import styled, { keyframes } from 'styled-components'
+
 import PropTypes from 'prop-types'
 import React from 'react'
-import { spinAnimation } from '../../utils/animations'
-import styled from 'styled-components'
+
+const spinAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`
 
 const StyledLoader = styled.div`
   animation: ${spinAnimation} 1s linear infinite;
