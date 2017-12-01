@@ -2,6 +2,7 @@
 
 exports[`dangerous html snapshot 1`] = `
 <div
+  className="font-sans"
   dangerouslySetInnerHTML={
     Object {
       "__html": undefined,
