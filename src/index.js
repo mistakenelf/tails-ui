@@ -1,5 +1,4 @@
 import 'tailwindcss/dist/tailwind.min.css'
-import 'icono/dist/icono.min.css'
 
 // Component exports
 export { default as Button } from './components/Button'
@@ -16,7 +15,6 @@ export { default as Article } from './components/Article'
 export { default as FullscreenMenu } from './components/FullscreenMenu'
 export { default as DangerousHTML } from './components/DangerousHTML'
 export { default as CodeBlock } from './components/CodeBlock'
-export { default as Icon } from './components/Icon'
 
 // Utility exports
 export { spinAnimation } from './utils/animations'
