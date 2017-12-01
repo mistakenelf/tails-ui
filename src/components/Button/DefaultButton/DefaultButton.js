@@ -13,9 +13,9 @@ const DefaultButton = ({ children, outline, fullWidth }) => (
     className={
       outline
         ? `${fullWidth &&
-            'w-full'} bg-transparent hover:bg-grey text-grey-dark font-semibold hover:text-white py-2 px-4 border-2 border-grey hover:border-transparent rounded`
+            'w-full'} bg-transparent hover:bg-grey text-grey-dark font-semibold hover:text-white py-2 px-4 border-2 border-grey hover:border-transparent rounded inline-flex items-center`
         : `${fullWidth &&
-            'w-full'} bg-grey hover:bg-grey-dark text-white font-sans font-bold py-2 px-4 shadow rounded`
+            'w-full'} bg-grey hover:bg-grey-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center`
     }
   >
     {children}

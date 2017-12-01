@@ -1,8 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`icon snapshot 1`] = `
-<i
-  className="icono-undefined sc-bdVaJa dpaqKb"
-  color={undefined}
+<svg
+  preserveAspectRatio="xMidYMid meet"
+  style={
+    Object {
+      "fill": "black",
+      "height": 24,
+      "verticalAlign": "middle",
+      "width": 24,
+    }
+  }
+  viewBox="0 0 24 24"
 />
 `;
