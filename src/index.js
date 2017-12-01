@@ -13,6 +13,7 @@ export { default as TableData } from './components/Table/TableData'
 export { default as Alert } from './components/Alert'
 export { default as TextField } from './components/TextField'
 export { default as Icon } from './components/Icon'
+export { default as Article } from './components/Article'
 
 // Utility exports
 export { spinAnimation } from './utils/animations'
