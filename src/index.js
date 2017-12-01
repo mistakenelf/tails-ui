@@ -1,4 +1,5 @@
 import 'tailwindcss/dist/tailwind.min.css'
+import 'icono/dist/icono.min.css'
 
 // Component exports
 export { default as Button } from './components/Button'
@@ -11,6 +12,7 @@ export { default as TableBody } from './components/Table/TableBody'
 export { default as TableData } from './components/Table/TableData'
 export { default as Alert } from './components/Alert'
 export { default as TextField } from './components/TextField'
+export { default as Icon } from './components/Icon'
 
 // Utility exports
 export { spinAnimation } from './utils/animations'
