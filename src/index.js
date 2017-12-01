@@ -16,6 +16,7 @@ export { default as Icon } from './components/Icon'
 export { default as Article } from './components/Article'
 export { default as FullscreenMenu } from './components/FullscreenMenu'
 export { default as DangerousHTML } from './components/DangerousHTML'
+export { default as CodeBlock } from './components/CodeBlock'
 
 // Utility exports
 export { spinAnimation } from './utils/animations'

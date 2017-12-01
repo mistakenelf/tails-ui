@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`codeblock snapshot 1`] = `
+<pre
+  className="bg-grey-lighter rounded border border-grey"
+>
+  <code
+    className="font-mono"
+  />
+</pre>
+`;
