@@ -1,3 +1,5 @@
-## tails-ui 0.0.4
-- Added article component
-- Minor table border adjustments
+## 0.0.5
+- DangerousHTML component
+- CodeBlock component
+- Allow icons in button
+- FullscreenMenu component
