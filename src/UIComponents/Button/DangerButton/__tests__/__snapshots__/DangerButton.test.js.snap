@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`danger button snapshot 1`] = `
-<button
-  className="undefined bg-red hover:bg-red-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center sc-bdVaJa igkfrU"
-/>
-`;
