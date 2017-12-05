@@ -16,16 +16,14 @@ const StyledLoader = styled.div`
   animation: ${spinAnimation} 1s linear infinite;
 `
 
-const Loader = ({ color }) => {
-  return (
-    <StyledLoader
-      className={`border-6 border-${color} bg-grey-light rounded-full w-8 h-8 border-t-4 shadow`}
-    />
-  )
-}
+const Loader = ({ color }) => (
+  <StyledLoader
+    className={`border-6 border-${color} bg-grey-light rounded-full w-8 h-8 border-t-4 shadow`}
+  />
+)
 
 Loader.defaultProps = {
-  color: "teal"
+  color: 'teal'
 }
 
 Loader.propTypes = {
