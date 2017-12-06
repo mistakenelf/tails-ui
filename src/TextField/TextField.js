@@ -8,7 +8,15 @@ const StyledInput = styled.input`
   }
 `
 
-const TextField = ({ label, value, type, name, placeholder, color }) => (
+const TextField = ({
+  label,
+  value,
+  type,
+  name,
+  placeholder,
+  color,
+  ...props
+}) => (
   <div>
     {label && (
       <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2">
@@ -21,6 +29,7 @@ const TextField = ({ label, value, type, name, placeholder, color }) => (
       value={value}
       name={name}
       placeholder={placeholder}
+      {...props}
     />
   </div>
 )

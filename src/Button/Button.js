@@ -8,7 +8,7 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, color, loading, outline, fullWidth }) => (
+const Button = ({ children, color, loading, outline, fullWidth, ...props }) => (
   <StyledButton
     className={
       outline
@@ -17,6 +17,7 @@ const Button = ({ children, color, loading, outline, fullWidth }) => (
         : `${fullWidth &&
             'w-full'} bg-${color} hover:bg-${color}-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center`
     }
+    {...props}
   >
     {loading ? 'loading...' : children}
   </StyledButton>

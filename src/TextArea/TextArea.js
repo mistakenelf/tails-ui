@@ -8,7 +8,16 @@ const StyledTextArea = styled.textarea`
   }
 `
 
-const TextArea = ({ label, value, type, name, placeholder, color, rows }) => (
+const TextArea = ({
+  label,
+  value,
+  type,
+  name,
+  placeholder,
+  color,
+  rows,
+  ...props
+}) => (
   <div>
     {label && (
       <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2">
@@ -22,6 +31,7 @@ const TextArea = ({ label, value, type, name, placeholder, color, rows }) => (
       name={name}
       placeholder={placeholder}
       rows={rows}
+      {...props}
     />
   </div>
 )
