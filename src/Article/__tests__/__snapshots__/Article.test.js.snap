@@ -16,13 +16,6 @@ exports[`article snapshot 1`] = `
   <p
     className="text-grey-darkest mb-6 leading-tight"
   />
-  <div>
-    <a
-      className="text-black mr-2"
-      href="#"
-    >
-      READ MORE
-    </a>
-  </div>
+  <div />
 </div>
 `;
