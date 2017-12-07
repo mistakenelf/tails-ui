@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar snapshot 1`] = `
+<nav
+  className="bg-white px-8 pt-2 shadow-md w-full"
+>
+  <div
+    className="-mb-px flex justify-center"
+  />
+</nav>
+`;

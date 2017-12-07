@@ -8,14 +8,26 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, color, loading, outline, fullWidth, ...props }) => (
+const Button = ({
+  children,
+  color,
+  loading,
+  outline,
+  fullWidth,
+  rounded,
+  ...props
+}) => (
   <StyledButton
     className={
       outline
         ? `${fullWidth &&
-            'w-full'} bg-transparent hover:bg-${color} text-${color}-dark font-semibold hover:text-white py-2 px-4 border-2 border-${color} hover:border-transparent rounded inline-flex items-center`
+            'w-full'} bg-transparent hover:bg-${color} text-${color}-dark font-semibold hover:text-white py-2 px-4 border border-${color} hover:border-transparent ${
+            rounded ? 'rounded-full' : 'rounded'
+          } inline-flex items-center justify-center`
         : `${fullWidth &&
-            'w-full'} bg-${color} hover:bg-${color}-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center`
+            'w-full'} bg-${color} hover:bg-${color}-dark text-white font-sans font-bold py-2 px-4 shadow ${
+            rounded ? 'rounded-full' : 'rounded'
+          } inline-flex items-center justify-center`
     }
     {...props}
   >
@@ -28,7 +40,8 @@ Button.propTypes = {
   color: PropTypes.string,
   loading: PropTypes.bool,
   outline: PropTypes.bool,
-  fullWidth: PropTypes.bool
+  fullWidth: PropTypes.bool,
+  rounded: PropTypes.bool
 }
 
 export default Button
