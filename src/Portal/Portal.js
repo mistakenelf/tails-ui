@@ -17,7 +17,6 @@ export default class Portal extends PureComponent {
 
   render() {
     const { domNode } = this.props
-
     if (!domNode && !this.defaultNode) {
       this.defaultNode = document.createElement('div')
       document.body.appendChild(this.defaultNode)
