@@ -1,14 +1,14 @@
 import React from 'react'
-import ShowIf from '../ShowIf'
+import RenderIf from '../RenderIf'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<ShowIf />, div)
+  render(<RenderIf />, div)
 })
 
-test('showif snapshot', () => {
-  const tree = renderer.create(<ShowIf />).toJSON()
+test('render if snapshot', () => {
+  const tree = renderer.create(<RenderIf />).toJSON()
   expect(tree).toMatchSnapshot()
 })
