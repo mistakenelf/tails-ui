@@ -8,7 +8,7 @@ exports[`progress bar snapshot 1`] = `
     className="shadow w-full bg-grey-light rounded"
   >
     <div
-      className="bg-undefined rounded text-xs leading-none py-1 text-center text-white"
+      className="bg-teal rounded text-xs leading-none py-1 text-center text-white"
       style={
         Object {
           "width": undefined,

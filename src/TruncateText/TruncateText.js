@@ -4,12 +4,14 @@ import PropTypes from 'prop-types'
 
 export default class TruncateText extends PureComponent {
   static propTypes = {
-    children: PropTypes.string,
-    wordCount: PropTypes.number
+    children: PropTypes.string.isRequired,
+    wordCount: PropTypes.number,
+    toggleColor: PropTypes.string
   }
 
   static defaultProps = {
-    wordCount: 10
+    wordCount: 10,
+    toggleColor: 'teal'
   }
 
   state = {
@@ -20,7 +22,7 @@ export default class TruncateText extends PureComponent {
 
   render() {
     const { showMore } = this.state
-    const { children, wordCount } = this.props
+    const { children, wordCount, toggleColor } = this.props
 
     const spliced = children
       .split(' ')
@@ -33,10 +35,13 @@ export default class TruncateText extends PureComponent {
         : spliced
 
     return (
-      <span>
+      <span className="font-sans">
         {showMore ? children : truncated}
         {children.split(' ').length > wordCount && (
-          <span onClick={() => this.toggleShowMore()}>
+          <span
+            className={`text-${toggleColor} cursor-pointer`}
+            onClick={() => this.toggleShowMore()}
+          >
             {!showMore ? <span>...more</span> : <span>...less</span>}
           </span>
         )}

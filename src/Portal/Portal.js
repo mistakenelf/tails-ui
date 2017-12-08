@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom'
 
 export default class Portal extends PureComponent {
   static propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node.isRequired,
     domNode: PropTypes.any
   }
 

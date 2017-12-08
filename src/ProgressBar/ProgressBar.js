@@ -16,7 +16,11 @@ const ProgressBar = ({ color, percent }) => (
 
 ProgressBar.propTypes = {
   color: PropTypes.string,
-  percent: PropTypes.string
+  percent: PropTypes.string.isRequired
+}
+
+ProgressBar.defaultProps = {
+  color: 'teal'
 }
 
 export default ProgressBar

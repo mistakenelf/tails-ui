@@ -22,12 +22,12 @@ const Loader = ({ color }) => (
   />
 )
 
-Loader.defaultProps = {
-  color: 'teal'
-}
-
 Loader.propTypes = {
   color: PropTypes.string
+}
+
+Loader.defaultProps = {
+  color: 'teal'
 }
 
 export default Loader

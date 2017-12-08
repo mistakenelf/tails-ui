@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Alert = ({ color, heading, content }) => (
+const Alert = ({ color, heading, message }) => (
   <div
     className={`bg-${color}-lightest border-t-4 border-${color} rounded-b text-${color}-darkest px-4 py-3 shadow-md`}
     role="alert"
@@ -16,7 +16,7 @@ const Alert = ({ color, heading, content }) => (
       </svg>
       <div>
         <p className="font-bold">{heading}</p>
-        <p className="text-sm">{content}</p>
+        <p className="text-sm">{message}</p>
       </div>
     </div>
   </div>
@@ -25,7 +25,11 @@ const Alert = ({ color, heading, content }) => (
 Alert.propTypes = {
   color: PropTypes.string,
   heading: PropTypes.string,
-  content: PropTypes.string
+  message: PropTypes.string.isRequired
+}
+
+Alert.defaultProps = {
+  color: 'teal'
 }
 
 export default Alert

@@ -8,7 +8,7 @@ const CodeBlock = ({ children }) => (
 )
 
 CodeBlock.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired
 }
 
 export default CodeBlock

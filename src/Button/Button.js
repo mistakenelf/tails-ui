@@ -36,12 +36,16 @@ const Button = ({
 )
 
 Button.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   color: PropTypes.string,
   loading: PropTypes.bool,
   outline: PropTypes.bool,
   fullWidth: PropTypes.bool,
   rounded: PropTypes.bool
+}
+
+Button.defaultProps = {
+  color: 'teal'
 }
 
 export default Button
