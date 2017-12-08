@@ -5,10 +5,10 @@ import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<Alert />, div)
+  render(<Alert message="This is a message" />, div)
 })
 
 test('alert snapshot', () => {
-  const tree = renderer.create(<Alert />).toJSON()
+  const tree = renderer.create(<Alert message="This is a message" />).toJSON()
   expect(tree).toMatchSnapshot()
 })

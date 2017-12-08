@@ -23,7 +23,9 @@ exports[`alert snapshot 1`] = `
       />
       <p
         className="text-sm"
-      />
+      >
+        This is a message
+      </p>
     </div>
   </div>
 </div>

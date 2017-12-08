@@ -11,10 +11,12 @@ exports[`progress bar snapshot 1`] = `
       className="bg-teal rounded text-xs leading-none py-1 text-center text-white"
       style={
         Object {
-          "width": undefined,
+          "width": "50%",
         }
       }
-    />
+    >
+      50%
+    </div>
   </div>
 </div>
 `;

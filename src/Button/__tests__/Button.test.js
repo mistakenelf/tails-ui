@@ -5,10 +5,10 @@ import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<Button />, div)
+  render(<Button>Button</Button>, div)
 })
 
 test('button snapshot', () => {
-  const tree = renderer.create(<Button />).toJSON()
+  const tree = renderer.create(<Button>Button</Button>).toJSON()
   expect(tree).toMatchSnapshot()
 })

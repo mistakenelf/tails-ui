@@ -5,10 +5,12 @@ import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<DangerousHTML />, div)
+  render(<DangerousHTML>First &middot; Second</DangerousHTML>, div)
 })
 
 test('dangerous html snapshot', () => {
-  const tree = renderer.create(<DangerousHTML />).toJSON()
+  const tree = renderer
+    .create(<DangerousHTML>First &middot; Second</DangerousHTML>)
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })
