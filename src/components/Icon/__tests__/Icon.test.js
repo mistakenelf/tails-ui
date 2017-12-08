@@ -1,14 +1,16 @@
-import Navbar from '../Navbar'
+import Icon from '../Icon'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  render(<Navbar />, div)
+  render(<Icon name="fas fa-audio-description" />, div)
 })
 
-test('navbar snapshot', () => {
-  const tree = renderer.create(<Navbar />).toJSON()
+test('icon snapshot', () => {
+  const tree = renderer
+    .create(<Icon name="fas fa-audio-description" />)
+    .toJSON()
   expect(tree).toMatchSnapshot()
 })
