@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar snapshot 1`] = `
+<div>
+  <nav
+    className="flex w-full items-center justify-between flex-wrap bg-teal p-3 shadow"
+  >
+    <div
+      className="flex items-center flex-no-shrink text-white mr-8"
+    >
+      <span
+        className="font-semibold text-2xl tracking-tight"
+      >
+        Tails-UI
+      </span>
+    </div>
+    <div
+      className="block lg:hidden"
+    >
+      <button
+        className="flex items-center px-3 py-2 border-2 rounded text-teal-lighter border-teal-lighter hover:text-white hover:border-white"
+        onClick={[Function]}
+      >
+        <svg
+          className="fill-current h-4 w-4"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Menu
+          </title>
+          <path
+            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+    >
+      <div
+        className="text-sm lg:flex-grow hidden sm:hidden md:hidden lg:flex xl:flex"
+      >
+        <a
+          className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+          href="#!"
+        >
+          Home
+        </a>
+        <a
+          className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+          href="#!"
+        >
+          Home
+        </a>
+        <a
+          className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+          href="#!"
+        >
+          Home
+        </a>
+        <a
+          className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+          href="#!"
+        >
+          Home
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="hidden flex-col bg-teal fixed w-full pl-4"
+  >
+    <a
+      className="no-underline text-white tracking-wide font-bold text-sm py-3 mr-8"
+      href="#!"
+    >
+      Home
+    </a>
+    <a
+      className="no-underline text-white tracking-wide font-bold text-sm py-3 mr-8"
+      href="#!"
+    >
+      Home
+    </a>
+    <a
+      className="no-underline text-white tracking-wide font-bold text-sm py-3 mr-8"
+      href="#!"
+    >
+      Home
+    </a>
+    <a
+      className="no-underline text-white tracking-wide font-bold text-sm py-3 mr-8"
+      href="#!"
+    >
+      Home
+    </a>
+  </div>
+</div>
+`;
