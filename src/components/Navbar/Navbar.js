@@ -1,10 +1,12 @@
-import React, { Children, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 
 import PropTypes from 'prop-types'
 
 export default class Navbar extends PureComponent {
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    navLeftItems: PropTypes.array,
+    navRightItems: PropTypes.array,
+    mobileMenuItems: PropTypes.array,
     brand: PropTypes.string.isRequired,
     color: PropTypes.string
   }
@@ -25,7 +27,13 @@ export default class Navbar extends PureComponent {
 
   render() {
     const { open } = this.state
-    const { children, brand, color } = this.props
+    const {
+      navRightItems,
+      navLeftItems,
+      mobileMenuItems,
+      brand,
+      color
+    } = this.props
     return (
       <div>
         <nav
@@ -51,28 +59,48 @@ export default class Navbar extends PureComponent {
               </svg>
             </button>
           </div>
-          <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div className="text-sm lg:flex-grow hidden sm:hidden md:hidden lg:flex xl:flex">
-              {Children.map(children, child => {
-                return React.cloneElement(child, {
-                  className:
-                    'no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8'
-                })
-              })}
+          {navLeftItems.length > 0 && (
+            <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+              <div className="text-sm lg:flex-grow hidden sm:hidden md:hidden lg:flex xl:flex">
+                {navLeftItems.map(item => (
+                  <div
+                    key={item.key}
+                    className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+                  >
+                    {item.value}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
+          {navRightItems.length > 0 && (
+            <div className="w-full block lg:flex lg:items-center lg:w-auto ml-auto">
+              <div className="text-sm lg:flex-grow hidden sm:hidden md:hidden lg:flex xl:flex">
+                {navRightItems.map(item => (
+                  <div
+                    key={item.key}
+                    className="no-underline text-white uppercase tracking-wide font-bold text-sm py-3 mr-8"
+                  >
+                    {item.value}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </nav>
         <div
           className={`${
             open ? 'flex' : 'hidden'
-          } flex-col bg-${color} fixed w-full pl-4`}
+          } flex-col bg-${color} w-full fixed pl-4`}
         >
-          {Children.map(children, child => {
-            return React.cloneElement(child, {
-              className:
-                'no-underline text-white tracking-wide font-bold text-sm py-3 mr-8'
-            })
-          })}
+          {mobileMenuItems.map(item => (
+            <div
+              key={item.key}
+              className="no-underline text-white tracking-wide font-bold text-sm py-3"
+            >
+              {item.value}
+            </div>
+          ))}
         </div>
       </div>
     )
