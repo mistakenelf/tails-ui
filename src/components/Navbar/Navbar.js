@@ -63,7 +63,7 @@ export default class Navbar extends PureComponent {
           </div>
         </nav>
         <div
-          className={`${open ? 'flex' : 'hidden'} flex-col bg-${color} pl-4`}
+          className={`${open ? 'flex' : 'hidden'} flex-col bg-${color} fixed w-full pl-4`}
         >
           {Children.map(children, child => {
             return React.cloneElement(child, {
