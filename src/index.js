@@ -1,5 +1,4 @@
 import 'tailwindcss/dist/tailwind.min.css'
-import './lib/fontawesome.js'
 
 // Component exports
 export { default as Alert } from './components/Alert'
@@ -9,7 +8,7 @@ export { default as Button } from './components/Button'
 export { default as CodeBlock } from './components/CodeBlock'
 export { default as DangerousHTML } from './components/DangerousHTML'
 export { default as FullscreenMenu } from './components/FullscreenMenu'
-export { default as Icon } from './components/Icon'
+export { default as ListGroup } from './components/ListGroup'
 export { default as Loader } from './components/Loader'
 export { default as Modal } from './components/Modal'
 export { default as Portal } from './components/Portal'
