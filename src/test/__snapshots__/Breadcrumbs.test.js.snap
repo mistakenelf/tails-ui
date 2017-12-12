@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`breadcrumbs snapshot 1`] = `
+<nav
+  className="bg-grey-light p-3 rounded font-sans w-full m-4"
+>
+  <ol
+    className="list-reset flex text-grey-dark"
+  >
+    <span
+      className="flex"
+    >
+      <li>
+        <a
+          className="text-blue font-bold"
+          href="#!"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <span
+          className="mx-2"
+        >
+          /
+        </span>
+      </li>
+    </span>
+    <span
+      className="flex"
+    >
+      <li>
+        <a
+          className="text-blue font-bold"
+          href="#!"
+        >
+          About
+        </a>
+      </li>
+    </span>
+  </ol>
+</nav>
+`;
