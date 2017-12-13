@@ -66,11 +66,6 @@
     "semi": false
   },
   "jest": {
-    "collectCoverage": true,
-    "coverageDirectory": "coverage/",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
     "setupFiles": [
       "raf/polyfill"
     ]
