@@ -1,4 +1,7 @@
-## 0.0.8
-- Icon component using fontawesome 5
-- Code structure cleanup
-- Fixed some tests
+## 0.0.9
+- Reduce bundle size by removing the icon component
+- New navbar component
+- Remove useless components
+- Update tests
+- Breadcrumbs component
+- Progress bar component
