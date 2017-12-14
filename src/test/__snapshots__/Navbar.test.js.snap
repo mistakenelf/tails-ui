@@ -5,48 +5,44 @@ exports[`navbar snapshot 1`] = `
   className="bg-blue text-white h-24 flex flex-col"
 >
   <div
-    className="flex items-center justify-between"
+    className="mt-4 pl-4 flex flex flex-row align-center w-full"
   >
     <div
-      className="mt-4 ml-4 flex flex flex-col w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2"
+      className="text-3xl"
     >
-      <div
-        className="text-3xl"
-      >
-        Tails-UI
-      </div>
-      <div
-        className="mt-4 overflow-x-scroll"
-      >
-        <a
-          className="text-white p-1 text-lg"
-          href="#!"
-        >
-          Home
-        </a>
-        <a
-          className="text-white p-1 text-lg"
-          href="#!"
-        >
-          Products
-        </a>
-        <a
-          className="text-white p-1 text-lg"
-          href="#!"
-        >
-          Cart
-        </a>
-        <a
-          className="text-white p-1 text-lg"
-          href="#!"
-        >
-          Shop
-        </a>
-      </div>
+      Tails-UI
     </div>
     <div
-      className="mr-4"
+      className="ml-auto pr-4"
     />
+  </div>
+  <div
+    className="mt-4 pl-4 overflow-x-scroll"
+  >
+    <a
+      className="text-white p-1 text-lg"
+      href="#!"
+    >
+      Home
+    </a>
+    <a
+      className="text-white p-1 text-lg"
+      href="#!"
+    >
+      Products
+    </a>
+    <a
+      className="text-white p-1 text-lg"
+      href="#!"
+    >
+      Cart
+    </a>
+    <a
+      className="text-white p-1 text-lg"
+      href="#!"
+    >
+      Shop
+    </a>
   </div>
 </div>
 `;
