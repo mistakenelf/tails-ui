@@ -1,7 +1,6 @@
-## 0.0.9
-- Reduce bundle size by removing the icon component
-- New navbar component
-- Remove useless components
-- Update tests
-- Breadcrumbs component
-- Progress bar component
+## 0.1.0
+- Cleanup navbar component
+- Fix breadcrumbs
+- Modal component
+- Fix tests
+
