@@ -8,7 +8,7 @@ const Breadcrumbs = ({ crumbs, bgColor, textColor }) => (
         <span key={crumb.key} className="flex">
           <li>
             {React.cloneElement(crumb.value, {
-              className: `${textColor} font-bold mr-2`
+              className: `${textColor} font-bold`
             })}
           </li>
           {crumb.hasSeparator && (
