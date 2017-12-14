@@ -1,3 +1,3 @@
-## 0.1.1
-- Decrease bundle size by making tailwind a peer dependency
+## 0.1.2
+- Fix issue with navbar overflow
 
