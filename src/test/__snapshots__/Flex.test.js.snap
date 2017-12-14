@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flex snapshot 1`] = `
+<div
+  className="flex flex-col flex-wrap justify-start items-start p-0 m-0"
+>
+  A flex box
+</div>
+`;

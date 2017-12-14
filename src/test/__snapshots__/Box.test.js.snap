@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`box snapshot 1`] = `
+<div
+  className="w-full sm:w-full md:w-undefined lg:w-undefined xl:w-undefined p-0 m-0"
+>
+  This is a box
+</div>
+`;
