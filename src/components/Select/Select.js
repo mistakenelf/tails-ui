@@ -24,7 +24,7 @@ const Select = ({
       </label>
     )}
     <StyledSelect
-      className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color} rounded w-full py-2 px-4 text-grey-darker`}
+      className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color} rounded w-full py-2 px-4 mr-4 text-grey-darker`}
       value={value}
       name={name}
       placeholder={placeholder}
