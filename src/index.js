@@ -1,6 +1,3 @@
-import 'tailwindcss/dist/tailwind.min.css'
-
-// Component exports
 export { default as Alert } from './components/Alert'
 export { default as Article } from './components/Article'
 export { default as Breadcrumbs } from './components/Breadcrumbs'
