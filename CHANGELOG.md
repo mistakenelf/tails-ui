@@ -1,3 +1,5 @@
-## 0.1.2
-- Fix issue with navbar overflow
+## 0.2.0
+- Update tests
+- Flex component
+- Box component
 
