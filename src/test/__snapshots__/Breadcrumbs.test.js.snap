@@ -2,7 +2,7 @@
 
 exports[`breadcrumbs snapshot 1`] = `
 <nav
-  className="bg-grey-light p-3 rounded font-sans w-full m-4"
+  className="bg-grey-light p-3 rounded font-sans w-full"
 >
   <ol
     className="list-reset flex text-grey-dark"
@@ -12,7 +12,7 @@ exports[`breadcrumbs snapshot 1`] = `
     >
       <li>
         <a
-          className="text-blue font-bold"
+          className="text-blue font-bold mr-2"
           href="#!"
         >
           Home
@@ -31,7 +31,7 @@ exports[`breadcrumbs snapshot 1`] = `
     >
       <li>
         <a
-          className="text-blue font-bold"
+          className="text-blue font-bold mr-2"
           href="#!"
         >
           About

@@ -2,13 +2,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Breadcrumbs = ({ crumbs, bgColor, textColor }) => (
-  <nav className={`${bgColor} p-3 rounded font-sans w-full m-4`}>
+  <nav className={`${bgColor} p-3 rounded font-sans w-full`}>
     <ol className="list-reset flex text-grey-dark">
       {crumbs.map(crumb => (
         <span key={crumb.key} className="flex">
           <li>
             {React.cloneElement(crumb.value, {
-              className: `${textColor} font-bold`
+              className: `${textColor} font-bold mr-2`
             })}
           </li>
           {crumb.hasSeparator && (
