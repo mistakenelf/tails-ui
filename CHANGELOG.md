@@ -1,6 +1,3 @@
-## 0.1.0
-- Cleanup navbar component
-- Fix breadcrumbs
-- Modal component
-- Fix tests
+## 0.1.1
+- Decrease bundle size by making tailwind a peer dependency
 
