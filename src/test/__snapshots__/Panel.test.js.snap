@@ -5,9 +5,14 @@ exports[`panel snapshot 1`] = `
   className="border-2 border-grey-light rounded"
 >
   <div
-    className="border-b-2 border-grey-light p-2 text-2xl"
+    className="flex flex-row items-center justify-between w-full border-b-2 border-grey-light p-2 "
   >
-    A Panel
+    <div
+      className="text-2xl"
+    >
+      A Panel
+    </div>
+    <div />
   </div>
   <div
     className="p-2"
