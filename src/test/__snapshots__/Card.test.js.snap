@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card snapshot 1`] = `
+<div
+  className="max-w-sm rounded overflow-hidden shadow-lg"
+>
+  <div
+    className="px-6 py-4"
+  >
+    <div
+      className="font-bold text-xl mb-4"
+    >
+      Card
+    </div>
+    This is a card
+  </div>
+  <div
+    className="px-6 py-4"
+  >
+    <a
+      href="#!"
+    >
+      footer link
+    </a>
+  </div>
+</div>
+`;

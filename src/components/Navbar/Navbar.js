@@ -2,7 +2,7 @@ import React, { Children } from 'react'
 
 import PropTypes from 'prop-types'
 
-const Navbar = ({ children, brand, color, navRight }) => (
+const Navbar = ({ color, brand, navRight, children }) => (
   <div className={`bg-${color} text-white h-24 flex flex-col`}>
     <div className="mt-4 pl-4 flex flex flex-row align-center w-full">
       <div className="text-3xl">{brand}</div>
@@ -23,10 +23,10 @@ Navbar.defaultProps = {
 }
 
 Navbar.propTypes = {
-  children: PropTypes.node,
-  brand: PropTypes.string,
   color: PropTypes.string,
-  navRight: PropTypes.node
+  brand: PropTypes.string,
+  navRight: PropTypes.node,
+  children: PropTypes.node
 }
 
 export default Navbar

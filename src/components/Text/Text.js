@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Text = ({ children, font, color, size, weight, align, fontStyle }) => (
+const Text = ({ font, color, size, weight, align, fontStyle, children }) => (
   <div
     className={`text-${color} font-${font} text-${size} font-${weight} text-${align} ${fontStyle}`}
   >
@@ -19,7 +19,6 @@ Text.defaultProps = {
 }
 
 Text.propTypes = {
-  children: PropTypes.node.isRequired,
   font: PropTypes.oneOf(['sans', 'serif', 'mono']),
   color: PropTypes.string,
   size: PropTypes.oneOf([
@@ -55,7 +54,8 @@ Text.propTypes = {
     'underline',
     'line-through',
     'no-underline'
-  ])
+  ]),
+  children: PropTypes.node.isRequired
 }
 
 export default Text

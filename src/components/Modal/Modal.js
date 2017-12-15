@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Modal = ({ children, title, handleClose, footer }) => (
+const Modal = ({ title, handleClose, children, footer }) => (
   <div className="fixed pin flex items-center">
     <div className="fixed pin bg-black opacity-75 z-10" />
     <div className="p-4 rounded shadow-lg bg-white relative mx-6 md:mx-auto w-full md:w-1/2 lg:w-1/3 z-20 m-8">
@@ -18,9 +18,9 @@ const Modal = ({ children, title, handleClose, footer }) => (
 )
 
 Modal.propTypes = {
-  children: PropTypes.node,
   title: PropTypes.string,
   handleClose: PropTypes.func,
+  children: PropTypes.node,
   footer: PropTypes.node
 }
 

@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 
-const RenderIf = ({ children, condition }) => (condition ? children : null)
+const RenderIf = ({ condition, children }) => (condition ? children : null)
 
 RenderIf.propTypes = {
-  children: PropTypes.node.isRequired,
-  condition: PropTypes.bool.isRequired
+  condition: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default RenderIf

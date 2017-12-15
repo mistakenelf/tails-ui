@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Breadcrumbs = ({ crumbs, bgColor, textColor }) => (
+const Breadcrumbs = ({ bgColor, crumbs, textColor }) => (
   <nav className={`${bgColor} p-3 rounded font-sans w-full`}>
     <ol className="list-reset flex text-grey-dark">
       {crumbs.map(crumb => (
@@ -28,8 +28,8 @@ Breadcrumbs.defaultProps = {
 }
 
 Breadcrumbs.propTypes = {
-  crumbs: PropTypes.array,
   bgColor: PropTypes.string,
+  crumbs: PropTypes.array,
   textColor: PropTypes.string
 }
 

@@ -3,7 +3,7 @@
 exports[`text field snapshot 1`] = `
 <div>
   <input
-    className="bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-undefined rounded w-full py-2 px-4 text-grey-darker sc-bdVaJa igkfrU"
+    className="bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-teal rounded w-full py-2 px-4 text-grey-darker sc-bdVaJa igkfrU"
     name={undefined}
     placeholder={undefined}
     type={undefined}

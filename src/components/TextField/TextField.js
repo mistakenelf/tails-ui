@@ -34,6 +34,10 @@ const TextField = ({
   </div>
 )
 
+TextField.defaultProps = {
+  color: 'teal'
+}
+
 TextField.propTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
