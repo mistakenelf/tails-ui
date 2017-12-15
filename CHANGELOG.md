@@ -1,4 +1,4 @@
-## 0.2.1
-- Card component
-- Space component to add margin and padding
+## 0.2.2
+- Removed styled-components dependency
+- Reduced bundle size dramatically, now at around 4kb
 
