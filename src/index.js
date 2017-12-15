@@ -1,3 +1,5 @@
+import 'tailwindcss/dist/tailwind.min.css'
+
 export { default as Alert } from './components/Alert'
 export { default as Article } from './components/Article'
 export { default as Box } from './components/Box'

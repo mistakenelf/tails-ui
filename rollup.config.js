@@ -23,7 +23,9 @@ export default {
   ],
   external: ['react', 'react-dom', 'prop-types'],
   plugins: [
-    postcss({}),
+    postcss({
+      extract: true
+    }),
     babel({
       exclude: 'node_modules/**'
     }),

@@ -57,12 +57,8 @@
     "uglify-es": "^3.2.2"
   },
   "dependencies": {
-    "styled-components": "^2.2.4"
-  },
-  "peerDependencies": {
-    "tailwindcss": "^0.3.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "styled-components": "^2.3.0",
+    "tailwindcss": "^0.3.0"
   },
   "prettier": {
     "trailingComma": "none",
