@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`panel snapshot 1`] = `
+<div
+  className="border-2 border-grey-light rounded"
+>
+  <div
+    className="border-b-2 border-grey-light p-2 text-2xl"
+  >
+    A Panel
+  </div>
+  <div
+    className="p-2"
+  >
+    A panel
+  </div>
+</div>
+`;
