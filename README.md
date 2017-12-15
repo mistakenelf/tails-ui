@@ -14,6 +14,7 @@ React UI components using **tailwindcss** and **styled-components**
 - Loader
 - Modal
 - Navbar
+- Panel
 - Portal
 - ProgressBar
 - RenderIf
