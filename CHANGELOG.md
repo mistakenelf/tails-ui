@@ -1,5 +1,4 @@
-## 0.2.0
-- Update tests
-- Flex component
-- Box component
+## 0.2.1
+- Card component
+- Space component to add margin and padding
 
