@@ -28,9 +28,9 @@ React UI components using **tailwindcss** and **styled-components**
 `npm i tails-ui`
 
 ## Usage:
-- Make sure to also import the tails-ui css file `import 'tails-ui/dist/index.css'`
+- Make sure to import the tails-ui css file `import 'tails-ui/dist/index.css'`
 - Documentation site is coming soon with all the component api's
-```
+``` js
 import React from 'react'
 import { Button } from 'tails-ui'
 
