@@ -1,5 +1,5 @@
 # Tails-UI
-React UI components using **tailwindcss** and **styled-components**
+React UI components using **tailwindcss**
 
 ## Components:
 - Alert
