@@ -1,12 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
-
-const StyledTextArea = styled.textarea`
-  &:focus {
-    outline: none;
-  }
-`
 
 const TextArea = ({
   label,
@@ -24,7 +17,7 @@ const TextArea = ({
         {label}
       </label>
     )}
-    <StyledTextArea
+    <textarea
       className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color}  rounded w-full py-2 px-4 text-grey-darker`}
       type={type}
       value={value}

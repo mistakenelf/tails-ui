@@ -1,12 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
-
-const StyledButton = styled.button`
-  &:focus {
-    outline: none;
-  }
-`
 
 const Button = ({
   children,
@@ -17,7 +10,7 @@ const Button = ({
   rounded,
   ...props
 }) => (
-  <StyledButton
+  <div
     className={
       outline
         ? `${fullWidth &&
@@ -32,7 +25,7 @@ const Button = ({
     {...props}
   >
     {loading ? 'loading...' : children}
-  </StyledButton>
+  </div>
 )
 
 Button.propTypes = {

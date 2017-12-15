@@ -57,7 +57,6 @@
     "uglify-es": "^3.2.2"
   },
   "dependencies": {
-    "styled-components": "^2.3.0",
     "tailwindcss": "^0.3.0"
   },
   "prettier": {

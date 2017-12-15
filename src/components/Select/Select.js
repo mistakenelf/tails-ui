@@ -1,12 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import styled from 'styled-components'
-
-const StyledSelect = styled.select`
-  &:focus {
-    outline: none;
-  }
-`
 
 const Select = ({
   children,
@@ -23,7 +16,7 @@ const Select = ({
         {label}
       </label>
     )}
-    <StyledSelect
+    <select
       className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color} rounded w-full py-2 px-4 mr-4 text-grey-darker`}
       value={value}
       name={name}
@@ -31,7 +24,7 @@ const Select = ({
       {...props}
     >
       {children}
-    </StyledSelect>
+    </select>
     <div className="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
       <svg
         className="fill-current h-4 w-4"
