@@ -8,6 +8,7 @@ const TextField = ({
   name,
   placeholder,
   color,
+  hasError,
   ...props
 }) => (
   <div>
@@ -17,7 +18,11 @@ const TextField = ({
       </label>
     )}
     <input
-      className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color} rounded w-full py-2 px-4 text-grey-darker`}
+      className={`bg-grey-lighter appearance-none border-2 ${
+        hasError ? 'border-red' : 'border-grey-lighter'
+      } ${
+        hasError ? 'red' : `hover:border-${color}`
+      } rounded w-full py-2 px-4 text-grey-darker`}
       type={type}
       value={value}
       name={name}
@@ -37,7 +42,8 @@ TextField.propTypes = {
   type: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  hasError: PropTypes.bool
 }
 
 export default TextField

@@ -9,6 +9,7 @@ const TextArea = ({
   placeholder,
   color,
   rows,
+  hasError,
   ...props
 }) => (
   <div>
@@ -18,7 +19,11 @@ const TextArea = ({
       </label>
     )}
     <textarea
-      className={`bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-${color}  rounded w-full py-2 px-4 text-grey-darker`}
+      className={`bg-grey-lighter appearance-none border-2 ${
+        hasError ? 'border-red' : 'border-grey-lighter'
+      } ${
+        hasError ? 'hover:border-red' : `hover:border-${color}`
+      }  rounded w-full py-2 px-4 text-grey-darker`}
       type={type}
       value={value}
       name={name}
@@ -41,7 +46,8 @@ TextArea.propTypes = {
   name: PropTypes.string,
   placeholder: PropTypes.string,
   color: PropTypes.string,
-  rows: PropTypes.number
+  rows: PropTypes.number,
+  hasError: PropTypes.bool
 }
 
 export default TextArea
