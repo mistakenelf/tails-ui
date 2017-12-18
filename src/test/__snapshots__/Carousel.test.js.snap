@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`carousel snapshot 1`] = `
+<div>
+  <div
+    className="h-64 flex items-center justify-center border border-grey-light rounded mb-8"
+  >
+    <img
+      alt="placeholder"
+      className="h-64 w-full p-4"
+      src="https://via.placeholder.com/350x150"
+    />
+  </div>
+  <div
+    className="flex flex-wrap justify-center"
+  >
+    <div
+      className="h-4 justify-center p-2 mb-4 cursor-pointer"
+    >
+      <div
+        className="h-full flex items-center justify-center"
+        onClick={[Function]}
+      >
+        <img
+          alt="placeholder"
+          className="h-12 w-12 rounded"
+          src="https://via.placeholder.com/350x150"
+        />
+      </div>
+    </div>
+    <div
+      className="h-4 justify-center p-2 mb-4 cursor-pointer"
+    >
+      <div
+        className="h-full flex items-center justify-center"
+        onClick={[Function]}
+      >
+        <img
+          alt="placeholder"
+          className="h-12 w-12 rounded"
+          src="https://placeimg.com/640/480/any"
+        />
+      </div>
+    </div>
+    <div
+      className="h-4 justify-center p-2 mb-4 cursor-pointer"
+    >
+      <div
+        className="h-full flex items-center justify-center"
+        onClick={[Function]}
+      >
+        <img
+          alt="placeholder"
+          className="h-12 w-12 rounded"
+          src="https://via.placeholder.com/350x150"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
