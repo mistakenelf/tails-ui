@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`carousel snapshot 1`] = `
+exports[`image carousel snapshot 1`] = `
 <div>
   <div
     className="h-64 flex items-center justify-center border border-grey-light rounded mb-8"
