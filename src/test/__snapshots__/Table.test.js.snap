@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`table snapshot 1`] = `
+<div
+  className="overflow-x-scroll"
+>
+  <table
+    className="w-full border-2 border-grey-light"
+  >
+    <thead>
+      <tr
+        className="border-b-2"
+      >
+        <th
+          className="text-left p-2"
+        >
+          First Name
+        </th>
+        <th
+          className="text-left p-2"
+        >
+          Last Name
+        </th>
+        <th
+          className="text-left p-2"
+        >
+          Age
+        </th>
+        <th
+          className="text-left p-2"
+        >
+          weight
+        </th>
+        <th
+          className="text-left p-2"
+        >
+          Dog
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="border-b-2"
+      >
+        <td
+          className="text-left p-2"
+        >
+          John
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          Doe
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          123
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1234
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          234234
+        </td>
+      </tr>
+      <tr
+        className="border-b-2"
+      >
+        <td
+          className="text-left p-2"
+        >
+          John
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          Doe
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          123
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1234
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          234234
+        </td>
+      </tr>
+      <tr
+        className="border-b-2"
+      >
+        <td
+          className="text-left p-2"
+        >
+          John
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          Doe
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          123
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1234
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          234234
+        </td>
+      </tr>
+      <tr
+        className="border-b-2"
+      >
+        <td
+          className="text-left p-2"
+        >
+          John
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          Doe
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          123
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1234
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          234234
+        </td>
+      </tr>
+      <tr
+        className="border-b-2"
+      >
+        <td
+          className="text-left p-2"
+        >
+          Clark
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          Kent
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          12938
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1345235
+        </td>
+        <td
+          className="text-left p-2"
+        >
+          1.2312309809800891e+33
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

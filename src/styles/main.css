@@ -26,3 +26,12 @@ input {
 select {
   outline: none;
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f8
+}
