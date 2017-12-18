@@ -11,6 +11,7 @@ React UI components using **tailwindcss**
 - CodeBlock
 - DangerousHTML
 - Flex
+- ImageCarousel
 - Loader
 - Modal
 - Navbar
@@ -20,6 +21,7 @@ React UI components using **tailwindcss**
 - RenderIf
 - Select
 - Space
+- Table
 - Text
 - TextArea
 - TextField
