@@ -1,3 +1,3 @@
-## 0.2.6
-- Add height option to Flex component
+## 0.2.7
+- Popover component
 
