@@ -13,6 +13,7 @@ React UI components using **tailwindcss**
 - Flex
 - ImageCarousel
 - Loader
+- MegaFooter
 - Modal
 - Navbar
 - Panel
