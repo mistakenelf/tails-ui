@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`popover snapshot 1`] = `
+<div
+  className="relative inline-block cursor-pointer"
+  onClick={[Function]}
+>
+  Click Me
+</div>
+`;

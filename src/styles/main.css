@@ -35,3 +35,7 @@ table {
 tr:nth-child(even) {
   background-color: #f1f5f8
 }
+
+.top-pin {
+  top: 110%;
+}
