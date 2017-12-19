@@ -2,7 +2,7 @@
 
 exports[`button snapshot 1`] = `
 <div
-  className="undefined bg-teal hover:bg-teal-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center justify-center"
+  className="undefined cursor-pointer bg-teal hover:bg-teal-dark text-white font-sans font-bold py-2 px-4 shadow rounded inline-flex items-center justify-center"
 >
   Button
 </div>
