@@ -9,10 +9,18 @@ const Flex = ({
   align,
   padding,
   margin,
-  children
+  children,
+  smHeight,
+  mdHeight,
+  lgHeight,
+  xlHeight,
+  smWidth,
+  mdWidth,
+  lgWidth,
+  xlWidth
 }) => (
   <div
-    className={`${display} flex-${direction} flex-${wrapping} justify-${justify} items-${align} p-${padding} m-${margin}`}
+    className={`h-${smHeight} sm:h-${smHeight} md:h-${mdHeight} lg:h-${lgHeight} xl:h-${xlHeight} w-${smWidth} sm:w-${smWidth} md:w-${mdWidth} lg:w-${lgWidth} xl:w-${xlWidth} ${display} flex-${direction} flex-${wrapping} justify-${justify} items-${align} p-${padding} m-${margin}`}
   >
     {children}
   </div>
@@ -36,7 +44,15 @@ Flex.propTypes = {
   align: PropTypes.oneOf(['stretch', 'start', 'center', 'end', 'baseline']),
   padding: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
   margin: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  smHeight: PropTypes.string,
+  mdHeight: PropTypes.string,
+  lgHeight: PropTypes.string,
+  xlHeight: PropTypes.string,
+  smWidth: PropTypes.string,
+  mdWidth: PropTypes.string,
+  lgWidth: PropTypes.string,
+  xlWidth: PropTypes.string
 }
 
 export default Flex
