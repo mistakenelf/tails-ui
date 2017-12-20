@@ -1,3 +1,3 @@
-## 0.2.9
-- Initial pass at a tabs component
+## 0.2.10
+- Fix tabs
 
