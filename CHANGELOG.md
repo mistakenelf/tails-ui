@@ -1,6 +1,3 @@
-## 0.2.8
-- Removed popover for now
-- Dropdown component
-- Flex and Box components have more options
-- Fix card overflow issue
+## 0.2.9
+- Initial pass at a tabs component
 

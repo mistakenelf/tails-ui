@@ -23,7 +23,9 @@ React UI components using **tailwindcss**
 - RenderIf
 - Select
 - Space
+- Tab
 - Table
+- Tabs
 - Text
 - TextArea
 - TextField
