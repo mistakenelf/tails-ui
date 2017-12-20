@@ -1,3 +1,6 @@
-## 0.2.7
-- Popover component
+## 0.2.8
+- Removed popover for now
+- Dropdown component
+- Flex and Box components have more options
+- Fix card overflow issue
 

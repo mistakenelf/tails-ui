@@ -10,6 +10,7 @@ React UI components using **tailwindcss**
 - Card
 - CodeBlock
 - DangerousHTML
+- Dropdown
 - Flex
 - ImageCarousel
 - Loader
@@ -17,7 +18,6 @@ React UI components using **tailwindcss**
 - Modal
 - Navbar
 - Panel
-- Popover
 - Portal
 - ProgressBar
 - RenderIf

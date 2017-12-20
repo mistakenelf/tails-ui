@@ -1,6 +1,6 @@
 {
   "name": "tails-ui",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Clean UI based on tailwindcss",
   "author": "Tyler Knipfer <knipferrc@gmail.com>",
   "license": "MIT",
