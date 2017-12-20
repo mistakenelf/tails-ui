@@ -7,19 +7,19 @@
   animation: spin 1s infinite linear;
 }
 
-button {
+button:focus {
   outline: none;
 }
 
-textarea {
+textarea:focus {
   outline: none;
 }
 
-input {
+input:focus {
   outline: none;
 }
 
-select {
+select:focus {
   outline: none;
 }
 

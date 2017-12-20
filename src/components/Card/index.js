@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Card = ({ title, children, footer }) => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg">
+  <div className="max-w-sm rounded shadow-lg">
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-4">{title}</div>
       {children}

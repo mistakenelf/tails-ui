@@ -2,7 +2,7 @@
 
 exports[`card snapshot 1`] = `
 <div
-  className="max-w-sm rounded overflow-hidden shadow-lg"
+  className="max-w-sm rounded shadow-lg"
 >
   <div
     className="px-6 py-4"
