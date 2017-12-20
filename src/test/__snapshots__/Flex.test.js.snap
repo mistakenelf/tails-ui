@@ -2,7 +2,7 @@
 
 exports[`flex snapshot 1`] = `
 <div
-  className="h-undefined sm:h-undefined md:h-undefined lg:h-undefined xl:h-undefined w-undefined sm:w-undefined md:w-undefined lg:w-undefined xl:w-undefined flex flex-col flex-wrap justify-start items-start p-0 m-0"
+  className="h-undefined sm:h-undefined md:h-undefined lg:h-undefined xl:h-undefined w-undefined sm:w-undefined md:w-undefined lg:w-undefined xl:w-undefined flex flex-col flex-wrap justify-start items-start p-0 pl-undefined pr-undefined pt-undefined pb-undefined m-0 ml-undefined mr-undefined mt-undefined mb-undefined"
 >
   A flex box
 </div>

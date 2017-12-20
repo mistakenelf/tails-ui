@@ -2,7 +2,7 @@
 
 exports[`box snapshot 1`] = `
 <div
-  className="w-full sm:w-full md:w-undefined lg:w-undefined xl:w-undefined p-0 m-0"
+  className="w-full sm:w-full md:w-undefined lg:w-undefined xl:w-undefined p-0 pl-undefined pr-undefined pt-undefined pb-undefined m-0 ml-undefined mr-undefined mt-undefined mb-undefined"
 >
   This is a box
 </div>
