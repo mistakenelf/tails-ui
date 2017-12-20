@@ -38,7 +38,7 @@ export default class Tabs extends PureComponent {
   render() {
     return (
       <React.Fragment>
-        <ul className="list-reset flex justify-between">
+        <ul className="list-reset flex justify-center">
           {this.renderChildrenWithTabsApiAsProps()}
         </ul>
         <div>{this.renderActiveTabContent()}</div>
