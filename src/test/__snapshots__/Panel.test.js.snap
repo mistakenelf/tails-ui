@@ -5,17 +5,17 @@ exports[`panel snapshot 1`] = `
   className="border-2 border-grey-light rounded"
 >
   <div
-    className="flex flex-row items-center justify-between w-full border-b-2 border-grey-light p-2 "
+    className="flex flex-row items-center justify-between w-full border-b-2 border-grey-light p-4 "
   >
     <div
-      className="text-2xl"
+      className="text-2xl text-grey-darker"
     >
       A Panel
     </div>
     <div />
   </div>
   <div
-    className="p-2"
+    className="p-4"
   >
     A panel
   </div>

@@ -8,7 +8,7 @@ exports[`navbar snapshot 1`] = `
     className="mt-4 pl-4 flex flex flex-row align-center w-full"
   >
     <div
-      className="text-3xl"
+      className="text-3xl uppercase font-black"
     >
       Tails-UI
     </div>
@@ -17,28 +17,28 @@ exports[`navbar snapshot 1`] = `
     />
   </div>
   <div
-    className="mt-4 pl-4 overflow-x-scroll"
+    className="mt-4 pl-4 overflow-x-scroll whitespace-no-wrap"
   >
     <a
-      className="text-white p-1 text-lg"
+      className="text-white p-1 text-sm no-underline uppercase hover:text-blue-darker"
       href="#!"
     >
       Home
     </a>
     <a
-      className="text-white p-1 text-lg"
+      className="text-white p-1 text-sm no-underline uppercase hover:text-blue-darker"
       href="#!"
     >
       Products
     </a>
     <a
-      className="text-white p-1 text-lg"
+      className="text-white p-1 text-sm no-underline uppercase hover:text-blue-darker"
       href="#!"
     >
       Cart
     </a>
     <a
-      className="text-white p-1 text-lg"
+      className="text-white p-1 text-sm no-underline uppercase hover:text-blue-darker"
       href="#!"
     >
       Shop
