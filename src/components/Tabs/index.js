@@ -5,8 +5,14 @@ import PropTypes from 'prop-types'
 export default class Tabs extends PureComponent {
   static propTypes = {
     defaultActiveTabIndex: PropTypes.number,
-    children: PropTypes.node
+    children: PropTypes.node,
+    position: PropTypes.oneOf(['start', 'center', 'end', 'between', 'around'])
   }
+
+  static defaultProps = {
+    position: 'start'
+  }
+
   state = {
     activeTabIndex: this.props.defaultActiveTabIndex
   }
@@ -36,9 +42,10 @@ export default class Tabs extends PureComponent {
   }
 
   render() {
+    const { position } = this.props
     return (
       <React.Fragment>
-        <ul className="list-reset flex justify-center">
+        <ul className={`list-reset flex justify-${position}`}>
           {this.renderChildrenWithTabsApiAsProps()}
         </ul>
         <div>{this.renderActiveTabContent()}</div>
