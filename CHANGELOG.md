@@ -1,3 +1,5 @@
-## 0.2.10
-- Fix tabs
+## 0.3.0
+- Fix issues with navbar
+- Adjust padding on panel
+- Add positioning to tabs
 
