@@ -10,15 +10,16 @@ import uglify from 'rollup-plugin-uglify'
 
 export default {
   input: 'src/index.js',
-  sourcemap: 'true',
   output: [
     {
       file: pkg.main,
-      format: 'cjs'
+      format: 'cjs',
+      sourcemap: 'true'
     },
     {
       file: pkg.module,
-      format: 'es'
+      format: 'es',
+      sourcemap: 'true'
     }
   ],
   external: ['react', 'react-dom', 'prop-types'],
