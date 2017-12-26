@@ -10,7 +10,7 @@ const Button = ({
   rounded,
   ...props
 }) => (
-  <div
+  <button
     className={
       outline
         ? `${fullWidth &&
@@ -25,7 +25,7 @@ const Button = ({
     {...props}
   >
     {loading ? 'loading...' : children}
-  </div>
+  </button>
 )
 
 Button.propTypes = {
