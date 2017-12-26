@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkbox snapshot 1`] = `
+<div
+  className="flex items-center"
+>
+  <input
+    checked={undefined}
+    disabled={undefined}
+    onChange={undefined}
+    type="checkbox"
+  />
+</div>
+`;
