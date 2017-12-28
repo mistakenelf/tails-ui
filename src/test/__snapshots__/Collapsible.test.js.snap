@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`collapsible snapshot 1`] = `
+<div
+  className="border-2 border-grey-light rounded"
+>
+  <div
+    className="flex flex-row items-center justify-between w-full border-b-2 border-grey-light p-3 "
+  >
+    <div
+      className="text-2xl text-grey-darker"
+    >
+      Collapsible
+    </div>
+    <div
+      className="cursor-pointer"
+      onClick={[Function]}
+    >
+      <svg
+        fill="#606f7b"
+        height="16"
+        viewBox="0 0 32 32"
+        width="16"
+      >
+        <path
+          d="M32 16c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zM3 16c0-7.18 5.82-13 13-13s13 5.82 13 13-5.82 13-13 13-13-5.82-13-13z"
+        />
+        <path
+          d="M9.914 11.086l-2.829 2.829 8.914 8.914 8.914-8.914-2.828-2.828-6.086 6.086z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="p-3"
+  >
+    <div>
+      Some content
+    </div>
+  </div>
+</div>
+`;
