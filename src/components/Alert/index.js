@@ -64,16 +64,16 @@ const Alert = ({ color, heading, message, icon }) => (
   </div>
 )
 
+Alert.defaultProps = {
+  color: 'teal',
+  icon: 'info'
+}
+
 Alert.propTypes = {
   color: PropTypes.string,
   heading: PropTypes.string,
   message: PropTypes.string.isRequired,
   icon: PropTypes.oneOf(['warning', 'success', 'info', 'danger'])
-}
-
-Alert.defaultProps = {
-  color: 'teal',
-  icon: 'info'
 }
 
 export default Alert

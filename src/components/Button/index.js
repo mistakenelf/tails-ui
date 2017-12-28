@@ -28,6 +28,10 @@ const Button = ({
   </button>
 )
 
+Button.defaultProps = {
+  color: 'teal'
+}
+
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
@@ -35,10 +39,6 @@ Button.propTypes = {
   outline: PropTypes.bool,
   fullWidth: PropTypes.bool,
   rounded: PropTypes.bool
-}
-
-Button.defaultProps = {
-  color: 'teal'
 }
 
 export default Button
