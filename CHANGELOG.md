@@ -1,4 +1,4 @@
-## 0.3.2
-- Basic radio and checkbox component
-- Collapsible component
+## 0.4.0
+- Component and code cleanup
+- Refactor Space component to use Margin and Padding components
 
