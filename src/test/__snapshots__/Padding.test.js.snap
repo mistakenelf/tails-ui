@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`padding snapshot 1`] = `
+<div
+  className="p-undefined pl-undefined pr-undefined pb-undefined pt-undefined"
+>
+  Some Padding
+</div>
+`;

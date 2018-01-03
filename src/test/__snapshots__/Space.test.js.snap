@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`space snapshot 1`] = `
-<div
-  className="m-undefined ml-undefined mr-undefined mb-undefined mt-undefined p-undefined pl-undefined pr-undefined pb-undefined pt-undefined"
->
-  some space
-</div>
-`;

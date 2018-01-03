@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`margin snapshot 1`] = `
+<div
+  className="m-undefined ml-undefined mr-undefined mb-undefined mt-undefined"
+>
+  Some Margin
+</div>
+`;
