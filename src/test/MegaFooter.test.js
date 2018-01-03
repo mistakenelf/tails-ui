@@ -1,4 +1,4 @@
-import MegaFooter from '../components/MegaFooter'
+import MegaFooter from '../components/MegaFooter/MegaFooter'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

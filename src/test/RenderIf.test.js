@@ -1,5 +1,5 @@
 import React from 'react'
-import RenderIf from '../components/RenderIf'
+import RenderIf from '../components/RenderIf/RenderIf'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 

@@ -1,4 +1,4 @@
-import Button from '../components/Button'
+import Button from '../components/Button/Button'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

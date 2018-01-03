@@ -1,4 +1,4 @@
-import DangerousHTML from '../components/DangerousHTML'
+import DangerousHTML from '../components/DangerousHTML/DangerousHTML'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

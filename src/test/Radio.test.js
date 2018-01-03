@@ -1,4 +1,4 @@
-import Radio from '../components/Radio'
+import Radio from '../components/Radio/Radio'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

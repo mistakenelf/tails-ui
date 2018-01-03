@@ -1,5 +1,5 @@
 import React from 'react'
-import TruncateText from '../components/TruncateText'
+import TruncateText from '../components/TruncateText/TruncateText'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 

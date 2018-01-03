@@ -1,4 +1,4 @@
-import Dropdown from '../components/Dropdown'
+import Dropdown from '../components/Dropdown/Dropdown'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

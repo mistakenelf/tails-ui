@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

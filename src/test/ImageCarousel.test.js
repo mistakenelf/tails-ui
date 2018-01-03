@@ -1,4 +1,4 @@
-import ImageCarousel from '../components/ImageCarousel'
+import ImageCarousel from '../components/ImageCarousel/ImageCarousel'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

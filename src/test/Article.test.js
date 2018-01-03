@@ -1,4 +1,4 @@
-import Article from '../components/Article'
+import Article from '../components/Article/Article'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

@@ -1,4 +1,4 @@
-import Panel from '../components/Panel'
+import Panel from '../components/Panel/Panel'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

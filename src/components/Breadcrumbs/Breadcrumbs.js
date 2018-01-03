@@ -29,7 +29,13 @@ Breadcrumbs.defaultProps = {
 
 Breadcrumbs.propTypes = {
   bgColor: PropTypes.string,
-  crumbs: PropTypes.array,
+  crumbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      key: PropTypes.string,
+      value: PropTypes.node,
+      hasSeparator: PropTypes.bool
+    })
+  ),
   textColor: PropTypes.string
 }
 

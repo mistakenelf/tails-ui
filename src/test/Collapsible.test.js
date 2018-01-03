@@ -1,4 +1,4 @@
-import Collapsible from '../components/Collapsible'
+import Collapsible from '../components/Collapsible/Collapsible'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

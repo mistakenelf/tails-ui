@@ -1,4 +1,4 @@
-import Checkbox from '../components/Checkbox'
+import Checkbox from '../components/Checkbox/Checkbox'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

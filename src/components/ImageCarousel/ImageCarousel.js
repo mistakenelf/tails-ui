@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 
 export default class ImageCarousel extends PureComponent {
   static propTypes = {
-    images: PropTypes.array.isRequired,
+    images: PropTypes.arrayOf(
+      PropTypes.shape({ alt: PropTypes.string, src: PropTypes.string })
+    ),
     color: PropTypes.string
   }
 
@@ -24,7 +26,6 @@ export default class ImageCarousel extends PureComponent {
     const { images, color } = this.props
     const { selectedImage } = this.state
     const showNav = images && images.length > 1
-
     return (
       <div>
         <div

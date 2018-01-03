@@ -1,4 +1,4 @@
-import CodeBlock from '../components/CodeBlock'
+import CodeBlock from '../components/CodeBlock/CodeBlock'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

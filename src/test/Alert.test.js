@@ -1,4 +1,4 @@
-import Alert from '../components/Alert'
+import Alert from '../components/Alert/Alert'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

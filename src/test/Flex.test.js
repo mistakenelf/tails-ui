@@ -1,4 +1,4 @@
-import Flex from '../components/Flex'
+import Flex from '../components/Flex/Flex'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

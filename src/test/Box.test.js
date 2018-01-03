@@ -1,4 +1,4 @@
-import Box from '../components/Box'
+import Box from '../components/Box/Box'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

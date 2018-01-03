@@ -1,26 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Box = ({
-  sm,
-  md,
-  lg,
-  xl,
-  padding,
-  paddingLeft,
-  paddingRight,
-  paddingTop,
-  paddingBottom,
-  margin,
-  marginLeft,
-  marginRight,
-  marginTop,
-  marginBottom,
-  children
-}) => (
-  <div
-    className={`w-${sm} sm:w-${sm} md:w-${md} lg:w-${lg} xl:w-${xl} p-${padding} pl-${paddingLeft} pr-${paddingRight} pt-${paddingTop} pb-${paddingBottom} m-${margin} ml-${marginLeft} mr-${marginRight} mt-${marginTop} mb-${marginBottom}`}
-  >
+const Box = ({ sm, md, lg, xl, children }) => (
+  <div className={`w-${sm} sm:w-${sm} md:w-${md} lg:w-${lg} xl:w-${xl}`}>
     {children}
   </div>
 )
@@ -152,16 +134,6 @@ Box.propTypes = {
     'full',
     'screen'
   ]),
-  padding: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  paddingLeft: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  paddingRight: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  paddingTop: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  paddingBottom: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  margin: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  marginLeft: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  marginRight: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  marginTop: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
-  marginBottom: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7', '8']),
   children: PropTypes.node.isRequired
 }
 

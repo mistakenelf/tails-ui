@@ -1,4 +1,4 @@
-import ProgressBar from '../components/ProgressBar'
+import ProgressBar from '../components/ProgressBar/ProgressBar'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

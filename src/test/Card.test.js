@@ -1,4 +1,4 @@
-import Card from '../components/Card'
+import Card from '../components/Card/Card'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

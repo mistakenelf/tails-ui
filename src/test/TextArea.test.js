@@ -1,5 +1,5 @@
 import React from 'react'
-import TextArea from '../components/TextArea'
+import TextArea from '../components/TextArea/TextArea'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 

@@ -1,4 +1,4 @@
-import Breadcrumbs from '../components/Breadcrumbs'
+import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'

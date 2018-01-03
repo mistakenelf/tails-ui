@@ -1,5 +1,5 @@
 import React from 'react'
-import TextField from '../components/TextField'
+import TextField from '../components/TextField/TextField'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
 

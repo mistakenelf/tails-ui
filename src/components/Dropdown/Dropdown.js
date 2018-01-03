@@ -1,9 +1,16 @@
 import React, { PureComponent } from 'react'
+
 import PropTypes from 'prop-types'
 
 export default class Dropdown extends PureComponent {
   static propTypes = {
-    dropdownLinks: PropTypes.array
+    dropdownLinks: PropTypes.arrayOf(
+      PropTypes.shape({
+        key: PropTypes.string,
+        value: PropTypes.node,
+        hasSeparator: PropTypes.bool
+      })
+    )
   }
 
   state = {

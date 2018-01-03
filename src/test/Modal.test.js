@@ -1,4 +1,4 @@
-import Modal from '../components/Modal'
+import Modal from '../components/Modal/Modal'
 import React from 'react'
 import { render } from 'react-dom'
 import renderer from 'react-test-renderer'
