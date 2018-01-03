@@ -65,6 +65,7 @@ const Alert = ({ color, heading, message, icon }) => (
 )
 
 Alert.defaultProps = {
+  displayName: 'Alert',
   color: 'teal',
   icon: 'info'
 }
