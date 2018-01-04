@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel'
+import bucklescript from 'rollup-plugin-bucklescript'
 import commonjs from 'rollup-plugin-commonjs'
 import filesize from 'rollup-plugin-filesize'
 import { minify } from 'uglify-es'
@@ -14,22 +14,15 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: 'true'
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: 'true'
+      sourcemap: true
     }
   ],
-  external: ['react', 'react-dom', 'prop-types'],
+  external: ['react'],
   plugins: [
     postcss({
       extract: true
     }),
-    babel({
-      exclude: 'node_modules/**'
-    }),
+    bucklescript(),
     resolve(),
     commonjs(),
     replace({

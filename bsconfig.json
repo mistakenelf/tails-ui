@@ -1,0 +1,16 @@
+{
+  "name": "tails-ui",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": ["reason-react"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "package-specs": ["es6"],
+  "bsc-flags": ["-bs-super-errors"],
+  "refmt": 3
+}

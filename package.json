@@ -1,12 +1,10 @@
 {
   "name": "tails-ui",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "description": "Clean UI based on tailwindcss",
   "author": "Tyler Knipfer <knipferrc@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/knipferrc/tails-ui.git"
@@ -16,38 +14,31 @@
   },
   "keywords": [
     "react",
+    "reasonml",
     "tails-ui",
     "library",
     "components",
     "tailwindcss"
   ],
   "scripts": {
-    "test": "jest",
-    "build": "NODE_ENV=production rollup -c",
     "start": "rollup -c -w",
+    "build": "NODE_ENV=production rollup -c",
+    "precommit": "lint-staged",
     "prepublishOnly": "npm run build",
-    "format": "prettier --write \"src/**/*.js\""
+    "format:css": "prettier --write ./*.css ./**/*.css",
+    "format:js": "prettier --write ./*.{js,json} ./**/*.{js,json}",
+    "format:reason": "refmt --in-place src/**/*.re",
+    "format": "npm run format:js && npm run format:css && npm run format:reason"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.1.2",
-    "babel-jest": "^22.0.4",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.14.0",
-    "eslint-plugin-jest": "^21.5.0",
-    "eslint-plugin-react": "^7.5.1",
-    "jest": "^22.0.4",
+    "bs-platform": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
     "prettier": "^1.9.2",
-    "prop-types": "^15.6.0",
-    "raf": "^3.4.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0",
+    "reason-react": "^0.3.0",
     "rollup": "^0.53.0",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-bucklescript": "^0.6.1",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-node-resolve": "^3.0.0",
@@ -59,17 +50,10 @@
   "dependencies": {
     "tailwindcss": "^0.4.0"
   },
-  "prettier": {
-    "trailingComma": "none",
-    "singleQuote": true,
-    "semi": false
+  "lint-staged": {
+    "*.{js,json}": ["prettier --write", "git add"],
+    "*.css": ["prettier --write", "git add"],
+    "src/**/*.re": ["refmt --in-place", "git add"]
   },
-  "jest": {
-    "setupFiles": [
-      "raf/polyfill"
-    ]
-  },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"]
 }
