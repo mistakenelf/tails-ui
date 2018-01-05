@@ -1,14 +1,6 @@
 let component = ReasonReact.statelessComponent("Article");
 
-let make =
-    (
-      ~title: string,
-      ~author: string,
-      ~description: string,
-      ~abstract: string,
-      ~footer: array(ReasonReact.reactElement),
-      _children
-    ) => {
+let make = (~title, ~author, ~description, ~abstract, ~footer, _children) => {
   ...component,
   render: _self =>
     <div className="w-full font-sans">

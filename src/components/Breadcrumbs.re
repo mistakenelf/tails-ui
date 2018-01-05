@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Breadcrumbs");
 
-let make = (~bgColor: string, ~children: array(ReasonReact.reactElement)) => {
+let make = (~bgColor, ~children) => {
   ...component,
   render: _self =>
     <nav className={j|bg-$(bgColor) p-3 rounded font-sans w-full|j}>

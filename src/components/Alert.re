@@ -1,13 +1,6 @@
 let component = ReasonReact.statelessComponent("Alert");
 
-let make =
-    (
-      ~color: string="teal",
-      ~heading: string,
-      ~icon: string="info",
-      ~message: string,
-      _children
-    ) => {
+let make = (~color="teal", ~heading, ~icon="info", ~message, _children) => {
   ...component,
   render: _self =>
     <div className={j|flex bg-$(color)-lighter max-w-sm|j}>

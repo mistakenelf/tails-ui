@@ -2,13 +2,13 @@ let component = ReasonReact.statelessComponent("Button");
 
 let make =
     (
-      ~fontColor: string,
-      ~loading: bool,
-      ~width: string,
-      ~backgroundColor: string,
-      ~borderColor: string,
-      ~borderRadius: string,
-      ~children: array(ReasonReact.reactElement)
+      ~fontColor,
+      ~loading,
+      ~width,
+      ~backgroundColor,
+      ~borderColor,
+      ~borderRadius,
+      ~children
     ) => {
   ...component,
   render: _self =>
