@@ -1,3 +1,3 @@
-## 0.3.1
-- Fix button
-
+## 0.5.0
+- Most components are written in ReasonML
+- Minor tweaks to component styles
