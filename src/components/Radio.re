@@ -1,11 +1,11 @@
-let component = ReasonReact.statelessComponent("Checkbox");
+let component = ReasonReact.statelessComponent("Radio");
 
 let make = (~checked, ~disabled, ~handleChange, ~label, _children) => {
   ...component,
   render: _self =>
     <div className="flex items-center">
       <input
-        _type="checkbox"
+        _type="radio"
         defaultChecked=(Js.Boolean.to_js_boolean(checked))
         disabled
         onChange=((_) => handleChange())
