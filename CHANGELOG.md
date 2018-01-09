@@ -1,3 +1,2 @@
-## 0.5.0
-- Most components are written in ReasonML
-- Minor tweaks to component styles
+## 0.5.1
+- Testing publishing with reasonml
