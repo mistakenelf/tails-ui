@@ -1,2 +1,2 @@
-## 0.5.3
-- Fix reason props
+## 0.5.4
+- More prop fixes
