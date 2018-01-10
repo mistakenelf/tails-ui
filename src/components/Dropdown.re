@@ -17,7 +17,7 @@ let make = (~text="Dropdown", ~color="teal", ~children) => {
   render: self =>
     <div
       className="relative inline-block cursor-pointer"
-      onClick=(_event => self.send(Click))
+      onClick=(_event => self.send(Toggle))
       onBlur=(_event => self.send(Close))>
       <button
         className={j|bg-$(color) hover:bg-$(color)-dark p-3 rounded text-white shadow-inner flex items-center justify-between|j}>

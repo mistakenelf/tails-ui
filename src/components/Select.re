@@ -3,21 +3,26 @@ let component = ReasonReact.statelessComponent("Select");
 let make =
     (~label=?, ~value=?, ~name=?, ~placeholder=?, ~color="teal", ~children) => {
   ...component,
-  render: _self =>
+  render: _self => {
+    let labelComponent =
+      switch label {
+      | None => ReasonReact.nullElement
+      | Some(label) => ReasonReact.stringToElement(label)
+      };
     <div className="relative">
       (
-        label !== "" ?
+        labelComponent === ReasonReact.stringToElement("") ?
           <label
             className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2">
-            (ReasonReact.stringToElement(label))
+            labelComponent
           </label> :
           ReasonReact.nullElement
       )
       <select
         className={j|bg-grey-lighter appearance-none border-2 border-grey-lighter hover:border-$(color) rounded w-full py-2 px-4 mr-4 text-grey-darker|j}
-        value
-        name
-        placeholder>
+        ?value
+        ?name
+        ?placeholder>
         (ReasonReact.arrayToElement(children))
       </select>
       <div
@@ -31,16 +36,17 @@ let make =
           />
         </svg>
       </div>
-    </div>
+    </div>;
+  }
 };
 
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~label=jsProps##label,
-      ~value=jsProps##value,
-      ~name=jsProps##name,
-      ~placeholder=jsProps##placeholder,
+      ~label=?jsProps##label,
+      ~value=?jsProps##value,
+      ~name=?jsProps##name,
+      ~placeholder=?jsProps##placeholder,
       ~color=jsProps##color,
       ~children=jsProps##children
     )

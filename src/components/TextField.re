@@ -8,7 +8,7 @@ let make =
       ~name=?,
       ~placeholder=?,
       ~color="teal",
-      ~hasError=?,
+      ~hasError=false,
       _children
     ) => {
   ...component,
@@ -20,21 +20,26 @@ let make =
           {j|border-grey-light hover:border-$(color)|j}
       ]
       |> String.concat("");
+    let labelComponent =
+      switch label {
+      | None => ReasonReact.nullElement
+      | Some(label) => ReasonReact.stringToElement(label)
+      };
     <div>
       (
-        label !== "" ?
+        labelComponent === ReasonReact.stringToElement("") ?
           <label
             className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2">
-            (ReasonReact.stringToElement(label))
+            labelComponent
           </label> :
           ReasonReact.nullElement
       )
       <input
         className={j|bg-grey-lighter appearance-none border-2 rounded w-full py-2 px-4 text-grey-darker $(errorStyle)|j}
         _type=htmlType
-        value
-        name
-        placeholder
+        ?value
+        ?name
+        ?placeholder
       />
     </div>;
   }
@@ -43,13 +48,13 @@ let make =
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~label=jsProps##label,
-      ~value=jsProps##value,
+      ~label=?jsProps##label,
+      ~value=?jsProps##value,
       ~htmlType=jsProps##htmlType,
-      ~name=jsProps##name,
-      ~placeholder=jsProps##placeholder,
+      ~name=?jsProps##name,
+      ~placeholder=?jsProps##placeholder,
       ~color=jsProps##color,
-      ~hasError=jsProps##hasError,
+      ~hasError=?jsProps##hasError,
       [||]
     )
   );

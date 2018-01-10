@@ -19,11 +19,11 @@ let make =
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~padding=jsProps##padding,
-      ~paddingLeft=jsProps##paddingLeft,
-      ~paddingRight=jsProps##paddingRight,
-      ~paddingBottom=jsProps##paddingBottom,
-      ~paddingTop=jsProps##paddingTop,
+      ~padding=?jsProps##padding,
+      ~paddingLeft=?jsProps##paddingLeft,
+      ~paddingRight=?jsProps##paddingRight,
+      ~paddingBottom=?jsProps##paddingBottom,
+      ~paddingTop=?jsProps##paddingTop,
       [||]
     )
   );

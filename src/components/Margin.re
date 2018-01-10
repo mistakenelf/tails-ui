@@ -19,11 +19,11 @@ let make =
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~margin=jsProps##margin,
-      ~marginLeft=jsProps##marginLeft,
-      ~marginRight=jsProps##marginRight,
-      ~marginBottom=jsProps##marginBottom,
-      ~marginTop=jsProps##marginTop,
+      ~margin=?jsProps##margin,
+      ~marginLeft=?jsProps##marginLeft,
+      ~marginRight=?jsProps##marginRight,
+      ~marginBottom=?jsProps##marginBottom,
+      ~marginTop=?jsProps##marginTop,
       [||]
     )
   );

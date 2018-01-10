@@ -9,7 +9,7 @@ let make =
       ~placeholder=?,
       ~color="teal",
       ~rows=?,
-      ~hasError=?,
+      ~hasError=false,
       _children
     ) => {
   ...component,
@@ -21,22 +21,27 @@ let make =
           {j|border-grey-light hover:border-$(color)|j}
       ]
       |> String.concat("");
+    let labelComponent =
+      switch label {
+      | None => ReasonReact.nullElement
+      | Some(label) => ReasonReact.stringToElement(label)
+      };
     <div>
       (
-        label !== "" ?
+        labelComponent === ReasonReact.stringToElement("") ?
           <label
             className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2">
-            (ReasonReact.stringToElement(label))
+            labelComponent
           </label> :
           ReasonReact.nullElement
       )
       <textarea
         className={j|bg-grey-lighter appearance-none border-2 rounded w-full py-2 px-4 text-grey-darker $(errorStyle)|j}
-        _type=htmlType
-        value
-        name
-        placeholder
-        rows
+        _type=?htmlType
+        ?value
+        ?name
+        ?placeholder
+        ?rows
       />
     </div>;
   }
@@ -45,14 +50,14 @@ let make =
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
-      ~label=jsProps##label,
-      ~value=jsProps##value,
-      ~htmlType=jsProps##htmlType,
-      ~name=jsProps##name,
-      ~placeholder=jsProps##placeholder,
+      ~label=?jsProps##label,
+      ~value=?jsProps##value,
+      ~htmlType=?jsProps##htmlType,
+      ~name=?jsProps##name,
+      ~placeholder=?jsProps##placeholder,
       ~color=jsProps##color,
-      ~rows=jsProps##rows,
-      ~hasError=jsProps##hasError,
+      ~rows=?jsProps##rows,
+      ~hasError=?jsProps##hasError,
       [||]
     )
   );

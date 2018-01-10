@@ -10,7 +10,12 @@ let make =
       _children
     ) => {
   ...component,
-  render: _self =>
+  render: _self => {
+    let footerComponent =
+      switch footer {
+      | None => ReasonReact.nullElement
+      | Some(footer) => ReasonReact.arrayToElement(footer)
+      };
     <div className="w-full font-sans">
       <h1 className="font-sans font-thin mb-4">
         (ReasonReact.stringToElement(title))
@@ -22,14 +27,11 @@ let make =
       <p className="text-grey-darkest mb-6 leading-tight">
         (ReasonReact.stringToElement(abstract))
       </p>
-      (
-        Array.length(footer) > 0 ?
-          <div className="text-black no-underline uppercase">
-            (ReasonReact.arrayToElement(footer))
-          </div> :
-          ReasonReact.nullElement
-      )
-    </div>
+      <div className="text-black no-underline uppercase">
+        footerComponent
+      </div>
+    </div>;
+  }
 };
 
 let default =
@@ -39,7 +41,7 @@ let default =
       ~author=jsProps##author,
       ~description=jsProps##description,
       ~abstract=jsProps##abstract,
-      ~footer=jsProps##footer,
+      ~footer=?jsProps##footer,
       [||]
     )
   );

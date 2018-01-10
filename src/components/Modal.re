@@ -1,8 +1,13 @@
 let component = ReasonReact.statelessComponent("Modal");
 
-let make = (~title="Modal Title", ~handleClose=?, ~footer=?, ~children) => {
+let make = (~title="Modal Title", ~footer=?, ~children) => {
   ...component,
-  render: _self =>
+  render: _self => {
+    let footerComponent =
+      switch footer {
+      | None => ReasonReact.nullElement
+      | Some(footer) => ReasonReact.arrayToElement(footer)
+      };
     <div className="fixed pin flex items-center">
       <div className="fixed pin bg-black opacity-75 z-10" />
       <div
@@ -11,30 +16,24 @@ let make = (~title="Modal Title", ~handleClose=?, ~footer=?, ~children) => {
           <div className="text-2xl">
             (ReasonReact.stringToElement(title))
           </div>
-          <button onClick=((_) => handleClose())>
+          <button>
             <span className="mr-2">
               (ReasonReact.stringToElement("close"))
             </span>
           </button>
         </div>
         <div> (ReasonReact.arrayToElement(children)) </div>
-        (
-          Array.length(footer) > 0 ?
-            <div className="mt-4 flex justify-end">
-              (ReasonReact.arrayToElement(footer))
-            </div> :
-            ReasonReact.nullElement
-        )
+        <div className="mt-4 flex justify-end"> footerComponent </div>
       </div>
-    </div>
+    </div>;
+  }
 };
 
 let default =
   ReasonReact.wrapReasonForJs(~component, jsProps =>
     make(
       ~title=jsProps##title,
-      ~handleClose=jsProps##handleClose,
-      ~footer=jsProps##footer,
+      ~footer=?jsProps##footer,
       ~children=jsProps##children
     )
   );
