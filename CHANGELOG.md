@@ -1,2 +1,2 @@
-## 0.5.2
-- Test publish
+## 0.5.3
+- Fix reason props
