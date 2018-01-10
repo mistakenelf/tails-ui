@@ -1,7 +1,14 @@
 let component = ReasonReact.statelessComponent("Margin");
 
 let make =
-    (~margin, ~marginLeft, ~marginRight, ~marginBottom, ~marginTop, _children) => {
+    (
+      ~margin=?,
+      ~marginLeft=?,
+      ~marginRight=?,
+      ~marginBottom=?,
+      ~marginTop=?,
+      _children
+    ) => {
   ...component,
   render: _self =>
     <div

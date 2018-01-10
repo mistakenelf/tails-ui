@@ -2,7 +2,7 @@ let component = ReasonReact.statelessComponent("Alert");
 
 let make =
     (
-      ~color="blue",
+      ~color="teal",
       ~heading="Heading here",
       ~icon="info",
       ~message="A message",

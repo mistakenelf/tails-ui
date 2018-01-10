@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("ProgressBar");
 
-let make = (~color, ~percent, _children) => {
+let make = (~color="teal", ~percent="50%", _children) => {
   ...component,
   render: _self =>
     <div className="w-full">

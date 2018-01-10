@@ -1,6 +1,7 @@
 let component = ReasonReact.statelessComponent("Select");
 
-let make = (~label, ~value, ~name, ~placeholder, ~color, ~children) => {
+let make =
+    (~label=?, ~value=?, ~name=?, ~placeholder=?, ~color="teal", ~children) => {
   ...component,
   render: _self =>
     <div className="relative">

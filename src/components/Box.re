@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Box");
 
-let make = (~sm, ~md, ~lg, ~xl, ~children) => {
+let make = (~sm="full", ~md="full", ~lg="full", ~xl="full", ~children) => {
   ...component,
   render: _self =>
     <div className={j|w-$(sm) sm:w-$(sm) md:w-$(md) lg:w-$(lg) xl:w-$(xl)|j}>

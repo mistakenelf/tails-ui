@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Panel");
 
-let make = (~color, ~title, ~extra, ~children) => {
+let make = (~color="grey", ~title="Panel Title", ~extra=?, ~children) => {
   ...component,
   render: _self =>
     <div className={j|border-2 border-$(color)-light rounded|j}>
@@ -9,7 +9,11 @@ let make = (~color, ~title, ~extra, ~children) => {
         <div className="text-2xl text-grey-darker">
           (ReasonReact.stringToElement(title))
         </div>
-        <div> (ReasonReact.arrayToElement(extra)) </div>
+        (
+          Array.length(extra) > 0 ?
+            <div> (ReasonReact.arrayToElement(extra)) </div> :
+            ReasonReact.nullElement
+        )
       </div>
       <div className="p-2"> (ReasonReact.arrayToElement(children)) </div>
     </div>

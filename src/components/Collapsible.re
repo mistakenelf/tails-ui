@@ -5,7 +5,7 @@ type state = {collapsed: bool};
 
 let component = ReasonReact.reducerComponent("Collapsible");
 
-let make = (~color, ~title, ~children) => {
+let make = (~color="grey", ~title="Panel Title", ~children) => {
   ...component,
   initialState: () => {collapsed: false},
   reducer: (action, state) =>
@@ -19,8 +19,7 @@ let make = (~color, ~title, ~children) => {
         <div className="text-2xl text-grey-darker">
           (ReasonReact.stringToElement(title))
         </div>
-        <div
-          onClick=(self.reduce(_event => Toggle)) className="cursor-pointer">
+        <div onClick=(_event => self.send(Toggle)) className="cursor-pointer">
           (
             self.state.collapsed === false ?
               <svg width="16" height="16" viewBox="0 0 32 32" fill="#606f7b">

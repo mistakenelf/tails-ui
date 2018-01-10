@@ -6,7 +6,7 @@ type state = {isOpen: bool};
 
 let component = ReasonReact.reducerComponent("Dropdown");
 
-let make = (~text, ~color, ~children) => {
+let make = (~text="Dropdown", ~color="teal", ~children) => {
   ...component,
   initialState: () => {isOpen: false},
   reducer: (action, state) =>
@@ -17,8 +17,8 @@ let make = (~text, ~color, ~children) => {
   render: self =>
     <div
       className="relative inline-block cursor-pointer"
-      onClick=(self.reduce(_event => Toggle))
-      onBlur=(self.reduce(_event => Close))>
+      onClick=(_event => self.send(Click))
+      onBlur=(_event => self.send(Close))>
       <button
         className={j|bg-$(color) hover:bg-$(color)-dark p-3 rounded text-white shadow-inner flex items-center justify-between|j}>
         <span className="pr-2"> (ReasonReact.stringToElement(text)) </span>

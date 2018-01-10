@@ -18,7 +18,7 @@ export default {
       sourcemap: true
     }
   ],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom', 'reason-react'],
   plugins: [
     postcss({
       extract: true

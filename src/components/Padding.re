@@ -2,11 +2,11 @@ let component = ReasonReact.statelessComponent("Padding");
 
 let make =
     (
-      ~padding,
-      ~paddingLeft,
-      ~paddingRight,
-      ~paddingBottom,
-      ~paddingTop,
+      ~padding=?,
+      ~paddingLeft=?,
+      ~paddingRight=?,
+      ~paddingBottom=?,
+      ~paddingTop=?,
       _children
     ) => {
   ...component,

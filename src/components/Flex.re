@@ -1,7 +1,16 @@
 let component = ReasonReact.statelessComponent("Flex");
 
 let make =
-    (~display, ~direction, ~wrap, ~justify, ~align, ~height, ~width, ~children) => {
+    (
+      ~display="flex",
+      ~direction="row",
+      ~wrap="no-wrap",
+      ~justify="start",
+      ~align="start",
+      ~height="full",
+      ~width="full",
+      ~children
+    ) => {
   ...component,
   render: _self =>
     <div

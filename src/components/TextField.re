@@ -2,13 +2,13 @@ let component = ReasonReact.statelessComponent("TextField");
 
 let make =
     (
-      ~label,
-      ~value,
-      ~htmlType,
-      ~name,
-      ~placeholder,
-      ~color,
-      ~hasError,
+      ~label=?,
+      ~value=?,
+      ~htmlType="text",
+      ~name=?,
+      ~placeholder=?,
+      ~color="teal",
+      ~hasError=?,
       _children
     ) => {
   ...component,

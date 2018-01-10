@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Modal");
 
-let make = (~title, ~handleClose, ~footer, ~children) => {
+let make = (~title="Modal Title", ~handleClose=?, ~footer=?, ~children) => {
   ...component,
   render: _self =>
     <div className="fixed pin flex items-center">
@@ -18,9 +18,13 @@ let make = (~title, ~handleClose, ~footer, ~children) => {
           </button>
         </div>
         <div> (ReasonReact.arrayToElement(children)) </div>
-        <div className="mt-4 flex justify-end">
-          (ReasonReact.arrayToElement(footer))
-        </div>
+        (
+          Array.length(footer) > 0 ?
+            <div className="mt-4 flex justify-end">
+              (ReasonReact.arrayToElement(footer))
+            </div> :
+            ReasonReact.nullElement
+        )
       </div>
     </div>
 };

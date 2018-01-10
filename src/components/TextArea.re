@@ -2,14 +2,14 @@ let component = ReasonReact.statelessComponent("TextArea");
 
 let make =
     (
-      ~label,
-      ~value,
-      ~htmlType,
-      ~name,
-      ~placeholder,
-      ~color,
-      ~rows,
-      ~hasError,
+      ~label=?,
+      ~value=?,
+      ~htmlType=?,
+      ~name=?,
+      ~placeholder=?,
+      ~color="teal",
+      ~rows=?,
+      ~hasError=?,
       _children
     ) => {
   ...component,

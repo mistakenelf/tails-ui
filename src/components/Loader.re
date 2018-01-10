@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Loader");
 
-let make = (~color, _children) => {
+let make = (~color="teal", _children) => {
   ...component,
   render: _self =>
     <div

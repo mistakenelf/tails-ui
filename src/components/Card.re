@@ -1,11 +1,6 @@
 let component = ReasonReact.statelessComponent("Card");
 
-let make =
-    (
-      ~title: string,
-      ~footer: array(ReasonReact.reactElement),
-      ~children: array(ReasonReact.reactElement)
-    ) => {
+let make = (~title="Card Title", ~footer=?, ~children) => {
   ...component,
   render: _self =>
     <div className="max-w-sm rounded shadow-lg">
@@ -15,7 +10,13 @@ let make =
         </div>
         (ReasonReact.arrayToElement(children))
       </div>
-      <div className="px-6 py-4"> (ReasonReact.arrayToElement(footer)) </div>
+      (
+        Array.length(footer) > 0 ?
+          <div className="px-6 py-4">
+            (ReasonReact.arrayToElement(footer))
+          </div> :
+          ReasonReact.nullElement
+      )
     </div>
 };
 

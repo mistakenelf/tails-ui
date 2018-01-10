@@ -1,6 +1,6 @@
 let component = ReasonReact.statelessComponent("Navbar");
 
-let make = (~color, ~brand, ~navRight, ~children) => {
+let make = (~color="teal", ~brand="Navbar", ~navRight=?, ~children) => {
   ...component,
   render: _self =>
     <div className={j|bg-$(color) text-white h-24 flex flex-col|j}>
@@ -8,9 +8,13 @@ let make = (~color, ~brand, ~navRight, ~children) => {
         <div className="text-3xl uppercase font-black">
           (ReasonReact.stringToElement(brand))
         </div>
-        <div className="ml-auto pr-4">
-          (ReasonReact.arrayToElement(navRight))
-        </div>
+        (
+          Array.length(navRight) > 0 ?
+            <div className="ml-auto pr-4">
+              (ReasonReact.arrayToElement(navRight))
+            </div> :
+            ReasonReact.nullElement
+        )
       </div>
       <div
         className="mt-4 pl-4 overflow-x-scroll whitespace-no-wrap flex flex-row">

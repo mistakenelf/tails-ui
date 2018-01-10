@@ -1,6 +1,14 @@
 let component = ReasonReact.statelessComponent("Article");
 
-let make = (~title, ~author, ~description, ~abstract, ~footer, _children) => {
+let make =
+    (
+      ~title="Article Title",
+      ~author="Article Author",
+      ~description="Article Description",
+      ~abstract="Article Abstract",
+      ~footer=?,
+      _children
+    ) => {
   ...component,
   render: _self =>
     <div className="w-full font-sans">
@@ -14,9 +22,13 @@ let make = (~title, ~author, ~description, ~abstract, ~footer, _children) => {
       <p className="text-grey-darkest mb-6 leading-tight">
         (ReasonReact.stringToElement(abstract))
       </p>
-      <div className="text-black no-underline uppercase">
-        (ReasonReact.arrayToElement(footer))
-      </div>
+      (
+        Array.length(footer) > 0 ?
+          <div className="text-black no-underline uppercase">
+            (ReasonReact.arrayToElement(footer))
+          </div> :
+          ReasonReact.nullElement
+      )
     </div>
 };
 

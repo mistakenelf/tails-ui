@@ -1,6 +1,15 @@
 let component = ReasonReact.statelessComponent("Text");
 
-let make = (~font, ~color, ~size, ~weight, ~align, ~fontStyle, ~children) => {
+let make =
+    (
+      ~font="sans",
+      ~color="grey-darker",
+      ~size="sm",
+      ~weight="normal",
+      ~align="left",
+      ~fontStyle="normal-case",
+      ~children
+    ) => {
   ...component,
   render: _self =>
     <div
