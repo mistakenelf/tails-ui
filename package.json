@@ -43,7 +43,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "reason-react": "^0.3.1",
-    "rollup": "^0.53.4",
+    "rollup": "^0.54.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-bucklescript": "^0.6.1",
     "rollup-plugin-commonjs": "^8.2.6",
