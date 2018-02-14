@@ -7,12 +7,12 @@ let make =
       ~description="Article Description",
       ~abstract="Article Abstract",
       ~footer=?,
-      _children
+      _children,
     ) => {
   ...component,
   render: _self => {
     let footerComponent =
-      switch footer {
+      switch (footer) {
       | None => ReasonReact.nullElement
       | Some(footer) => ReasonReact.arrayToElement(footer)
       };
@@ -20,7 +20,9 @@ let make =
       <h1 className="font-sans font-thin mb-4">
         (ReasonReact.stringToElement(title))
       </h1>
-      <p className="text-grey mb-3"> (ReasonReact.stringToElement(author)) </p>
+      <p className="text-grey mb-3">
+        (ReasonReact.stringToElement(author))
+      </p>
       <h2 className="font-sans font-thin leading-normal mb-4">
         (ReasonReact.stringToElement(description))
       </h2>
@@ -31,7 +33,7 @@ let make =
         footerComponent
       </div>
     </div>;
-  }
+  },
 };
 
 let default =
@@ -42,6 +44,6 @@ let default =
       ~description=jsProps##description,
       ~abstract=jsProps##abstract,
       ~footer=?jsProps##footer,
-      [||]
+      [||],
     )
   );

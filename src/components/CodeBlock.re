@@ -7,7 +7,7 @@ let make = (~children) => {
       <code className="font-mono">
         (ReasonReact.arrayToElement(children))
       </code>
-    </pre>
+    </pre>,
 };
 
 let default =

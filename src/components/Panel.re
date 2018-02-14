@@ -4,7 +4,7 @@ let make = (~color="grey", ~title="Panel Title", ~extra=?, ~children) => {
   ...component,
   render: _self => {
     let extraComponent =
-      switch extra {
+      switch (extra) {
       | None => ReasonReact.nullElement
       | Some(extra) => ReasonReact.arrayToElement(extra)
       };
@@ -18,7 +18,7 @@ let make = (~color="grey", ~title="Panel Title", ~extra=?, ~children) => {
       </div>
       <div className="p-2"> (ReasonReact.arrayToElement(children)) </div>
     </div>;
-  }
+  },
 };
 
 let default =
@@ -27,6 +27,6 @@ let default =
       ~color=jsProps##color,
       ~title=jsProps##title,
       ~extra=?jsProps##extra,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );

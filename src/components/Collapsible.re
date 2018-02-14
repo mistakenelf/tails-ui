@@ -9,7 +9,7 @@ let make = (~color="grey", ~title="Panel Title", ~children) => {
   ...component,
   initialState: () => {collapsed: false},
   reducer: (action, state) =>
-    switch action {
+    switch (action) {
     | Toggle => ReasonReact.Update({collapsed: ! state.collapsed})
     },
   render: self =>
@@ -48,10 +48,12 @@ let make = (~color="grey", ~title="Panel Title", ~children) => {
       </div>
       (
         self.state.collapsed === false ?
-          <div className="p-2"> (ReasonReact.arrayToElement(children)) </div> :
+          <div className="p-2">
+            (ReasonReact.arrayToElement(children))
+          </div> :
           ReasonReact.nullElement
       )
-    </div>
+    </div>,
 };
 
 let default =
@@ -59,6 +61,6 @@ let default =
     make(
       ~color=jsProps##color,
       ~title=jsProps##title,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );

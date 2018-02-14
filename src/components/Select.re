@@ -5,7 +5,7 @@ let make =
   ...component,
   render: _self => {
     let labelComponent =
-      switch label {
+      switch (label) {
       | None => ReasonReact.nullElement
       | Some(label) => ReasonReact.stringToElement(label)
       };
@@ -37,7 +37,7 @@ let make =
         </svg>
       </div>
     </div>;
-  }
+  },
 };
 
 let default =
@@ -48,6 +48,6 @@ let default =
       ~name=?jsProps##name,
       ~placeholder=?jsProps##placeholder,
       ~color=jsProps##color,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );

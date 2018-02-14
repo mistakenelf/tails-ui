@@ -9,7 +9,7 @@ let make =
       ~placeholder=?,
       ~color="teal",
       ~hasError=false,
-      _children
+      _children,
     ) => {
   ...component,
   render: _self => {
@@ -17,11 +17,11 @@ let make =
       [
         Js.Boolean.to_js_boolean(hasError) === Js.Boolean.to_js_boolean(true) ?
           "border-red hover:border-red" :
-          {j|border-grey-light hover:border-$(color)|j}
+          {j|border-grey-light hover:border-$(color)|j},
       ]
       |> String.concat("");
     let labelComponent =
-      switch label {
+      switch (label) {
       | None => ReasonReact.nullElement
       | Some(label) => ReasonReact.stringToElement(label)
       };
@@ -42,7 +42,7 @@ let make =
         ?placeholder
       />
     </div>;
-  }
+  },
 };
 
 let default =
@@ -55,6 +55,6 @@ let default =
       ~placeholder=?jsProps##placeholder,
       ~color=jsProps##color,
       ~hasError=?jsProps##hasError,
-      [||]
+      [||],
     )
   );

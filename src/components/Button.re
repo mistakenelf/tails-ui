@@ -9,7 +9,7 @@ let make =
       ~backgroundColor="teal",
       ~borderColor="teal",
       ~borderRadius="rounded",
-      ~children
+      ~children,
     ) => {
   ...component,
   render: _self =>
@@ -21,7 +21,7 @@ let make =
           ReasonReact.stringToElement("loading...") :
           ReasonReact.arrayToElement(children)
       )
-    </button>
+    </button>,
 };
 
 let default =
@@ -34,6 +34,6 @@ let default =
       ~backgroundColor=jsProps##backgroundColor,
       ~borderColor=jsProps##borderColor,
       ~borderRadius=jsProps##borderRadius,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );

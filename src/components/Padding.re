@@ -7,13 +7,13 @@ let make =
       ~paddingRight=?,
       ~paddingBottom=?,
       ~paddingTop=?,
-      _children
+      _children,
     ) => {
   ...component,
   render: _self =>
     <div
       className={j|p-$(padding) pl-$(paddingLeft) pr-$(paddingRight) pb-$(paddingBottom) pt-$(paddingTop)|j}
-    />
+    />,
 };
 
 let default =
@@ -24,6 +24,6 @@ let default =
       ~paddingRight=?jsProps##paddingRight,
       ~paddingBottom=?jsProps##paddingBottom,
       ~paddingTop=?jsProps##paddingTop,
-      [||]
+      [||],
     )
   );

@@ -4,7 +4,7 @@ let component = ReasonReact.statelessComponent("DangerousHTML");
 
 let make = (~children) => {
   ...component,
-  render: _self => <div dangerouslySetInnerHTML=(dangerousHtml(children)) />
+  render: _self => <div dangerouslySetInnerHTML=(dangerousHtml(children)) />,
 };
 
 let default =

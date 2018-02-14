@@ -4,7 +4,7 @@ let make = (~color="teal", ~brand="Navbar", ~navRight=?, ~children) => {
   ...component,
   render: _self => {
     let navRightComponent =
-      switch navRight {
+      switch (navRight) {
       | None => ReasonReact.nullElement
       | Some(navRight) => ReasonReact.arrayToElement(navRight)
       };
@@ -20,7 +20,7 @@ let make = (~color="teal", ~brand="Navbar", ~navRight=?, ~children) => {
         (ReasonReact.arrayToElement(children))
       </div>
     </div>;
-  }
+  },
 };
 
 let default =
@@ -29,6 +29,6 @@ let default =
       ~color=jsProps##color,
       ~brand=jsProps##brand,
       ~navRight=?jsProps##navRight,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );

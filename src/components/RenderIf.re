@@ -4,7 +4,7 @@ let make = (~condition, ~children) => {
   ...component,
   render: _self =>
     Js.Boolean.to_js_boolean(condition) === Js.Boolean.to_js_boolean(true) ?
-      ReasonReact.arrayToElement(children) : ReasonReact.nullElement
+      ReasonReact.arrayToElement(children) : ReasonReact.nullElement,
 };
 
 let default =

@@ -5,7 +5,7 @@ let make = (~sm="full", ~md="full", ~lg="full", ~xl="full", ~children) => {
   render: _self =>
     <div className={j|w-$(sm) sm:w-$(sm) md:w-$(md) lg:w-$(lg) xl:w-$(xl)|j}>
       (ReasonReact.arrayToElement(children))
-    </div>
+    </div>,
 };
 
 let default =
@@ -15,6 +15,6 @@ let default =
       ~md=jsProps##md,
       ~lg=jsProps##lg,
       ~xl=jsProps##xl,
-      ~children=jsProps##children
+      ~children=jsProps##children,
     )
   );
