@@ -6,16 +6,11 @@ let make =
       ~author="Article Author",
       ~description="Article Description",
       ~abstract="Article Abstract",
-      ~footer=?,
+      ~footer: array(ReasonReact.reactElement)=[||],
       _children
     ) => {
   ...component,
-  render: _self => {
-    let footerComponent =
-      switch footer {
-      | None => ReasonReact.nullElement
-      | Some(footer) => ReasonReact.arrayToElement(footer)
-      };
+  render: _self =>
     <div className="w-full font-sans">
       <h1 className="font-sans font-thin mb-4">
         (ReasonReact.stringToElement(title))
@@ -28,10 +23,9 @@ let make =
         (ReasonReact.stringToElement(abstract))
       </p>
       <div className="text-black no-underline uppercase">
-        footerComponent
+        (ReasonReact.arrayToElement(footer))
       </div>
-    </div>;
-  }
+    </div>
 };
 
 let default =
@@ -41,7 +35,11 @@ let default =
       ~author=jsProps##author,
       ~description=jsProps##description,
       ~abstract=jsProps##abstract,
-      ~footer=?jsProps##footer,
+      ~footer=
+        switch (Js.Null_undefined.to_opt(jsProps##footer)) {
+        | None => [||]
+        | Some(footer) => footer
+        },
       [||]
     )
   );
