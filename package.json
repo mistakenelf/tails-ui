@@ -45,7 +45,7 @@
     "reason-cli":
       "https://github.com/reasonml/reason-cli/archive/3.0.5-bin-darwin.tar.gz",
     "reason-react": "^0.3.2",
-    "rollup": "^0.56.1",
+    "rollup": "^0.56.2",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-bucklescript": "^0.6.1",
     "rollup-plugin-commonjs": "^8.3.0",
@@ -54,7 +54,7 @@
     "rollup-plugin-postcss": "^1.2.8",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^3.0.0",
-    "uglify-es": "^3.3.9"
+    "uglify-es": "^3.3.10"
   },
   "dependencies": {
     "tailwindcss": "^0.4.1"
