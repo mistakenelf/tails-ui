@@ -11,7 +11,7 @@ let make = (~color="teal", ~percent="50%", _children) => {
           (ReasonReact.stringToElement(percent))
         </div>
       </div>
-    </div>,
+    </div>
 };
 
 let default =

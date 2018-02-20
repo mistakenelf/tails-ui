@@ -10,7 +10,7 @@ let make = (~text="Dropdown", ~color="teal", ~children) => {
   ...component,
   initialState: () => {isOpen: false},
   reducer: (action, state) =>
-    switch (action) {
+    switch action {
     | Toggle => ReasonReact.Update({isOpen: ! state.isOpen})
     | Close => ReasonReact.Update({isOpen: false})
     },
@@ -56,7 +56,7 @@ let make = (~text="Dropdown", ~color="teal", ~children) => {
           </div> :
           ReasonReact.nullElement
       )
-    </div>,
+    </div>
 };
 
 let default =
@@ -64,6 +64,6 @@ let default =
     make(
       ~text=jsProps##text,
       ~color=jsProps##color,
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );

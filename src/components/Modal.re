@@ -4,7 +4,7 @@ let make = (~title="Modal Title", ~footer=?, ~children) => {
   ...component,
   render: _self => {
     let footerComponent =
-      switch (footer) {
+      switch footer {
       | None => ReasonReact.nullElement
       | Some(footer) => ReasonReact.arrayToElement(footer)
       };
@@ -26,7 +26,7 @@ let make = (~title="Modal Title", ~footer=?, ~children) => {
         <div className="mt-4 flex justify-end"> footerComponent </div>
       </div>
     </div>;
-  },
+  }
 };
 
 let default =
@@ -34,6 +34,6 @@ let default =
     make(
       ~title=jsProps##title,
       ~footer=?jsProps##footer,
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );

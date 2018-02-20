@@ -8,14 +8,14 @@ let make =
       ~weight="normal",
       ~align="left",
       ~fontStyle="normal-case",
-      ~children,
+      ~children
     ) => {
   ...component,
   render: _self =>
     <div
       className={j|text-$(color) font-$(font) text-$(size) font-$(weight) text-$(align) $(fontStyle)|j}>
       (ReasonReact.arrayToElement(children))
-    </div>,
+    </div>
 };
 
 let default =
@@ -27,6 +27,6 @@ let default =
       ~weight=jsProps##weight,
       ~align=jsProps##align,
       ~fontStyle=jsProps##fontStyle,
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );

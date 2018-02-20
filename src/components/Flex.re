@@ -9,14 +9,14 @@ let make =
       ~align="start",
       ~height="full",
       ~width="full",
-      ~children,
+      ~children
     ) => {
   ...component,
   render: _self =>
     <div
       className={j| h-$(height) w-$(width) $(display) flex-$(direction) flex-$(wrap) justify-$(justify) items-$(align)|j}>
       (ReasonReact.arrayToElement(children))
-    </div>,
+    </div>
 };
 
 let default =
@@ -29,6 +29,6 @@ let default =
       ~align=jsProps##align,
       ~height=jsProps##height,
       ~width=jsProps##width,
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );

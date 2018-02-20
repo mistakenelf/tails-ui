@@ -7,13 +7,13 @@ let make =
       ~marginRight=?,
       ~marginBottom=?,
       ~marginTop=?,
-      _children,
+      _children
     ) => {
   ...component,
   render: _self =>
     <div
       className={j|m-$(margin) ml-$(marginLeft) mr-$(marginRight) mb-$(marginBottom) mt-$(marginTop)|j}
-    />,
+    />
 };
 
 let default =
@@ -24,6 +24,6 @@ let default =
       ~marginRight=?jsProps##marginRight,
       ~marginBottom=?jsProps##marginBottom,
       ~marginTop=?jsProps##marginTop,
-      [||],
+      [||]
     )
   );
