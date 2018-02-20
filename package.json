@@ -42,8 +42,6 @@
     "prettier": "^1.10.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "reason-cli":
-      "https://github.com/reasonml/reason-cli/archive/3.0.5-bin-darwin.tar.gz",
     "reason-react": "^0.3.2",
     "rollup": "^0.56.2",
     "rollup-plugin-babel": "^3.0.3",
@@ -54,7 +52,7 @@
     "rollup-plugin-postcss": "^1.2.8",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^3.0.0",
-    "uglify-es": "^3.3.10"
+    "uglify-es": "^3.3.9"
   },
   "dependencies": {
     "tailwindcss": "^0.4.1"

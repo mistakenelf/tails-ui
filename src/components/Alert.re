@@ -6,7 +6,7 @@ let make =
       ~heading="Heading here",
       ~icon="info",
       ~message="A message",
-      _children,
+      _children
     ) => {
   ...component,
   render: _self =>
@@ -89,7 +89,7 @@ let make =
           (ReasonReact.stringToElement(message))
         </p>
       </div>
-    </div>,
+    </div>
 };
 
 let default =
@@ -99,6 +99,6 @@ let default =
       ~heading=jsProps##heading,
       ~icon=jsProps##icon,
       ~message=jsProps##message,
-      [||],
+      [||]
     )
   );

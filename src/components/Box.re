@@ -2,10 +2,10 @@ let component = ReasonReact.statelessComponent("Box");
 
 let make = (~sm="full", ~md="full", ~lg="full", ~xl="full", ~children) => {
   ...component,
-  render: _self =>
+  render: (_) =>
     <div className={j|w-$(sm) sm:w-$(sm) md:w-$(md) lg:w-$(lg) xl:w-$(xl)|j}>
       (ReasonReact.arrayToElement(children))
-    </div>,
+    </div>
 };
 
 let default =
@@ -15,6 +15,6 @@ let default =
       ~md=jsProps##md,
       ~lg=jsProps##lg,
       ~xl=jsProps##xl,
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );

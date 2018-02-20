@@ -4,7 +4,7 @@ let make =
     (
       ~title="Card Title",
       ~footer: array(ReasonReact.reactElement)=[||],
-      ~children,
+      ~children
     ) => {
   ...component,
   render: _self =>
@@ -15,8 +15,8 @@ let make =
         </div>
         (ReasonReact.arrayToElement(children))
       </div>
-      <div className="px-6 py-4"> footer </div>
-    </div>,
+      <div className="px-6 py-4"> (ReasonReact.arrayToElement(footer)) </div>
+    </div>
 };
 
 let default =
@@ -28,6 +28,6 @@ let default =
         | None => [||]
         | Some(footer) => footer
         },
-      ~children=jsProps##children,
+      ~children=jsProps##children
     )
   );
